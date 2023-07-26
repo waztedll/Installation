@@ -1,10 +1,44 @@
 The system has been installed, run:
 sudo pacman -Syu
 
+-You need refresh to keys:
+sudo pacman -S archlinux-keyring
+sudo pacman-key --list-keys bretti@i--b.com
+sudo pacman-key --refresh
+
 # Installation
 After the Install
 
+-Configure & Speed Up Pacman
+
+sudo nano sudo nano /etc/pacman.conf
+
+Remove # on
+Color
+Parallel Downloads = 5
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+Add
+ILoveCandy
+
+-Update pacman
+
+sudo pacman -Sy
+
+-Updating mirrorlist
+
+sudo pacman -S reflector
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo pacman -Sy
+
+# Get yay
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
 # Packages to Install
+
+-Install
 
 git
 pup
@@ -65,16 +99,6 @@ rustdesk
 spotify
 urn-git
 code
-
-# Get yay
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-
-You need refresh to keys:
-sudo pacman -S archlinux-keyring
-sudo pacman-key --list-keys bretti@i--b.com
-sudo pacman-key --refresh
-
-reboot
 
 # Changing GRUB
 sudo nvim /etc/default/grub
