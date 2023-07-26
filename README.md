@@ -97,6 +97,7 @@ antimicrox
 bitwarden
 celluloid
 thunar
+alacritty
 jstest-gtk
 kitty
 kdenlive
