@@ -37,6 +37,12 @@ Add
 # Get yay
 - sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
+# Install ZSH
+- echo $SHELL
+- sudo pacman -S zsh zsh-completions
+- chsh -l
+- chsh -s chsh -s /usr/bin/zsh
+
 # Packages to Install
 
 -Install
@@ -46,7 +52,6 @@ pup
 recode
 jq
 curl
-zsh
 vim
 nvim
 touch
@@ -81,7 +86,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -S git recode jq curl zsh wget cargo htop bpytop neofetch zip unzip unrar nodejs make python podman cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
+- sudo pacman -S git recode jq curl wget cargo htop bpytop neofetch zip unzip unrar nodejs make python podman cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
 
 reboot
 
