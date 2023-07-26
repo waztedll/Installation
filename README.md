@@ -12,30 +12,30 @@ After the Install
 
 -Configure & Speed Up Pacman
 
-sudo nano sudo nano /etc/pacman.conf
+- sudo nano sudo nano /etc/pacman.conf
 
-Remove # on
-Color
-Parallel Downloads = 5
-[multilib]
-Include = /etc/pacman.d/mirrorlist
+- Remove # on
+- Color
+- Parallel Downloads = 5
+- [multilib]
+- Include = /etc/pacman.d/mirrorlist
 
 Add
-ILoveCandy
+- ILoveCandy
 
 -Update pacman
 
-sudo pacman -Sy
+- sudo pacman -Sy
 
 -Updating mirrorlist
 
-sudo pacman -S reflector
-sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-sudo pacman -Sy
+- sudo pacman -S reflector
+- sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+- sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+- sudo pacman -Sy
 
 # Get yay
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+- sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 # Packages to Install
 
@@ -74,10 +74,10 @@ devour
 tuxi
 
 lib:
-lib32-alsa-plugins lib32-libpulse lib32-openal
+- lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-$ sudo pacman -S git pup recode jq curl zsh touch wget cargo htop bpytop neofetch pfetch cpufetch zip unzip unrar nodejs make python podman cmatrix vim nvim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
+- *$* sudo pacman -S git pup recode jq curl zsh touch wget cargo htop bpytop neofetch pfetch cpufetch zip unzip unrar nodejs make python podman cmatrix vim nvim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
 
 reboot
 
@@ -102,22 +102,22 @@ urn-git
 code
 
 # Changing GRUB
-sudo nvim /etc/default/grub
+- sudo nvim /etc/default/grub
 
 GRUB_TIMEOUT=0
 
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+- sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 reboot
 
 # Adding SWAP (4GiB)
-sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-swapon --show
+- sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+- sudo chmod 600 /swapfile
+- sudo mkswap /swapfile
+- sudo swapon /swapfile
+- swapon --show
 
-sudo nano /etc/fstab
+- sudo nano /etc/fstab
 
 /swapfile                                 none           swap    defaults         0 0
 
@@ -130,11 +130,11 @@ reboot.
 
 If bluetooth not working, run this commands
 
-sudo rfkill list
-sudo rfkill unblock bluetooth
-sudo systemctl status bluetooth
-sudo systemctl start bluetooth
-sudo systemctl status bluetooth
+- sudo rfkill list
+- sudo rfkill unblock bluetooth
+- sudo systemctl status bluetooth
+- sudo systemctl start bluetooth
+- sudo systemctl status bluetooth
 
 -Check the PS3 controller
 
@@ -142,17 +142,17 @@ Truth & Authorise
 
 -Removing color on noefetch
 
-sudo nvim /home/taha/.config/neofetch/config.conf
+- sudo nvim /home/taha/.config/neofetch/config.conf
 
 Add # on info cols
 
 -Installing wine
 
-sudo pacman -S wine wine-mono wine-gecko
+- sudo pacman -S wine wine-mono wine-gecko
 
 -Install flatpak
 
-sudo pacman -S flatpak
+- sudo pacman -S flatpak
 
 # *Shortcuts*
 
@@ -232,7 +232,7 @@ browser.safebrowsing.downloads.remote.url = blank
 
 # Spotify
 
-bash <(curl -sSL https://raw.githubusercontent.com/SpotX-CLI/SpotX-Linux/main/install.sh)
+- bash <(curl -sSL https://raw.githubusercontent.com/SpotX-CLI/SpotX-Linux/main/install.sh)
 
 # KDE
 
