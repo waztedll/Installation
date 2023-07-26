@@ -42,6 +42,11 @@ Add
 - sudo pacman -S zsh zsh-completions
 - chsh -l
 - chsh -s chsh -s /usr/bin/zsh
+/plugins
+- plugins=( 
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 # Packages to Install
 
