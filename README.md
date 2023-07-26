@@ -72,12 +72,16 @@ rofi
 AUR packages:
 devour
 tuxi
+pup
+touch
+pfetch
+cpufetch
 
 lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -S git pup recode jq curl zsh touch wget cargo htop bpytop neofetch pfetch cpufetch zip unzip unrar nodejs make python podman cmatrix vim nvim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
+- sudo pacman -S git recode jq curl zsh wget cargo htop bpytop neofetch zip unzip unrar nodejs make python podman cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
 
 reboot
 
