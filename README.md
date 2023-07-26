@@ -68,6 +68,7 @@ nvim
 touch
 wget
 cargo
+locate
 htop
 bpytop
 neofetch
@@ -97,7 +98,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -S git recode jq curl wget cargo htop bpytop neofetch zip unzip unrar nodejs make python podman cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
+- sudo pacman -Syu git recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
 
 reboot
 
