@@ -2,6 +2,7 @@ The system has been installed, run:
 sudo pacman -Syu
 
 -You need refresh to keys:
+
 sudo pacman -S archlinux-keyring
 sudo pacman-key --list-keys bretti@i--b.com
 sudo pacman-key --refresh
