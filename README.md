@@ -12,7 +12,7 @@ After the Install
 
 -Configure & Speed Up Pacman
 
-- sudo nano sudo nano /etc/pacman.conf
+- sudo nano /etc/pacman.conf
 
 - Remove # on
 - Color
