@@ -265,6 +265,11 @@ browser.safebrowsing.downloads.remote.url = blank
 
 - bash <(curl -sSL https://raw.githubusercontent.com/SpotX-CLI/SpotX-Linux/main/install.sh)
 
+# Java
+
+- sudo pacman -S jre-openjdk
+- sudo pacman -S jdk-openjdk
+
 # KDE
 
 -Konsole
