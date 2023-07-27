@@ -274,4 +274,3 @@ install edna theme and set transparecsty %50
 -Plasma
 
 install tokyo night and set splash arch theme
-
