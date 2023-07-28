@@ -272,6 +272,11 @@ browser.safebrowsing.downloads.remote.url = blank
 - sudo pacman -S jdk-openjdk
 - java -version
 
+# Snap
+
+- sudo systemctl enable snapd
+- sudo systemctl start snapd
+
 # KDE
 
 -Konsole
