@@ -274,6 +274,7 @@ browser.safebrowsing.downloads.remote.url = blank
 
 # Snap
 
+- yay -Sy snapd
 - sudo systemctl enable snapd
 - sudo systemctl start snapd
 
