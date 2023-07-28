@@ -1,4 +1,4 @@
-The system has been installed, run:
+sThe system has been installed, run:
 sudo pacman -Syu
 
 -You need refresh to keys:
