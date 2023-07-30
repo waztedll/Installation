@@ -87,7 +87,8 @@ cmatrix (optional)
 enable firefox pwa
 rofi
 netctl
-dialoh
+dialog
+npm
 
 AUR packages:
 devour
@@ -101,7 +102,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
+- sudo pacman -Syu git npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
 
 reboot
 
