@@ -1,4 +1,4 @@
-sThe system has been installed, run:
+The system has been installed, run:
 sudo pacman -Syu
 
 -You need refresh to keys:
@@ -87,6 +87,7 @@ cmatrix (optional)
 enable firefox pwa
 rofi
 netctl
+dialoh
 
 AUR packages:
 devour
@@ -100,7 +101,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git netctl recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
+- sudo pacman -Syu git netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
 
 reboot
 
