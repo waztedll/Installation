@@ -300,3 +300,10 @@ install edna theme and set transparecsty %50
 -Plasma
 
 install tokyo night and set splash arch theme
+
+# Notification
+
+knotifications % knotifyconfig packages download
+- sudo pacman -S knotifications knotifyconfig
+go to settings and notifications then enable all authentication pushs
+
