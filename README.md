@@ -307,3 +307,6 @@ knotifications % knotifyconfig packages download
 - sudo pacman -S knotifications knotifyconfig
 go to settings and notifications then enable all authentication pushs
 
+-Clipboard
+
+go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion" Meta+V
