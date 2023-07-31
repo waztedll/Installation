@@ -65,6 +65,8 @@ jq
 curl
 vim
 nvim
+mako
+dunst
 touch
 wget
 cargo
@@ -103,7 +105,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim lib32-alsa-plugins lib32-libpulse lib32-openal
+- sudo pacman -Syu git scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim mako dunst lib32-alsa-plugins lib32-libpulse lib32-openal
 
 reboot
 
@@ -310,3 +312,7 @@ go to settings and notifications then enable all authentication pushs
 -Clipboard
 
 go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion" Meta+V
+
+# Hyprland
+ 
+- sudo pacman -Syu hyprland qt5-wayland qt6-wayland mako dunst polkit-kde-agent && pacman -Syu
