@@ -318,4 +318,4 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland mako dunst polkit-kde-agent && pacman -Syu
+- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper mako dunst polkit-kde-agent && pacman -Syu
