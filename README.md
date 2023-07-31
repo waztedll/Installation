@@ -14,7 +14,7 @@ After the Install
 
 - sudo nano /etc/pacman.conf
 
-- Remove # on
+- Remove # on-desktop-portal-hyprland-git
 - Color
 - Parallel Downloads = 5
 - [multilib]
@@ -321,4 +321,4 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 - sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper mako dunst polkit-kde-agent && pacman -Syu
 - yay -S xdg-desktop-portal-hyprland-git
 
-reboot
+reboot.
