@@ -42,9 +42,12 @@ Add
 - sudo pacman -S zsh zsh-completions
 - chsh -l
 - chsh -s chsh -s /usr/bin/zsh
+- git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 /plugins
-- plugins=( 
+- plugins=(
+    git
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
