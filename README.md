@@ -152,6 +152,17 @@ GRUB_TIMEOUT=0
 
 reboot
 
+# Mounting Disk
+
+- lsblk -f
+
+or
+- ls -l /dev/disk/by-uuid
+
+then
+- sudo nvim /etc/fstab
+UUID=uuid_paste_here 
+
 # Adding SWAP (4GiB)
 - sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
 - sudo chmod 600 /swapfile
