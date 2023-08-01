@@ -154,14 +154,25 @@ reboot
 
 # Mounting Disk
 
+first, creating mount folder
+- cd /mnt
+- sudo mkdir Depo
+
+list disks with uuid
 - lsblk -f
 
 or
-- ls -l /dev/disk/by-uuid
+- ls -l /dev/disk/by-uuid              
 
 then
 - sudo nvim /etc/fstab
-UUID=uuid_paste_here 
+UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
+- :wq!
+- sudo mount -a
+- systemctl daemon-reload
+- sudo mount -a
+
+reboot
 
 # Adding SWAP (4GiB)
 - sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
@@ -174,7 +185,7 @@ UUID=uuid_paste_here
 
 /swapfile                                 none           swap    defaults         0 0
 
-reboot.
+reboot
 
 # Then
 -Change firefox config bkz: .mozilla
