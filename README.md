@@ -95,8 +95,6 @@ rofi
 netctl
 dialog
 npm
-qt5ct
-qt6ct
 scrcpy
 
 AUR packages:
@@ -111,7 +109,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git tlp scrcpy npm qt5ct qt6ct netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim mako dunst lib32-alsa-plugins lib32-libpulse lib32-openal
+- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim mako dunst lib32-alsa-plugins lib32-libpulse lib32-openal
 
 reboot
 
@@ -321,7 +319,7 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper mako dunst polkit-kde-agent && pacman -Syu
+- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper mako dunst nwg-look polkit-kde-agent && pacman -Syu
 - yay -S xdg-desktop-portal-hyprland-git
 
 reboot.
