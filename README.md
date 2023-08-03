@@ -216,6 +216,10 @@ reboot
 
 reboot
 
+# Showing stars on sudo password
+- sudo nvim /etc/sudoers
+- Defaults pwfeedback
+
 # Then
 -Change firefox config bkz: .mozilla
 
@@ -370,7 +374,7 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper mako dunst nwg-look polkit-kde-agent && pacman -Syu
+- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper blueman swaybg mako dunst nwg-look polkit-kde-agent && pacman -Syu
 - yay -S xdg-desktop-portal-hyprland-git
 
 reboot.
