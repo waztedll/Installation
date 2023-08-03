@@ -156,21 +156,26 @@ code
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
 - sudo nvim /etc/default/grub
-- /GRUB_SAVEDEFAULT=true
+- search /GRUB_SAVEDEFAULT=true
 
 remove # (uncomment)
-- /GRUB_DEFAULT=0
+
+- search /GRUB_DEFAULT=0
 
 make GRUB_DEFAULT=saved
+
 - sudo grub-mkconfig -o /boot/grub/grub.cfg
-- reboot
+
+reboot
 
 on the grub menu, select the linux-zen kernel. on the next time will automaticly select
 
 # Changing GRUB time
 - sudo nvim /etc/default/grub
+- search /GRUB_TIMEOUT=5
 
-GRUB_TIMEOUT=0
+ make GRUB_TIMEOUT=0
+
 - sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 reboot
