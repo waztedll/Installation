@@ -77,6 +77,7 @@ pup
 recode
 jq
 curl
+vi
 vim
 nvim
 mako
@@ -119,7 +120,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vim neovim mako dunst lib32-alsa-plugins lib32-libpulse lib32-openal
+- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim mako dunst lib32-alsa-plugins lib32-libpulse lib32-openal && sudo pacman -Syu
 
 reboot
 
