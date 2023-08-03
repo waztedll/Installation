@@ -115,6 +115,7 @@ pup
 touch
 pfetch
 cpufetch
+firefox-pwa-bin
 
 lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
