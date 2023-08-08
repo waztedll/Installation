@@ -3,7 +3,7 @@
 - iwctl
 - device list
 - station wlan0 scan
-- station wlna0 get-networks
+- station wlan0 get-networks
 - station wlan0 connect <your wifi name>
 - station wlan0 show
 - ping gnu.org
