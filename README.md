@@ -125,7 +125,7 @@ In one code:
 - sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release ffmpegthumbnailer tumbler && sudo pacman -Syu
 
 -Driver
-- yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu
+- yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 
 reboot
 
