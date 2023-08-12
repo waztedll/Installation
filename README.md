@@ -218,6 +218,12 @@ reboot
 
 reboot
 
+-Deleting Swap file
+- sudo swapoff -v /swapfile
+- sudo rm /swapfile
+
+reboot
+
 # Showing stars on sudo password
 - sudo nvim /etc/sudoers
 - Defaults pwfeedback
