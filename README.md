@@ -122,7 +122,9 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler && sudo pacman -Syu
+- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler && sudo pacman -Syu
+
+- sudo systemctl enable --now tlp.service
 
 -Driver
 - yay -S optimus-manager
