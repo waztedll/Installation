@@ -67,6 +67,15 @@ Add
 - set theme "powerlevel10k/powerlevel10k"
 - source .zshrc
 
+# Installing fish
+- sudo pacman -S fish
+- curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+- chsh -l
+- chsh
+- /usr/bin/fish
+- sudo pacman -S fisher
+- fisher install IlanCosman/tide@v5
+
 # Packages to Install
 
 -Install
