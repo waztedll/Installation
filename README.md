@@ -35,14 +35,14 @@ Add
 
 -Update pacman
 
-- sudo pacman -Sy
+- sudo pacman -Syu
 
 -Updating mirrorlist
 
 - sudo pacman -S reflector
 - sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 - sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-- sudo pacman -Sy
+- sudo pacman -Syu
 
 # Get yay
 - sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
