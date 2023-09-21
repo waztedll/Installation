@@ -171,6 +171,17 @@ urn-git
 code
 upscayl
 ungoogled
+lyrebird
+youtube-music
+metadata cleaner
+akregator
+blueman
+nuclear
+cheese
+granatier
+pamac-nosnap
+nvchad
+
 
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
