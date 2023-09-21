@@ -68,13 +68,12 @@ Add
 - source .zshrc
 
 # Installing fish
-- sudo pacman -S fish
+- sudo pacman -S fish fisher
 - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 - chsh -l
-- chsh
-- /usr/bin/fish
-- sudo pacman -S fisher
+- chsh -s /usr/bin/fish
 - fisher install IlanCosman/tide@v5
+- tide configure
 
 # Packages to Install
 
@@ -131,7 +130,7 @@ lib:
 - lib32-alsa-plugins lib32-libpulse lib32-openal
 
 In one code: 
-- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler && sudo pacman -Syu
+- sudo pacman -Syu git tlp scrcpy npm netctl dialog recode jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
 
 - sudo systemctl enable --now tlp.service
 
