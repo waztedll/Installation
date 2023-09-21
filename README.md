@@ -169,6 +169,8 @@ rustdesk
 spotify
 urn-git
 code
+upscayl
+ungoogled
 
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
