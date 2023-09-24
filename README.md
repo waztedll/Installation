@@ -104,6 +104,8 @@ reboot
 
 -Editing tuxi config
 
+nvim /usr/bin/tuxi
+
 line 18
 
     [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
@@ -323,15 +325,15 @@ browser.safebrowsing.downloads.remote.url = blank
 - sudo pacman -S jdk-openjdk
 - java -version
 
+# Flatpak
+
+- sudo pacman -S flatpak
+
 # Snap
 
 - yay -Sy snapd
 - sudo systemctl enable snapd
 - sudo systemctl start snapd
-
-# Flatpak
-
-- sudo pacman -S flatpak
 
 # KDE
 
@@ -345,7 +347,6 @@ install tokyo night and set splash arch theme
 
 # Notification
 
-knotifications % knotifyconfig packages download
 - sudo pacman -S knotifications knotifyconfig
 go to settings and notifications then enable all authentication pushs
 
@@ -355,7 +356,6 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent && pacman -Syu
-- yay -S xdg-desktop-portal-hyprland-git
+- sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent && sudo pacman -Syu
 
 reboot.
