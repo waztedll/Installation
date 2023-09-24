@@ -24,7 +24,7 @@ After the Install
 
 - sudo nano /etc/pacman.conf
 
-- Remove # on-desktop-portal-hyprland-git
+- Remove # on
 - Color
 - Parallel Downloads = 5
 - [multilib]
@@ -44,6 +44,15 @@ Add
 - sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 - sudo pacman -Syu
 
+# Chaotic AUR
+
+    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'  
+
+- sudo nvim /etc/pacman.conf
+
+      [chaotic-aur]
+      Include = /etc/pacman.d/chaotic-mirrorlist
+      
 # Get yay
 
     sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -64,7 +73,7 @@ Add
 )
 
 - git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-- nvim .zshrc
+- nano .zshrc
 - set theme "powerlevel10k/powerlevel10k"
 - source .zshrc
 
@@ -77,9 +86,11 @@ Add
 
 # Packages to Install
 
-In one code: 
+official:
 
-    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
+    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
+
+AUR:
 
     yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin
 
@@ -93,45 +104,44 @@ reboot
 
 -Editing tuxi config
 
-18- [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
+line 18
 
-886- user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
+    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
 
--Enable firefox pwa
-- yay firefox-pwa-bin
+line 886
+      
+    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
 # Applications
-pamac
-antimicrox
-bitwarden
-celluloid
-thunar
-alacritty
-jstest-gtk
-kitty
-kdenlive
-mousai
-obs studio
-obsidian
-piper
-qbittorrent
-qdirstat
-rustdesk
-spotify
-urn-git
-code
-upscayl
-ungoogled
-lyrebird
-youtube-music
-metadata cleaner
-akregator
-blueman
-nuclear
-cheese
-granatier
-pamac-nosnap
-nvchad
+pamac-nosnap  
+antimicrox  
+bitwarden  
+celluloid  
+thunar  
+alacritty  
+jstest-gtk  
+kitty  
+kdenlive  
+mousai  
+obs studio  
+obsidian  
+piper  
+qbittorrent  
+qdirstat  
+rustdesk  
+spotify  
+urn-git  
+code  
+upscayl  
+ungoogled  
+lyrebird  
+youtube-music  
+metadata cleaner  
+akregator  
+nuclear  
+cheese  
+granatier  
+nvchad  
 
 
 # Installing Zen kernel
@@ -207,8 +217,6 @@ reboot
 - Defaults pwfeedback
 
 # Then
--Change firefox config bkz: .mozilla
-
 -Check the bluetooth
 
 If bluetooth not working, run this commands
@@ -228,14 +236,6 @@ Truth & Authorise
 - sudo nvim /home/taha/.config/neofetch/config.conf
 
 Add # on info cols
-
--Installing wine
-
-- sudo pacman -S wine wine-mono wine-gecko
-
--Install flatpak
-
-- sudo pacman -S flatpak
 
 # *Shortcuts*
 
@@ -329,16 +329,10 @@ browser.safebrowsing.downloads.remote.url = blank
 - sudo systemctl enable snapd
 - sudo systemctl start snapd
 
-# Chaotic AUR
+# Flatpak
 
-- sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-- sudo pacman-key --lsign-key 3056513887B78AEB
-- sudo pacman -U'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-- sudo nvim /etc/pacman.conf
+- sudo pacman -S flatpak
 
-      [chaotic-aur]
-      Include = /etc/pacman.d/chaotic-mirrorlist
-      
 # KDE
 
 -Konsole
@@ -361,7 +355,7 @@ go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist blueman swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent && pacman -Syu
+- sudo pacman -Syu hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent && pacman -Syu
 - yay -S xdg-desktop-portal-hyprland-git
 
 reboot.
