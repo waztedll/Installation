@@ -70,7 +70,6 @@ Add
 
 # Installing fish
 - sudo pacman -S fish fisher
-- curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 - chsh -l
 - chsh -s /usr/bin/fish
 - fisher install IlanCosman/tide@v5
@@ -78,62 +77,11 @@ Add
 
 # Packages to Install
 
--Install
-
-git
-tlp
-pup
-recode
-jq
-curl
-vi
-vim
-nvim
-mako
-dunst
-touch
-wget
-cargo
-locate
-htop
-bpytop
-neofetch
-pfetch
-ufetch
-cpufetch
-zip
-unzip
-make
-python
-podman
-lsb-release
-gvfs
-nodejs
-unrar
-cmatrix (optional)
-enable firefox pwa
-rofi
-netctl
-dialog
-npm
-scrcpy
-net-tools
-
-AUR packages:
-devour
-tuxi
-pup
-touch
-pfetch
-cpufetch
-firefox-pwa-bin
-
-lib:
-- lib32-alsa-plugins lib32-libpulse lib32-openal
-
 In one code: 
 
-    sudo pacman -S git tlp scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
+    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
+
+    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin
 
 - sudo systemctl enable --now tlp.service
 
