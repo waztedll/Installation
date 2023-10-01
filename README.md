@@ -24,7 +24,7 @@ After the Install
 
 - sudo nano /etc/pacman.conf
 
-- Remove # on
+Remove # on
 - Color
 - Parallel Downloads = 5
 - [multilib]
@@ -33,8 +33,7 @@ After the Install
 Add
 - ILoveCandy
 
--Update pacman
-
+Update pacman
 - sudo pacman -Syu
 
 -Updating mirrorlist
@@ -121,27 +120,26 @@ line 886
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
 - sudo nvim /etc/default/grub
-- search /GRUB_SAVEDEFAULT=true
 
+/GRUB_SAVEDEFAULT="true"  
 remove # (uncomment)
 
-- search /GRUB_DEFAULT=0
-
+/GRUB_DEFAULT=0  
 make GRUB_DEFAULT=saved
 
-- sudo grub-mkconfig -o /boot/grub/grub.cfg
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 reboot
 
-on the grub menu, select the linux-zen kernel. on the next time will automaticly select
+on the grub menu, select the linux-zen kernel. on the next time will automatically select the zen kernel
 
 # Changing GRUB time
 - sudo nvim /etc/default/grub
-- search /GRUB_TIMEOUT=5
 
- make GRUB_TIMEOUT=0
+/GRUB_TIMEOUT=5  
+make GRUB_TIMEOUT=0
 
-- sudo grub-mkconfig -o /boot/grub/grub.cfg
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 reboot
 
@@ -151,7 +149,7 @@ first, creating mount folder
 - cd /mnt
 - sudo mkdir Depo
 
-list disks with uuid
+list disks uuid
 - lsblk -f
 
 or
@@ -159,9 +157,8 @@ or
 
 then
 - sudo nvim /etc/fstab
-UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
-- :wq!
-- sudo mount -a
+
+      UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
 - systemctl daemon-reload
 - sudo mount -a
 
@@ -173,14 +170,14 @@ reboot
 - sudo mkswap /swapfile
 - sudo swapon /swapfile
 - swapon --show
+- sudo nvim /etc/fstab
 
-- sudo nano /etc/fstab
-
-/swapfile                                 none           swap    defaults         0 0
+      /swapfile                                 none           swap    defaults         0 0
 
 reboot
 
--Deleting Swap file
+Deleting Swap file
+-
 - sudo swapoff -v /swapfile
 - sudo rm /swapfile
 
@@ -188,28 +185,10 @@ reboot
 
 # Showing stars on sudo password
 - sudo nvim /etc/sudoers
-- Defaults pwfeedback
 
-# Then
--Check the bluetooth
+add
 
-If bluetooth not working, run this commands
-
-- sudo rfkill list
-- sudo rfkill unblock bluetooth
-- sudo systemctl status bluetooth
-- sudo systemctl start bluetooth
-- sudo systemctl status bluetooth
-
--Check the PS3 controller
-
-Truth & Authorise
-
--Removing color on noefetch
-
-- sudo nvim /home/taha/.config/neofetch/config.conf
-
-Add # on info cols
+    Defaults pwfeedback
 
 # *Shortcuts*
 
@@ -301,15 +280,38 @@ install tokyo night and set splash arch theme
 
 # Error Solutions
 
-- Notifications
+--------------------------------------------------
+If bluetooth not working, run this commands
+-
+- sudo rfkill list
+- sudo rfkill unblock bluetooth
+- sudo systemctl status bluetooth
+- sudo systemctl start bluetooth
+- sudo systemctl status bluetooth
 
+Check the PS3 controller, then click the ***Truth & Authorise*** notification
+
+--------------------------------------------------
+
+Removing color on noefetch
+-
+      sudo nvim /home/taha/.config/neofetch/config.conf
+
+- Add # on **info cols**
+
+--------------------------------------------------
+If notifications will not working correctly
+-
       sudo pacman -S knotifications knotifyconfig
   
-go to settings and notifications then enable all authentication pushs
+- go to settings and notifications then enable all authentication pushs
 
-- Clipboard
+--------------------------------------------------
+If clipboard will not working correctly
+-
+- go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
-go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
+--------------------------------------------------
 
 # Hyprland
  
