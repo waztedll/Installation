@@ -9,9 +9,11 @@
 - ping gnu.org
 
 The system has been installed, run:
-sudo pacman -Syu
 
--If you need refresh to keys:
+      sudo pacman -Syu
+
+If you need refresh to keys:
+-
 
 - sudo pacman -S archlinux-keyring
 - sudo pacman-key --list-keys brett@i--b.com
@@ -20,9 +22,10 @@ sudo pacman -Syu
 # Installation
 After the Install
 
--Configure & Speed Up Pacman
+Configure & Speed Up Pacman
+-
 
-- sudo nano /etc/pacman.conf
+    sudo nano /etc/pacman.conf
 
 Remove # on
 - Color
@@ -36,20 +39,20 @@ Add
 Update pacman
 - sudo pacman -Syu
 
--Updating mirrorlist
+Updating mirrorlist
+-
 
-- sudo pacman -S reflector
-- sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-- sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-- sudo pacman -Syu
+    sudo pacman -S reflector && sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu
 
 # Chaotic AUR
 
-    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'  
+    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+ㅤ
 
-- sudo nvim /etc/pacman.conf
+    sudo nvim /etc/pacman.conf
+ㅤ
 
-      [chaotic-aur]
+      [chaotic-aur]  
       Include = /etc/pacman.d/chaotic-mirrorlist
       
 # Get yay
@@ -57,24 +60,21 @@ Update pacman
     sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 # Install ZSH
-- echo $SHELL
-- sudo pacman -S zsh zsh-completions
-- chsh -l
-- chsh -s chsh -s /usr/bin/zsh
+    sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
+    
 - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+- git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+      nvim ~/.zshrc
 
 /plugins
-- plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
+- plugins=( git zsh-autosuggestions zsh-syntax-highlighting )
 
-- git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-- nano .zshrc
-- set theme "powerlevel10k/powerlevel10k"
-- source .zshrc
+/ZSH_THEME
+- ZSH_THEME="powerlevel10k/powerlevel10k"
+
+      source .zshrc
 
 # Installing fish
 
@@ -84,7 +84,7 @@ Update pacman
 
 requirements:
 
-    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
+    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
 
 applications:
 
@@ -92,19 +92,24 @@ applications:
 
 flatpak:
 
-    flatpak install parsec spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
+    flatpak install spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
 
 AUR:
 
     yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin urn-git lyrebird spotube-bin easyssh
 
--Driver
-- yay -S optimus-manager
-- yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+Driver
+-
+
+    yay -S optimus-manager
+ㅤ
+
+    yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 
 reboot
 
--Editing tuxi config
+Editing tuxi config
+-
 
 nvim /usr/bin/tuxi
 
@@ -224,49 +229,49 @@ ALT + Q = killactive
 
 # Firefox config
 
-- Needed
-
-extensions.pocket.enabled = false
-browser.send_pings = false
-dom.event.clipboardevents.enabled = false
-media.eme.enabled = false
-media.navigator.enabled = false
-beacon.enabled = false
-browser.safebrowsing.downloads.remote.enabled = false
-network.IDN_show_punycode = true
-
-- For Google IP
-
-geo.enabled = false
-geo.wifi.uri = blank
-browser.search.geoip.url = blank
-
-- For ultra super privacy
-
-browser.safebrowsing.enabled = false
-browser.safebrowsing.phishing.enabled = false
-browser.safebrowsing.malware.enabled = false
-browser.safebrowsing.downloads.enabled = false
-browser.safebrowsing.provider.google4.dataSharing.enabled = blank
-browser.safebrowsing.provider.google4.updateURL = blank
-browser.safebrowsing.provider.google4.reportURL = blank
-browser.safebrowsing.provider.google4.reportPhishMistakeURL = blank
-browser.safebrowsing.provider.google4.reportMalwareMistakeURL = blank
-browser.safebrowsing.provider.google4.lists = blank
-browser.safebrowsing.provider.google4.gethashURL = blank
-browser.safebrowsing.provider.google4.dataSharingURL = blank
-browser.safebrowsing.provider.google4.dataSharing.enabled = false
-browser.safebrowsing.provider.google4.advisoryURL = blank
-browser.safebrowsing.provider.google4.advisoryName = blank
-browser.safebrowsing.provider.google.updateURL = blank
-browser.safebrowsing.provider.google.reportURL = blank
-browser.safebrowsing.provider.google.reportPhishMistakeURL = blank
-browser.safebrowsing.provider.google.reportMalwareMistakeURL = blank
-browser.safebrowsing.provider.google.pver = blank
-browser.safebrowsing.provider.google.lists = blank
-browser.safebrowsing.provider.google.gethashURL = blank
-browser.safebrowsing.provider.google.advisoryURL = blank
-browser.safebrowsing.downloads.remote.url = blank
+    - Needed
+    
+    extensions.pocket.enabled = false
+    browser.send_pings = false
+    dom.event.clipboardevents.enabled = false
+    media.eme.enabled = false
+    media.navigator.enabled = false
+    beacon.enabled = false
+    browser.safebrowsing.downloads.remote.enabled = false
+    network.IDN_show_punycode = true
+    
+    - For Google IP
+    
+    geo.enabled = false
+    geo.wifi.uri = blank
+    browser.search.geoip.url = blank
+    
+    - For ultra super privacy
+    
+    browser.safebrowsing.enabled = false
+    browser.safebrowsing.phishing.enabled = false
+    browser.safebrowsing.malware.enabled = false
+    browser.safebrowsing.downloads.enabled = false
+    browser.safebrowsing.provider.google4.dataSharing.enabled = blank
+    browser.safebrowsing.provider.google4.updateURL = blank
+    browser.safebrowsing.provider.google4.reportURL = blank
+    browser.safebrowsing.provider.google4.reportPhishMistakeURL = blank
+    browser.safebrowsing.provider.google4.reportMalwareMistakeURL = blank
+    browser.safebrowsing.provider.google4.lists = blank
+    browser.safebrowsing.provider.google4.gethashURL = blank
+    browser.safebrowsing.provider.google4.dataSharingURL = blank
+    browser.safebrowsing.provider.google4.dataSharing.enabled = false
+    browser.safebrowsing.provider.google4.advisoryURL = blank
+    browser.safebrowsing.provider.google4.advisoryName = blank
+    browser.safebrowsing.provider.google.updateURL = blank
+    browser.safebrowsing.provider.google.reportURL = blank
+    browser.safebrowsing.provider.google.reportPhishMistakeURL = blank
+    browser.safebrowsing.provider.google.reportMalwareMistakeURL = blank
+    browser.safebrowsing.provider.google.pver = blank
+    browser.safebrowsing.provider.google.lists = blank
+    browser.safebrowsing.provider.google.gethashURL = blank
+    browser.safebrowsing.provider.google.advisoryURL = blank
+    browser.safebrowsing.downloads.remote.url = blank
 
 # KDE
 
@@ -283,6 +288,7 @@ install tokyo night and set splash arch theme
 --------------------------------------------------
 If bluetooth not working, run this commands
 -
+
 - sudo rfkill list
 - sudo rfkill unblock bluetooth
 - sudo systemctl status bluetooth
@@ -295,6 +301,7 @@ Check the PS3 controller, then click the ***Truth & Authorise*** notification
 
 Removing color on noefetch
 -
+
       sudo nvim /home/taha/.config/neofetch/config.conf
 
 - Add # on **info cols**
@@ -302,6 +309,7 @@ Removing color on noefetch
 --------------------------------------------------
 If notifications will not working correctly
 -
+
       sudo pacman -S knotifications knotifyconfig
   
 - go to settings and notifications then enable all authentication pushs
@@ -309,9 +317,20 @@ If notifications will not working correctly
 --------------------------------------------------
 If clipboard will not working correctly
 -
+
 - go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 --------------------------------------------------
+KDE
+-
+
+- Konsole
+
+install edna theme and set transparecsty %50
+
+- Plasma
+
+install tokyo night and set splash arch theme
 
 # Hyprland
  
