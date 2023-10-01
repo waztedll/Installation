@@ -121,6 +121,12 @@ line 886
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
+Backup your config files
+-
+
+    mkdir configs
+
+    rsync -a --delete ~/.config ~/configs
 
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
