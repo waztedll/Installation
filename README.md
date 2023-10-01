@@ -4,7 +4,7 @@
 - device list
 - station wlan0 scan
 - station wlan0 get-networks
-- station wlan0 connect <=your wifi name=>
+- station wlan0 connect 'your wifi name'
 - station wlan0 show
 - ping gnu.org
 
@@ -14,7 +14,7 @@ sudo pacman -Syu
 -If you need refresh to keys:
 
 - sudo pacman -S archlinux-keyring
-- sudo pacman-key --list-keys bretti@i--b.com
+- sudo pacman-key --list-keys brett@i--b.com
 - sudo pacman-key --refresh
 
 # Installation
@@ -78,23 +78,26 @@ Add
 - source .zshrc
 
 # Installing fish
-- sudo pacman -S fish fisher
-- chsh -l
-- chsh -s /usr/bin/fish
-- fisher install IlanCosman/tide@v5
-- tide configure
+
+    sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
 
 # Packages to Install
 
-official:
+requirements:
 
-    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol && sudo pacman -Syu
+    sudo pacman -S git scrcpy npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
+
+applications:
+
+    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner akregator nuclear-player-bin cheese granatier jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+flatpak:
+
+    flatpak install parsec spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
 
 AUR:
 
-    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin
-
-- sudo systemctl enable --now tlp.service
+    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin urn-git lyrebird spotube-bin easyssh
 
 -Driver
 - yay -S optimus-manager
@@ -113,37 +116,6 @@ line 18
 line 886
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
-
-# Applications
-pamac-nosnap  
-antimicrox  
-bitwarden  
-celluloid  
-thunar  
-alacritty  
-jstest-gtk  
-kitty  
-kdenlive  
-mousai  
-obs studio  
-obsidian  
-piper  
-qbittorrent  
-qdirstat  
-rustdesk  
-spotify  
-urn-git  
-code  
-upscayl  
-ungoogled  
-lyrebird  
-youtube-music  
-metadata cleaner  
-akregator  
-nuclear  
-cheese  
-granatier  
-nvchad  
 
 
 # Installing Zen kernel
@@ -244,36 +216,37 @@ Add # on info cols
 rofi -modi drun -show drun -show-icons
 
 
-firefox
-# open firefox
-$mod+w
--firefox
+    firefox
+    # open firefox
+    $mod+w
+    -firefox
 
-terminal
-# open konsole
-$mod+enter
--konsole
+    terminal
+    # open konsole
+    $mod+enter
+    -konsole
 
-ksysguard
-# open kde system guard
-$mod+h
--systemmonitor
+    ksysguard
+    # open kde system guard
+    $mod+h
+    -systemmonitor
 
-discovery
-# open discover
-$mod+shift+s
--plasma-discover
+    discovery
+    # open discover
+    $mod+shift+s
+    -plasma-discover
 
-pamac
-# open pamac
-$mod+shift+p
--pamac-manager
+    pamac
+    # open pamac
+    $mod+shift+p
+    -pamac-manager
 
 ALT + Q = killactive
 
 # Firefox config
 
--Needed
+- Needed
+
 extensions.pocket.enabled = false
 browser.send_pings = false
 dom.event.clipboardevents.enabled = false
@@ -283,12 +256,13 @@ beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled = false
 network.IDN_show_punycode = true
 
--For Google IP
+- For Google IP
+
 geo.enabled = false
 geo.wifi.uri = blank
 browser.search.geoip.url = blank
 
--For ultra super privacy
+- For ultra super privacy
 
 browser.safebrowsing.enabled = false
 browser.safebrowsing.phishing.enabled = false
@@ -315,26 +289,6 @@ browser.safebrowsing.provider.google.gethashURL = blank
 browser.safebrowsing.provider.google.advisoryURL = blank
 browser.safebrowsing.downloads.remote.url = blank
 
-# Spotify
-
-- bash <(curl -sSL https://raw.githubusercontent.com/SpotX-CLI/SpotX-Linux/main/install.sh)
-
-# Java
-
-- sudo pacman -S jre-openjdk
-- sudo pacman -S jdk-openjdk
-- java -version
-
-# Flatpak
-
-- sudo pacman -S flatpak
-
-# Snap
-
-- yay -Sy snapd
-- sudo systemctl enable snapd
-- sudo systemctl start snapd
-
 # KDE
 
 -Konsole
@@ -345,17 +299,20 @@ install edna theme and set transparecsty %50
 
 install tokyo night and set splash arch theme
 
-# Notification
+# Error Solutions
 
-- sudo pacman -S knotifications knotifyconfig
+- Notifications
+
+      sudo pacman -S knotifications knotifyconfig
+  
 go to settings and notifications then enable all authentication pushs
 
--Clipboard
+- Clipboard
 
-go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion" Meta+V
+go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 # Hyprland
  
-- sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent && sudo pacman -Syu
+    sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 reboot.
