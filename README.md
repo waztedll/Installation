@@ -33,11 +33,13 @@ Remove # on
     [multilib]
     Include = /etc/pacman.d/mirrorlist
 
-Add
-- ILoveCandy
+Add  
+
+    ILoveCandy
 
 Update pacman
-- sudo pacman -Syu
+
+    sudo pacman -Syu
 
 Updating mirrorlist
 -
