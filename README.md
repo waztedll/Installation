@@ -15,9 +15,7 @@ The system has been installed, run:
 If you need refresh to keys:
 -
 
-- sudo pacman -S archlinux-keyring
-- sudo pacman-key --list-keys brett@i--b.com
-- sudo pacman-key --refresh
+    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 # Installation
 After the Install
