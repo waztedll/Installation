@@ -10,7 +10,7 @@
 
 The system has been installed, run:
 
-      sudo pacman -Syu
+    sudo pacman -Syu
 
 If you need refresh to keys:
 -
@@ -47,15 +47,33 @@ Updating mirrorlist
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 ㅤ
 
-    sudo nvim /etc/pacman.conf
+    sudo nano /etc/pacman.conf
 ㅤ
 
-      [chaotic-aur]  
-      Include = /etc/pacman.d/chaotic-mirrorlist
+    [chaotic-aur]  
+    Include = /etc/pacman.d/chaotic-mirrorlist
       
 # Get yay
 
     sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
+# Packages to Install
+
+requirements:
+
+    sudo pacman -S git ksh fast scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
+
+applications:
+
+    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+flatpak:
+
+    flatpak install spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
+
+AUR:
+
+    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin urn-git lyrebird spotube-bin easyssh
 
 # Install ZSH
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
@@ -78,23 +96,7 @@ Updating mirrorlist
 
     sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
 
-# Packages to Install
-
-requirements:
-
-    sudo pacman -S git ksh fast scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
-
-applications:
-
-    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-
-flatpak:
-
-    flatpak install spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
-
-AUR:
-
-    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin urn-git lyrebird spotube-bin easyssh
+# Useful utilities
 
 Driver
 -
@@ -306,7 +308,7 @@ Check the PS3 controller, then click the ***Truth & Authorise*** notification
 Removing color on noefetch
 -
 
-      sudo nvim /home/taha/.config/neofetch/config.conf
+    sudo nvim /home/taha/.config/neofetch/config.conf
 
 - Add # on **info cols**
 
@@ -314,7 +316,7 @@ Removing color on noefetch
 If notifications will not working correctly
 -
 
-      sudo pacman -S knotifications knotifyconfig
+    sudo pacman -S knotifications knotifyconfig
   
 - go to settings and notifications then enable all authentication pushs
 
