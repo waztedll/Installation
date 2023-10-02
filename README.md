@@ -18,7 +18,7 @@ If you need refresh to keys:
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 # Installation
-After the Install
+**Beginning install**
 
 Configure & Speed Up Pacman
 -
@@ -26,10 +26,12 @@ Configure & Speed Up Pacman
     sudo nano /etc/pacman.conf
 
 Remove # on
-- Color
-- Parallel Downloads = 5
-- [multilib]
-- Include = /etc/pacman.d/mirrorlist
+
+    Color
+    Parallel Downloads = 5
+    
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
 
 Add
 - ILoveCandy
@@ -43,12 +45,13 @@ Updating mirrorlist
     sudo pacman -S reflector && sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu
 
 # Chaotic AUR
+ㅤfirst, downloading required packages
 
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-ㅤ
+ㅤㅤㅤthen editing the pacman config
 
     sudo nano /etc/pacman.conf
-ㅤ
+ㅤinclude this codes
 
     [chaotic-aur]  
     Include = /etc/pacman.d/chaotic-mirrorlist
