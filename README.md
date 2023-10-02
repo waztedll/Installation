@@ -1,13 +1,4 @@
 
-# Connecting to Wi-Fi
-- iwctl
-- device list
-- station wlan0 scan
-- station wlan0 get-networks
-- station wlan0 connect 'your wifi name'
-- station wlan0 show
-- ping gnu.org
-
 The system has been installed, run:
 
     sudo pacman -Syu
@@ -101,37 +92,7 @@ AUR:
 
     sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
 
-# Useful utilities
 
-Driver
--
-
-    yay -S optimus-manager
-ㅤ
-
-    yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
-
-reboot
-
-Editing tuxi config
--
-
-nvim /usr/bin/tuxi
-
-line 18
-
-    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
-
-line 886
-      
-    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
-
-Backup your config files
--
-
-    mkdir configs
-
-    rsync -a --delete ~/.config ~/configs
 
 # Installing Zen kernel
 - sudo pacman -S linux-zen linux-zen-headers
@@ -199,8 +160,53 @@ Deleting Swap file
 
 reboot
 
-# Showing stars on sudo password
-- sudo nvim /etc/sudoers
+# Useful utilities
+
+Connecting to Wi-Fi
+-
+
+- iwctl
+- device list
+- station wlan0 scan
+- station wlan0 get-networks
+- station wlan0 connect 'your wifi name'
+- station wlan0 show
+- ping gnu.org
+
+Driver
+-
+
+    yay -S optimus-manager
+ㅤ
+
+    yay -S mesa lib32-mesa vulkan-intel vulkan-icd-loader ocl-icd lib32-ocl-icd intel-compute-runtime xf86-video-ati xf86-video-intel xf86-video-amdgpu libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+
+reboot
+
+Editing tuxi config
+-
+
+nvim /usr/bin/tuxi
+
+line 18
+
+    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
+
+line 886
+      
+    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
+
+Backup your config files
+-
+
+    mkdir configs
+
+    rsync -a --delete ~/.config ~/configs
+
+Showing stars on sudo password
+-
+
+    sudo nvim /etc/sudoers
 
 add
 
@@ -283,16 +289,6 @@ ALT + Q = killactive
     browser.safebrowsing.provider.google.gethashURL = blank
     browser.safebrowsing.provider.google.advisoryURL = blank
     browser.safebrowsing.downloads.remote.url = blank
-
-# KDE
-
--Konsole
-
-install edna theme and set transparecsty %50
-
--Plasma
-
-install tokyo night and set splash arch theme
 
 # Error Solutions
 
