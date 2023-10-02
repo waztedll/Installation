@@ -82,11 +82,11 @@ Updating mirrorlist
 
 requirements:
 
-    sudo pacman -S git ksh scrcpy yt-dlp npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
+    sudo pacman -S git ksh fast scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq curl wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw lib32-mesa lib32-amdvlk lib32-vulkan-radeon vulkan-radeon amdvlk lib32-alsa-plugins lib32-libpulse lib32-openal speech-dispatcher lsb-release network-manager-applet wine-stable ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && sudo pacman -Syu
 
 applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner akregator nuclear-player-bin cheese granatier jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 flatpak:
 
