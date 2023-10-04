@@ -103,8 +103,12 @@ AUR:
 
 
 # Installing Zen kernel
-- sudo pacman -S linux-zen linux-zen-headers
-- sudo nvim /etc/default/grub
+first downloading the packages
+
+    sudo pacman -S linux-zen linux-zen-headers
+then editing the grub
+
+    sudo nvim /etc/default/grub
 
 /GRUB_SAVEDEFAULT="true"  
 remove # (uncomment)
