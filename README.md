@@ -162,8 +162,7 @@ reboot
 
 Deleting Swap file
 -
-- sudo swapoff -v /swapfile
-- sudo rm /swapfile
+    sudo swapoff -v /swapfile && sudo rm /swapfile
 
 reboot
 
@@ -351,9 +350,5 @@ install edna theme and set transparecsty %50
 - Plasma
 
 install tokyo night and set splash arch theme
-
-# Hyprland
- 
-    sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grimblast grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 reboot.
