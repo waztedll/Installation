@@ -171,13 +171,7 @@ reboot
 Connecting to Wi-Fi
 -
 
-- iwctl
-- device list
-- station wlan0 scan
-- station wlan0 get-networks
-- station wlan0 connect 'your wifi name'
-- station wlan0 show
-- ping gnu.org
+    nmtui
 
 Driver
 -
@@ -192,7 +186,7 @@ reboot
 Editing tuxi config
 -
 
-nvim /usr/bin/tuxi
+`nvim /usr/bin/tuxi`
 
 line 18:
 
