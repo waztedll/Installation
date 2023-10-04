@@ -48,7 +48,11 @@ Updating mirrorlist
 
     [chaotic-aur]  
     Include = /etc/pacman.d/chaotic-mirrorlist
-      
+
+then updating the mirrors
+
+    sudo pacman -S powerpill && sudo pacman -Sy && sudo powerpill -Su && sudo pacman -Su
+    
 # Get yay
 
     sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -69,7 +73,11 @@ flatpak:
 
 AUR:
 
-    yay -S pup pfetch cpufetch tuxi devour urn-git lyrebird spotube-bin easyssh
+    yay -S pup pfetch cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git easyssh
+
+# Hyprland
+ 
+    sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland  waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 # Install ZSH
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
@@ -188,11 +196,11 @@ Editing tuxi config
 
 nvim /usr/bin/tuxi
 
-line 18
+line 18:
 
     [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
 
-line 886
+line 886:
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
@@ -214,35 +222,41 @@ add
 
 # *Shortcuts*
 
-rofi -modi drun -show drun -show-icons
+    rofi
+    # open rofi
+    $mod+r
+    $ rofi -modi drun -show drun -show-icons
 
 
     firefox
     # open firefox
     $mod+w
-    -firefox
+    $ firefox
 
     terminal
     # open konsole
     $mod+enter
-    -konsole
+    $ konsole
 
     ksysguard
     # open kde system guard
     $mod+h
-    -systemmonitor
+    $ systemmonitor
 
     discovery
     # open discover
     $mod+shift+s
-    -plasma-discover
+    $ plasma-discover
 
     pamac
     # open pamac
     $mod+shift+p
-    -pamac-manager
+    $ pamac-manager
 
-ALT + Q = killactive
+    kill
+    # kill active program
+    $alt+q
+    $ killactive
 
 # Firefox config
 
