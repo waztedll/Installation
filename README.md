@@ -100,8 +100,6 @@ AUR:
 
     sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
 
-
-
 # Installing Zen kernel
 first downloading the packages
 
@@ -123,7 +121,7 @@ reboot
 on the grub menu, select the linux-zen kernel. on the next time will automatically select the zen kernel
 
 # Changing GRUB time
-- sudo nvim /etc/default/grub
+    sudo nvim /etc/default/grub
 
 /GRUB_TIMEOUT=5  
 make GRUB_TIMEOUT=0
@@ -135,21 +133,18 @@ reboot
 # Mounting Disk
 
 first, creating mount folder
-- cd /mnt
-- sudo mkdir Depo
+- `cd /mnt`
+- `sudo mkdir Depo`
 
 list disks uuid
-- lsblk -f
-
-or
-- ls -l /dev/disk/by-uuid              
+- `lsblk -f` or `ls -l /dev/disk/by-uuid`              
 
 then
-- sudo nvim /etc/fstab
+- `sudo nvim /etc/fstab`
 
       UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
-- systemctl daemon-reload
-- sudo mount -a
+- `systemctl daemon-reload`
+- `sudo mount -a`
 
 reboot
 
