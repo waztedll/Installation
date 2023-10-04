@@ -61,7 +61,7 @@ requirements:
 
 applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk firefox-pwa && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 flatpak:
 
@@ -69,7 +69,7 @@ flatpak:
 
 AUR:
 
-    yay -S pup pfetch cpufetch tuxi devour firefox-pwa-bin urn-git lyrebird spotube-bin easyssh
+    yay -S pup pfetch cpufetch tuxi devour urn-git lyrebird spotube-bin easyssh
 
 # Install ZSH
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
