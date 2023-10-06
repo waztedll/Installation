@@ -80,11 +80,13 @@ AUR:
     sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland  waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 # Install ZSH
+first, installing zsh and changing default shell to zsh
+
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
-ㅤ
+then cloning required pluginsㅤ
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-ㅤ
+ㅤlast one, editing zsh config and including plugins
 
     nvim ~/.zshrc
 
