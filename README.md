@@ -210,9 +210,10 @@ line 886:
 Backup your config files
 -
 
-    mkdir configs
+    mkdir ~/configs && mkdir ~/configs/.config && ~/configs/.mozilla
 
-    rsync -a --delete ~/.config ~/configs
+    rsync -a --delete ~/.config/ ~/configs/.config/
+    rsync -a --delete ~/.mozilla/ ~/configs/.mozilla/
 
 Showing stars on sudo password
 -
