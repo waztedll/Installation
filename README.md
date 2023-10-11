@@ -61,7 +61,17 @@ then updating the mirrors
 
 requirements:
 
-    sudo pacman -S inxi ksh tcsh fast scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop bpytop neofetch fastfetch zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak && sudo systemctl enable tlp.service && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
+
+tlp
+-
+
+    sudo systemctl enable tlp.service
+
+NvChad
+-
+
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 applications:
 
@@ -73,7 +83,7 @@ flatpak:
 
 AUR:
 
-    yay -S pup pfetch cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git easyssh
 
 # Hyprland
  
