@@ -210,7 +210,7 @@ line 886:
 Backup your config files
 -
 
-    mkdir ~/configs && mkdir ~/configs/.config && ~/configs/.mozilla
+    mkdir ~/configs && mkdir ~/configs/.config && mkdir ~/configs/.mozilla
 
     rsync -a --delete ~/.config/ ~/configs/.config/
     rsync -a --delete ~/.mozilla/ ~/configs/.mozilla/
