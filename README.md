@@ -217,6 +217,13 @@ line 886:
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
+Removing color on noefetch
+-
+
+    sudo nvim /home/taha/.config/neofetch/config.conf
+
+- Add # on **info cols**
+
 Backup your config files
 -
 
@@ -234,43 +241,59 @@ add
 
     Defaults pwfeedback
 
+
+
+# Error Solutions
+
+--------------------------------------------------
+If bluetooth not working, run this commands
+-
+
+- sudo rfkill list
+- sudo rfkill unblock bluetooth
+- sudo systemctl status bluetooth
+- sudo systemctl start bluetooth
+- sudo systemctl status bluetooth
+
+Check the PS3 controller, then click the ***Truth & Authorise*** notification
+
+--------------------------------------------------
+If notifications will not working correctly
+-
+
+    sudo pacman -S knotifications knotifyconfig
+  
+- go to settings and notifications then enable all authentication pushs
+
+--------------------------------------------------
+If clipboard will not working correctly
+-
+
+- go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
+
+--------------------------------------------------
+KDE
+-
+
+- Konsole
+
+install edna theme and set transparecsty %50
+
+- Plasma
+
+install tokyo night and set splash arch theme
+
+reboot.
+
 # *Shortcuts*
 
-    rofi
-    # open rofi
-    $mod+r
-    $ rofi -modi drun -show drun -show-icons
-
-
-    firefox
-    # open firefox
-    $mod+w
-    $ firefox
-
-    terminal
-    # open konsole
-    $mod+enter
-    $ konsole
-
-    ksysguard
-    # open kde system guard
-    $mod+h
-    $ systemmonitor
-
-    discovery
-    # open discover
-    $mod+shift+s
-    $ plasma-discover
-
-    pamac
-    # open pamac
-    $mod+shift+p
-    $ pamac-manager
-
-    kill
     # kill active program
     $alt+q
-    $ killactive
+    $: killactive
+
+    # start firefox
+    $mod+w
+    $: firefox
 
 # Firefox config
 
@@ -317,53 +340,3 @@ add
     browser.safebrowsing.provider.google.gethashURL = blank
     browser.safebrowsing.provider.google.advisoryURL = blank
     browser.safebrowsing.downloads.remote.url = blank
-
-# Error Solutions
-
---------------------------------------------------
-If bluetooth not working, run this commands
--
-
-- sudo rfkill list
-- sudo rfkill unblock bluetooth
-- sudo systemctl status bluetooth
-- sudo systemctl start bluetooth
-- sudo systemctl status bluetooth
-
-Check the PS3 controller, then click the ***Truth & Authorise*** notification
-
---------------------------------------------------
-Removing color on noefetch
--
-
-    sudo nvim /home/taha/.config/neofetch/config.conf
-
-- Add # on **info cols**
-
---------------------------------------------------
-If notifications will not working correctly
--
-
-    sudo pacman -S knotifications knotifyconfig
-  
-- go to settings and notifications then enable all authentication pushs
-
---------------------------------------------------
-If clipboard will not working correctly
--
-
-- go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
-
---------------------------------------------------
-KDE
--
-
-- Konsole
-
-install edna theme and set transparecsty %50
-
-- Plasma
-
-install tokyo night and set splash arch theme
-
-reboot.
