@@ -61,7 +61,7 @@ then updating the mirrors
 
 requirements:
 
-    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
+    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
 
 tlp
 -
@@ -188,11 +188,21 @@ Connecting to Wi-Fi
 Driver
 -
 
+for dual gpus:
+
     yay -S optimus-manager
+
+for open source amd & intel drivers:
 
     yay -S mesa lib32-mesa vulkan-radeon vulkan-intel lib32-vulkan-radeon lib32-vulkan-intel libva-mesa-driver lib32-libva-mesa-driver xf86-video-intel xf86-video-amdgpu vulkan-icd-loader lib32-vulkan-icd-loader
 
-reboot
+for printers:
+
+    yay -S cups
+
+for bluetooth:
+
+    yay -S blueman
 
 Editing tuxi config
 -
@@ -323,7 +333,6 @@ If bluetooth not working, run this commands
 Check the PS3 controller, then click the ***Truth & Authorise*** notification
 
 --------------------------------------------------
-
 Removing color on noefetch
 -
 
