@@ -281,7 +281,7 @@ Check the PS3 controller, then click the ***Truth & Authorise*** notification
 If notifications will not working correctly
 -
 
-    sudo pacman -S knotifications knotifyconfig
+    sudo pacman -S knotifications5 knotifyconfig5
   
 - go to settings and notifications then enable all authentication pushs
 
