@@ -75,11 +75,11 @@ NvChad
 
 applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat rustdesk-bin parsec-bin spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
 flatpak:
 
-    flatpak install spacecadetpinball flatseal jstest_gtk md.obsidian.Obsidian
+    flatpak install flatseal spacecadetpinball jstest_gtk md.obsidian.Obsidian
 
 AUR:
 
