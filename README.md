@@ -89,7 +89,11 @@ AUR:
 
     sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
-# Install ZSH
+# Installing Shells
+
+Install ZSH
+-
+
 first, installing zsh and changing default shell to zsh
 
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
@@ -110,11 +114,16 @@ then cloning required pluginsㅤ
 
       source .zshrc
 
-# Installing fish
+Installing fish
+-
 
     sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
 
-# Installing Zen kernel
+# System Modules
+
+Installing Zen kernel
+-
+
 first downloading the packages
 
     sudo pacman -S linux-zen linux-zen-headers
@@ -130,11 +139,13 @@ make GRUB_DEFAULT=saved
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-reboot
-
 on the grub menu, select the linux-zen kernel. on the next time will automatically select the zen kernel
 
-# Changing GRUB time
+reboot
+
+Changing GRUB time
+-
+
     sudo nvim /etc/default/grub
 
 /GRUB_TIMEOUT=5  
@@ -144,7 +155,8 @@ make GRUB_TIMEOUT=0
 
 reboot
 
-# Mounting Disk
+Mounting Disk
+-
 
 first, creating mount folder
 - `cd /mnt`
@@ -157,12 +169,15 @@ then
 - `sudo nvim /etc/fstab`
 
       UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
+  
 - `systemctl daemon-reload`
 - `sudo mount -a`
 
 reboot
 
-# Adding SWAP (4GiB)
+Adding SWAP (4GiB)
+-
+
 - sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
 - sudo chmod 600 /swapfile
 - sudo mkswap /swapfile
@@ -174,9 +189,9 @@ reboot
 
 reboot
 
-Deleting Swap file
--
-    sudo swapoff -v /swapfile && sudo rm /swapfile
+**Deleting Swap file**
+
+      sudo swapoff -v /swapfile && sudo rm /swapfile
 
 reboot
 
