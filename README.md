@@ -326,9 +326,37 @@ reboot.
     $alt+q
     $: killactive
 
-    # start firefox
+    # rofi
+    $alt+r
+    $: rofi -modi drun -show drun -show-icons
+
+    # start browser (gecko)
     $mod+w
     $: firefox
+
+    # start browser (webkit-gtk)
+    $mod_shift+w
+    $: epiphany
+
+    # start terminal
+    $mod+return
+    $: alacritty
+
+    # start file manager
+    $mod+e
+    $: thunar
+
+    # start mail client
+    $mod+g
+    $: thunderbird
+
+    # start system monitor
+    $mod+h
+    $: ksysguard
+    
+    # start package manager
+    $mod_shift+p
+    $: pamac-manager
 
 # Firefox config
 
