@@ -61,7 +61,7 @@ then updating the mirrors
 
 requirements:
 
-    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
+    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
 
 tlp
 -
@@ -86,16 +86,18 @@ AUR:
     yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git easyssh
 
 # Hyprland
- 
-    sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland  waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
+
+    sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 # Install ZSH
 first, installing zsh and changing default shell to zsh
 
     sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
+
 then cloning required pluginsㅤ
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 ㅤlast one, editing zsh config and including plugins
 
     nvim ~/.zshrc
@@ -204,6 +206,35 @@ for bluetooth:
 
     yay -S blueman
 
+Applying QT themes on Hyprland
+-
+
+    sudo nvim /etc/environment
+
+add
+
+    QT_QPA_PLATFORMTHEME=qt5ct
+    QT_QPA_PLATFORMTHEME=qt6ct
+
+Applying GTK themes on flatpak applications
+-
+
+    sudo flatpak override --filesystem=$HOME/.themes && sudo flatpak override --filesystem=$HOME/.icons
+
+then choosing the right theme & icons
+
+    sudo flatpak override --env=GTK_THEME=my-theme  
+    sudo flatpak override --env=GTK_THEME=my-theme
+    
+Showing stars on sudo password
+-
+
+    sudo nvim /etc/sudoers
+
+add
+
+    Defaults pwfeedback
+
 Editing tuxi config
 -
 
@@ -231,17 +262,6 @@ Backup your config files
 
     rsync -a --delete ~/.config/ ~/configs/.config/
     rsync -a --delete ~/.mozilla/ ~/configs/.mozilla/
-
-Showing stars on sudo password
--
-
-    sudo nvim /etc/sudoers
-
-add
-
-    Defaults pwfeedback
-
-
 
 # Error Solutions
 
