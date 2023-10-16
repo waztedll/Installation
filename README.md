@@ -8,7 +8,7 @@ If you need refresh to keys:
 
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
-##### Installation
+# Installation
 **Beginning install**
 
 Configure & Speed Up Pacman
