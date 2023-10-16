@@ -191,7 +191,7 @@ reboot
 
 **Deleting Swap file**
 
-      sudo swapoff -v /swapfile && sudo rm /swapfile
+    sudo swapoff -v /swapfile && sudo rm /swapfile
 
 reboot
 
