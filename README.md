@@ -231,7 +231,7 @@ add
     QT_QPA_PLATFORMTHEME=qt5ct
     QT_QPA_PLATFORMTHEME=qt6ct
 
-Applying GTK themes on flatpak applications
+Applying GTK & icon themes on flatpak applications
 -
 
     sudo flatpak override --filesystem=$HOME/.themes && sudo flatpak override --filesystem=$HOME/.icons
@@ -239,7 +239,7 @@ Applying GTK themes on flatpak applications
 then choosing the right theme & icons
 
     sudo flatpak override --env=GTK_THEME=my-theme
-    sudo flatpak override --env=GTK_THEME=my-theme
+    sudo flatpak override --env=ICON_THEME=my-icon-theme
     
 Showing stars on sudo password
 -
