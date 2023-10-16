@@ -238,7 +238,7 @@ Applying GTK themes on flatpak applications
 
 then choosing the right theme & icons
 
-    sudo flatpak override --env=GTK_THEME=my-theme  
+    sudo flatpak override --env=GTK_THEME=my-theme
     sudo flatpak override --env=GTK_THEME=my-theme
     
 Showing stars on sudo password
