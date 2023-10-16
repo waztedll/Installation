@@ -75,7 +75,7 @@ NvChad
 
 applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
 flatpak:
 
@@ -83,7 +83,7 @@ flatpak:
 
 AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird localsend-bin spotube-bin waypaper-git easyssh
 
 # Hyprland
 
