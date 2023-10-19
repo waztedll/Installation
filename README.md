@@ -61,7 +61,7 @@ then updating the mirrors
 
 requirements:
 
-    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler pipewire pipewire-pulse pavucontrol flatpak
+    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs cmatrix vi vim neovim ufw tlp tlp-rdw ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
 
 tlp
 -
@@ -87,7 +87,7 @@ AUR:
 
 # Hyprland
 
-    sudo pacman -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
+    yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent
 
 # Installing Shells
 
