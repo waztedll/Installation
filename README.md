@@ -87,7 +87,7 @@ AUR:
 
 # Hyprland
 
-    sudo pacman -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock slurp grim grimblast tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
+    sudo pacman -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako dunst swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent playerctl
 
 # Installing Shells
 
