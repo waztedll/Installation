@@ -54,35 +54,33 @@ then updating the mirrors
 
 # Packages to Install
 
-requirements:
+## requirements:
 
-    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
+    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
 
-tlp
--
+#### tlp
 
     sudo systemctl enable tlp.service
 
-NvChad
--
+#### NvChad
 
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
-applications:
+## applications:
 
-    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar\ alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
-flatpak:
+## flatpak:
 
     flatpak install flatseal rustdesk parsec spacecadetpinball jstest_gtk md.obsidian.Obsidian
 
-AUR:
+## AUR:
 
     yay -S cpufetch tuxi devour urn-git lyrebird localsend-bin spotube-bin waypaper-git easyssh
 
 # Hyprland
 
-    yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5ct qt6ct qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent
+    yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent
 
 # Installing Shells
 
