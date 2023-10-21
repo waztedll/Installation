@@ -1,4 +1,3 @@
-
 The system has been installed, run:
 
     sudo pacman -Syu
@@ -52,16 +51,12 @@ include this codes
 then updating the mirrors
 
     sudo pacman -S powerpill && sudo pacman -Sy && sudo powerpill -Su && sudo pacman -Su
-    
-# Get yay
-
-    sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 # Packages to Install
 
 requirements:
 
-    sudo pacman -S inxi ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
+    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
 
 tlp
 -
@@ -75,7 +70,7 @@ NvChad
 
 applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
 flatpak:
 
