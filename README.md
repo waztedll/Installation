@@ -212,7 +212,7 @@ for printers:
 
 for bluetooth:
 
-    yay -S blueman
+    yay -S bluez bluez-utils bluez-qt5 blueman
 
 Applying QT themes on Hyprland
 -
