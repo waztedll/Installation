@@ -56,7 +56,7 @@ then updating the mirrors
 
 ## requirements:
 
-    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate blueman htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
+    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
 
 #### tlp
 
