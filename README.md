@@ -214,16 +214,6 @@ for bluetooth:
 
     yay -S bluez bluez-utils bluez-qt5 blueman
 
-Applying QT themes on Hyprland
--
-
-    sudo nvim /etc/environment
-
-add
-
-    QT_QPA_PLATFORMTHEME=qt5ct
-    QT_QPA_PLATFORMTHEME=qt6ct
-
 Applying GTK & icon themes on flatpak applications
 -
 
