@@ -62,7 +62,7 @@ then updating the mirrors
                    xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome \
                    ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher translate-shell lsb-release \
                    network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl \
-                   playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
+                   playerctl pipewire pipewire-pulse wireplumber pamixer pavucontrol flatpak
 
 #### tlp
 
