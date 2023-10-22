@@ -76,9 +76,9 @@ then updating the mirrors
 
     sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive \
                    kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium \
-                   akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris \
-                   upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin youtube-music-bin metadata-cleaner \
-                   heroic-games-launcher-bin jre-openjdk jdk-openjdk
+                   webcord gtkcord4 signal-desktop akregator authy epiphany nuclear-player-bin cheese kweather ksysguard \
+                   granatier xdman steam lutris upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin \
+                   youtube-music-bin metadata-cleaner heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
 ## flatpak:
 
