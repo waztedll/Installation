@@ -56,7 +56,13 @@ then updating the mirrors
 
 ## requirements:
 
-    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
+    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog recode \
+                   net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch fastfetch pfetch \
+                   rufetch ufetch-git zip unzip unrar nodejs make python python-requests podman gvfs libva \
+                   xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw qt5ct qt6ct otf-font-awesome \
+                   ttf-jetbrains-mono-nerd noto-fonts-emoji speech-dispatcher translate-shell lsb-release \
+                   network-manager-applet wine-stable firefox-pwa ffmpegthumbnailer tumbler brightnessctl \
+                   playerctl pipewire pipewire-pulse pamixer pavucontrol flatpak
 
 #### tlp
 
@@ -68,7 +74,11 @@ then updating the mirrors
 
 ## applications:
 
-    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar\ alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin epiphany youtube-music-bin metadata-cleaner akregator authy nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive \
+                   kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium \
+                   akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier xdman steam lutris \
+                   upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin youtube-music-bin metadata-cleaner \
+                   heroic-games-launcher-bin jre-openjdk jdk-openjdk
 
 ## flatpak:
 
@@ -80,7 +90,9 @@ then updating the mirrors
 
 # Hyprland
 
-    yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent
+    yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper hyprpicker \
+           nwg-look wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur \
+           tesseract-data-rus tesseract-data-deu wlrobs-hg polkit-kde-agent
 
 ## for weather
 
