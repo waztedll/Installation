@@ -82,6 +82,10 @@ then updating the mirrors
 
     yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper hyprpicker wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg nwg-look polkit-kde-agent
 
+## for weather
+
+    curl -s https://raw.githubusercontent.com/yusufipk/hyprconf/master/waybar/modules/weather.sh | sh
+
 # Installing Shells
 
 Install ZSH
