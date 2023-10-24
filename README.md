@@ -326,84 +326,88 @@ reboot.
 
 # *Shortcuts*
 
-    # kill active program
-    $alt+q
-    $: killactive
+```
+# kill active program
+$alt+q
+$: killactive
 
-    # rofi
-    $alt+r
-    $: rofi -modi drun -show drun -show-icons
+# rofi
+$alt+r
+$: rofi -modi drun -show drun -show-icons
 
-    # start browser (gecko)
-    $mod+w
-    $: firefox
+# start browser (gecko)
+$mod+w
+$: firefox
 
-    # start browser (webkit-gtk)
-    $mod_shift+w
-    $: epiphany
+# start browser (webkit-gtk)
+$mod_shift+w
+$: epiphany
 
-    # start terminal
-    $mod+return
-    $: alacritty
+# start terminal
+$mod+return
+$: alacritty
 
-    # start file manager
-    $mod+e
-    $: thunar
+# start file manager
+$mod+e
+$: thunar
 
-    # start mail client
-    $mod+g
-    $: thunderbird
+# start mail client
+$mod+g
+$: thunderbird
 
-    # start system monitor
-    $mod+h
-    $: ksysguard
+# start system monitor
+$mod+h
+$: ksysguard
     
-    # start package manager
-    $mod_shift+p
-    $: pamac-manager
+# start package manager
+$mod_shift+p
+$: pamac-manager
+```
 
 # Firefox config
 
-    - Needed
+```
+- Needed
+
+extensions.pocket.enabled = false
+browser.send_pings = false
+dom.event.clipboardevents.enabled = false
+media.eme.enabled = false
+media.navigator.enabled = false
+beacon.enabled = false
+browser.safebrowsing.downloads.remote.enabled = false
+network.IDN_show_punycode = true
     
-    extensions.pocket.enabled = false
-    browser.send_pings = false
-    dom.event.clipboardevents.enabled = false
-    media.eme.enabled = false
-    media.navigator.enabled = false
-    beacon.enabled = false
-    browser.safebrowsing.downloads.remote.enabled = false
-    network.IDN_show_punycode = true
+- For Google IP
     
-    - For Google IP
+geo.enabled = false
+geo.wifi.uri = blank
+browser.search.geoip.url = blank
     
-    geo.enabled = false
-    geo.wifi.uri = blank
-    browser.search.geoip.url = blank
+- For ultra super privacy
     
-    - For ultra super privacy
-    
-    browser.safebrowsing.enabled = false
-    browser.safebrowsing.phishing.enabled = false
-    browser.safebrowsing.malware.enabled = false
-    browser.safebrowsing.downloads.enabled = false
-    browser.safebrowsing.provider.google4.dataSharing.enabled = blank
-    browser.safebrowsing.provider.google4.updateURL = blank
-    browser.safebrowsing.provider.google4.reportURL = blank
-    browser.safebrowsing.provider.google4.reportPhishMistakeURL = blank
-    browser.safebrowsing.provider.google4.reportMalwareMistakeURL = blank
-    browser.safebrowsing.provider.google4.lists = blank
-    browser.safebrowsing.provider.google4.gethashURL = blank
-    browser.safebrowsing.provider.google4.dataSharingURL = blank
-    browser.safebrowsing.provider.google4.dataSharing.enabled = false
-    browser.safebrowsing.provider.google4.advisoryURL = blank
-    browser.safebrowsing.provider.google4.advisoryName = blank
-    browser.safebrowsing.provider.google.updateURL = blank
-    browser.safebrowsing.provider.google.reportURL = blank
-    browser.safebrowsing.provider.google.reportPhishMistakeURL = blank
-    browser.safebrowsing.provider.google.reportMalwareMistakeURL = blank
-    browser.safebrowsing.provider.google.pver = blank
-    browser.safebrowsing.provider.google.lists = blank
-    browser.safebrowsing.provider.google.gethashURL = blank
-    browser.safebrowsing.provider.google.advisoryURL = blank
-    browser.safebrowsing.downloads.remote.url = blank
+browser.safebrowsing.enabled = false
+browser.safebrowsing.phishing.enabled = false
+browser.safebrowsing.malware.enabled = false
+browser.safebrowsing.downloads.enabled = false
+browser.safebrowsing.provider.google4.dataSharing.enabled = blank
+browser.safebrowsing.provider.google4.updateURL = blank
+browser.safebrowsing.provider.google4.reportURL = blank
+browser.safebrowsing.provider.google4.reportPhishMistakeURL = blank
+browser.safebrowsing.provider.google4.reportMalwareMistakeURL = blank
+browser.safebrowsing.provider.google4.lists = blank
+browser.safebrowsing.provider.google4.gethashURL = blank
+browser.safebrowsing.provider.google4.dataSharingURL = blank
+browser.safebrowsing.provider.google4.dataSharing.enabled = false
+browser.safebrowsing.provider.google4.advisoryURL = blank
+browser.safebrowsing.provider.google4.advisoryName = blank
+browser.safebrowsing.provider.google.updateURL = blank
+browser.safebrowsing.provider.google.reportURL = blank
+browser.safebrowsing.provider.google.reportPhishMistakeURL = blank
+browser.safebrowsing.provider.google.reportMalwareMistakeURL = blank
+browser.safebrowsing.provider.google.pver = blank
+browser.safebrowsing.provider.google.lists = blank
+browser.safebrowsing.provider.google.gethashURL = blank
+browser.safebrowsing.provider.google.advisoryURL = blank
+browser.safebrowsing.downloads.remote.url = blank
+```
