@@ -58,8 +58,8 @@ then updating the mirrors
 
     sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog \
                    recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch \
-                   fastfetch pfetch rufetch ufetch-git zip unzip unrar nodejs make python \
-                   podman gvfs libva xsensors cmatrix vi vim neovim starship ufw tlp tlp-rdw \
+                   fastfetch pfetch rufetch ufetch-git corectrl zip unzip unrar nodejs make python \
+                   podman gvfs libva xsensors cmatrix vi vim neovim starship iotop ufw tlp tlp-rdw \
                    qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
