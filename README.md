@@ -75,11 +75,13 @@ then updating the mirrors
 
 ## applications:
 
-    sudo pacman -S --needed pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar alacritty kitty kdenlive \
-                   kdeconnect thunderbird obs-studio piper qbittorrent qdirstat kdiskmark spotify discord vscodium \
-                   webcord gtkcord4 signal-desktop akregator authy epiphany nuclear-player-bin cheese kweather ksysguard \
-                   granatier xdman steam lutris upscayl-bin ungoogled-chromium thorium-browser-bin tor-browser-bin \
-                   youtube-music-bin metadata-cleaner heroic-games-launcher-bin jre-openjdk jdk-openjdk
+    sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar \
+                   alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
+                   qdirstat kdiskmark spotify discord vscodium webcord gtkcord4 signal-desktop \
+                   akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier \
+                   xdman steam lutris upscayl-bin ungoogled-chromium thorium-browser-bin \
+                   tor-browser-bin youtube-music-bin metadata-cleaner heroic-games-launcher-bin \
+                   jre-openjdk jdk-openjdk --needed
 
 ## flatpak:
 
@@ -92,9 +94,10 @@ then updating the mirrors
 
 # Hyprland
 
-    yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar hyprpaper hyprpicker \
-           nwg-look wl-clipboard cliphist swaybg mako swaylock slurp grim tesseract tesseract-data-eng tesseract-data-tur \
-           tesseract-data-rus tesseract-data-deu wlrobs-hg polkit-kde-agent
+    yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
+                    waybar hyprpaper hyprpicker nwg-look wl-clipboard cliphist swaybg mako swaylock \
+                    slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus \
+                    tesseract-data-deu wlrobs-hg polkit-kde-agent
 
 ## for weather
 
