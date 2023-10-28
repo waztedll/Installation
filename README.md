@@ -63,7 +63,8 @@ then updating the mirrors
                    qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
-                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum flatpak --needed
+                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum 
+                   dracula-gtk-theme-git flatpak --needed
 
 #### tlp
 
@@ -235,6 +236,22 @@ for bluetooth:
 
     yay -S bluez bluez-utils bluez-qt5 blueman
 
+Applying GTK & QT themes
+-
+
+### GTK
+
+first download the dracula kvantum and tokyonight-se icons [here](https://rentry.org/x9tsn)
+
+- firstly, extract the `TokyoNight-SE.tar.bz2` into `~/.local/share/icons`
+- secondly, open the `nwg-look` on wayland then select the `Dracula` into widgets, in icons select the `Tokyo Night-SE`
+
+### QT
+
+- firstly, extract the `Dracula.tar.xz`
+- secondly, open the `kvantum` then select the Dracula folder and install it
+- then click the change theme and select the dracula
+
 Applying GTK & icon themes on flatpak applications
 -
 
@@ -244,10 +261,6 @@ then choosing the right theme & icons
 
     sudo flatpak override --env=GTK_THEME=my-theme
     sudo flatpak override --env=ICON_THEME=my-icon-theme
-
-Applying QT themes
--
-
 
 Showing stars on sudo password
 -
