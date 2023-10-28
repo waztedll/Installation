@@ -259,8 +259,7 @@ Applying GTK & icon themes on flatpak applications
 
 then choosing the right theme & icons
 
-    sudo flatpak override --env=GTK_THEME=my-theme
-    sudo flatpak override --env=ICON_THEME=my-icon-theme
+    sudo flatpak override --env=GTK_THEME=Dracula && sudo flatpak override --env=ICON_THEME=TokyoNight-SE
 
 Showing stars on sudo password
 -
