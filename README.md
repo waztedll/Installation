@@ -100,7 +100,7 @@ then updating the mirrors
                     slurp grim tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus \
                     tesseract-data-deu wlrobs-hg polkit-kde-agent
 
-## for weather
+### for weather
 
     curl -s https://raw.githubusercontent.com/yusufipk/hyprconf/master/waybar/modules/weather.sh | sh
 
@@ -250,7 +250,7 @@ first download the dracula kvantum and tokyonight-se icons [here](https://rentry
 
 - firstly, extract the `Dracula.tar.xz`
 - secondly, open the `kvantum` then select the Dracula folder and install it
-- then click the change theme and select the dracula
+- then click the change theme and select the Dracula
 
 Applying GTK & icon themes on flatpak applications
 -
