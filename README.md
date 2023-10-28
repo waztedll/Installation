@@ -81,7 +81,7 @@ then updating the mirrors
                    akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier \
                    xdman steam lutris upscayl-bin ungoogled-chromium thorium-browser-bin \
                    tor-browser-bin youtube-music-bin metadata-cleaner heroic-games-launcher-bin \
-                   jre-openjdk jdk-openjdk --needed
+                   video-downloader jre-openjdk jdk-openjdk --needed
 
 ## flatpak:
 
