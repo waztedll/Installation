@@ -251,7 +251,7 @@ first download the dracula kvantum and tokyonight-se icons [here](https://rentry
 ### QT
 
 - firstly, extract the `Dracula.tar.xz`
-- secondly, open the `kvantum` then select the Dracula folder and install it
+- secondly, open the `kvantum` and select the Dracula folder and install it
 - then click the change theme and select the Dracula
 
 Applying GTK & icon themes on flatpak applications
