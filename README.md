@@ -239,11 +239,13 @@ for bluetooth:
 Applying GTK & QT themes
 -
 
+IMPORTANT: before the beginning be sure you have loaded ~/.themes and ~/.icons folders
+
 ### GTK
 
 first download the dracula kvantum and tokyonight-se icons [here](https://rentry.org/x9tsn)
 
-- firstly, extract the `TokyoNight-SE.tar.bz2` into `~/.local/share/icons`
+- firstly, extract the `TokyoNight-SE.tar.bz2` into `/usr/share/icons`
 - secondly, open the `nwg-look` on wayland then select the `Dracula` into widgets, in icons select the `Tokyo Night-SE`
 
 ### QT
