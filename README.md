@@ -63,7 +63,7 @@ then updating the mirrors
                    qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
-                   pipewire-pulse python-requests wireplumber pamixer pavucontrol flatpak --needed
+                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum flatpak --needed
 
 #### tlp
 
@@ -244,7 +244,11 @@ then choosing the right theme & icons
 
     sudo flatpak override --env=GTK_THEME=my-theme
     sudo flatpak override --env=ICON_THEME=my-icon-theme
-    
+
+Applying QT themes
+-
+
+
 Showing stars on sudo password
 -
 
