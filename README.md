@@ -99,7 +99,7 @@ then updating the mirrors
     yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
                     waybar hyprpaper hyprpicker nwg-look wl-clipboard cliphist mako swaybg swaylock \
                     swaylock-effects slurp grim tesseract tesseract-data-eng tesseract-data-tur \
-                    tesseract-data-rus tesseract-data-deu wlrobs-hg polkit-kde-agent 
+                    tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout polkit-kde-agent 
 
 ### for weather
 
