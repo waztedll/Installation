@@ -64,7 +64,7 @@ then updating the mirrors
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
-                   dracula-gtk-theme-git gtk-layer-shell flatpak --needed
+                   dracula-gtk-theme-git gtk-layer-shell hardinfo flatpak --needed
 
 #### tlp
 
@@ -78,7 +78,7 @@ then updating the mirrors
 
     sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar \
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark spotify discord vscodium webcord gtkcord4 \
+                   qdirstat kdiskmark spotify discord vscodium webcord gtkcord4 ventoy-bin \
                    akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier \
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike jre-openjdk jdk-openjdk --needed
