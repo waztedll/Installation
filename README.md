@@ -63,7 +63,7 @@ then updating the mirrors
                    qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
-                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum 
+                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
                    dracula-gtk-theme-git gtk-layer-shell flatpak --needed
 
 #### tlp
