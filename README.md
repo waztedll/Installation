@@ -296,10 +296,11 @@ Removing color on noefetch
 Backup your config files
 -
 
-    mkdir ~/configs && mkdir ~/configs/.config && mkdir ~/configs/.mozilla
+    mkdir ~/configs && mkdir ~/configs/.config && mkdir ~/configs/.mozilla && mkdir ~/configs/.thunderbird
 
     rsync -a --delete ~/.config/ ~/configs/.config/
     rsync -a --delete ~/.mozilla/ ~/configs/.mozilla/
+    rsync -a --delete ~/.thunderbird ~/configs/.thunderbird/
 
 # Error Solutions
 
