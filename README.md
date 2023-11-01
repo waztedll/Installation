@@ -133,7 +133,7 @@ then cloning required pluginsㅤ
 Installing fish
 -
 
-    sudo pacman -S fish fisher && fisher install IlanCosman/tide@v5 && chsh -s /usr/bin/fish
+    sudo pacman -S fish fisher && fish && fisher install IlanCosman/tide@v6 && chsh -s /usr/bin/fish
 
 # System Modules
 
