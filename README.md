@@ -79,11 +79,11 @@ then updating the mirrors
     sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar \
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify discord vscodium webcord gtkcord4 ventoy-bin \
-                   akregator authy epiphany nuclear-player-bin cheese kweather ksysguard granatier \
+                   akregator authy epiphany cheese kweather ksysguard granatier \
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike jre-openjdk jdk-openjdk --needed
                    
-optional: `yay -S signal-desktop xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader`
+optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader`
 
 ## flatpak:
 
