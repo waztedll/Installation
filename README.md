@@ -68,7 +68,7 @@ then updating the mirrors
 
 #### tlp
 
-    sudo systemctl enable tlp.service
+    sudo systemctl enable --now tlp.service
 
 #### NvChad
 
