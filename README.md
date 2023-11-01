@@ -50,7 +50,7 @@ include this codes
 
 then updating the mirrors
 
-    sudo pacman -S powerpill && sudo pacman -Sy && sudo powerpill -Su && sudo pacman -Su
+    sudo pacman -S powerpill --noconfirm && sudo pacman -Sy && sudo powerpill -Su && sudo pacman -Su
 
 # Packages to Install
 
