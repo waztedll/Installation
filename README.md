@@ -88,7 +88,7 @@ optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-la
 ## flatpak:
 
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
-    && flatpak install flatseal rustdesk parsec spacecadetpinball jstest_gtk md.obsidian.Obsidian
+    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk md.obsidian.Obsidian
 
 ## AUR:
 
