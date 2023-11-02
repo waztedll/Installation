@@ -60,7 +60,7 @@ then updating the mirrors
                    recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch \
                    fastfetch pfetch rufetch ufetch-git corectrl zip unzip unrar nodejs make python \
                    podman gvfs libva xsensors cmatrix vi vim neovim starship iotop ufw tlp tlp-rdw \
-                   qt5ct qt6ct otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
+                   qt5ct qt6ct gnome-keyring otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
