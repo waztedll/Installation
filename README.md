@@ -83,7 +83,7 @@ then updating the mirrors
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike jre-openjdk jdk-openjdk --needed
                    
-optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader`
+optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader hypnotix`
 
 ## flatpak:
 
