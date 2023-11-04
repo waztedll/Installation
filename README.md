@@ -100,7 +100,8 @@ optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-la
     yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
                     waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist mako swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
-                    tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout polkit-kde-agent 
+                    tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
+                    polkit-kde-agent 
 
 ### for weather
 
