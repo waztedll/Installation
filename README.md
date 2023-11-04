@@ -276,6 +276,11 @@ add
 
     Defaults pwfeedback
 
+List active systemd services
+-
+
+    systemctl list-units --type=service --state=active
+
 Editing tuxi config
 -
 
