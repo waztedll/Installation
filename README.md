@@ -101,7 +101,7 @@ optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-la
                     waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard clipman mako swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland-git tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-                    polkit-kde-agent 
+                    wine-wl-git polkit-kde-agent
 
 ### for weather
 
