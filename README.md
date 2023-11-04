@@ -79,7 +79,7 @@ then updating the mirrors
     sudo pacman -S pamac-nosnap octopi antimicrox bitwarden easyeffects celluloid thunar \
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy-bin \
-                   akregator authy epiphany cheese kweather ksysguard granatier gwenview \
+                   akregator authy epiphany cheese kweather ksysguard granatier viewnior \
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike jre-openjdk jdk-openjdk --needed
                    
