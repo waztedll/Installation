@@ -81,7 +81,8 @@ then updating the mirrors
                    qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy-bin \
                    akregator authy epiphany cheese kweather ksysguard granatier viewnior \
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
-                   mangohud goverlay gnome-dictionary dialect wike jre-openjdk jdk-openjdk --needed
+                   mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
+                   jre-openjdk jdk-openjdk --needed
                    
 optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader hypnotix`
 
@@ -92,7 +93,7 @@ optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-la
 
 ## AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird localsend-bin spotube-bin waypaper-git easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird localsend-bin spotube-bin waypaper-git sklauncher-bin easyssh
 
 # Hyprland
 
