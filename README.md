@@ -56,15 +56,15 @@ then updating the mirrors
 
 ## requirements:
 
-    sudo pacman -S inxi git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm netctl dialog \
-                   recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop neofetch \
+    sudo pacman -S inxi linux-headers git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm \
+                   netctl dialog recode net-tools jq wget cargo locate htop nvtop bashtop btop bpytop \
                    fastfetch pfetch rufetch ufetch-git corectrl zip unzip p7zip unrar nodejs make  \
                    podman gvfs libva xsensors cmatrix vi vim neovim starship iotop ufw tlp tlp-rdw \
                    qt5ct qt6ct gnome-keyring otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
-                   dracula-gtk-theme-git gtk-layer-shell hardinfo flatpak --needed
+                   neofetch dracula-gtk-theme-git gtk-layer-shell hardinfo flatpak --needed
 
 #### tlp
 
