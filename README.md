@@ -89,11 +89,11 @@ optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-la
 ## flatpak:
 
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
-    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk md.obsidian.Obsidian
+    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app md.obsidian.Obsidian
 
 ## AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird localsend-bin spotube-bin waypaper-git sklauncher-bin easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin easyssh
 
 # Hyprland
 
