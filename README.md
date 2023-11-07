@@ -84,7 +84,7 @@ then updating the mirrors
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    thunar-volman jre-openjdk jdk-openjdk --needed
                    
-optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin video-downloader hypnotix`
+optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf prismlauncher video-downloader hypnotix`
 
 ## flatpak:
 
