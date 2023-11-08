@@ -82,7 +82,7 @@ then updating the mirrors
                    akregator authy epiphany cheese kweather ksysguard granatier xed viewnior \
                    steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
-                   thunar-volman jre-openjdk jdk-openjdk --needed
+                   jre-openjdk jdk-openjdk --needed
                    
 optional: `yay -S signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf prismlauncher video-downloader hypnotix`
 
