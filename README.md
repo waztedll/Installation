@@ -93,7 +93,7 @@ optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-
 
 ## AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin dol-git easyssh
 
 # Hyprland
 
