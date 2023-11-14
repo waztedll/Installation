@@ -80,7 +80,7 @@ then updating the mirrors
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy okular \
                    akregator epiphany cheese kweather ksysguard granatier kwrite viewnior \
-                   steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
+                   krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian notesnook stremio jre-openjdk jdk-openjdk --needed
                    
