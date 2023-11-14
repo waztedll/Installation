@@ -78,11 +78,11 @@ then updating the mirrors
 
     sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar audacity \
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy-bin okular \
+                   qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy okular \
                    akregator epiphany cheese kweather ksysguard granatier kwrite viewnior \
-                   steam upscayl-bin ungoogled-chromium youtube-music-bin metadata-cleaner \
+                   steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
-                   jre-openjdk jdk-openjdk --needed
+                   notesnook jre-openjdk jdk-openjdk --needed
                    
 optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark`
 
