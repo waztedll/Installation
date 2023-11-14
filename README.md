@@ -82,14 +82,14 @@ then updating the mirrors
                    akregator epiphany cheese kweather ksysguard granatier kwrite viewnior \
                    steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
-                   notesnook jre-openjdk jdk-openjdk --needed
+                   obsidian notesnook stremio jre-openjdk jdk-openjdk --needed
                    
 optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark logseq-desktop-bin`
 
 ## flatpak:
 
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
-    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app md.obsidian.Obsidian
+    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app
 
 ## AUR:
 
