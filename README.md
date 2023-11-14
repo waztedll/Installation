@@ -306,6 +306,9 @@ Backup your config files
     rsync -a --delete ~/.thunderbird/ ~/backup/.thunderbird/
     rsync -a --delete ~/.themes/ ~/backup/.themes/
     rsync -a --delete ~/.icons/ ~/backup/.icons/
+    rsync -a --delete ~/.aliases ~/backup/
+    rsync -a --delete ~/.bashrc ~/backup/
+    rsync -a --delete ~/.zshrc ~/backup/
 
 # Error Solutions
 
