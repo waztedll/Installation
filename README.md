@@ -299,13 +299,13 @@ Removing color on noefetch
 Backup your config files
 -
 
-    mkdir ~/backup && mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons && 
+    mkdir ~/backup && mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons
 
     rsync -a --delete ~/.config/ ~/backup/.config/
     rsync -a --delete ~/.mozilla/ ~/backup/.mozilla/
     rsync -a --delete ~/.thunderbird/ ~/backup/.thunderbird/
-    rsync -a --delete ~/.themes/ ~/backup/.themes
-    rsync -a --delete ~/.icons/ ~/backup/.icons
+    rsync -a --delete ~/.themes/ ~/backup/.themes/
+    rsync -a --delete ~/.icons/ ~/backup/.icons/
 
 # Error Solutions
 
