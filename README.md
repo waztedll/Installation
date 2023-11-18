@@ -84,7 +84,7 @@ then updating the mirrors
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian notesnook harmonoid jre-openjdk jdk-openjdk --needed
                    
-optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark logseq-desktop-bin stremio syncthing`
+optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark logseq-desktop-bin stremio syncthing armcord`
 
 ## flatpak:
 
