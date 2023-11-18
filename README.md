@@ -78,7 +78,7 @@ then updating the mirrors
 
     sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar audacity \
                    alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark spotify vscodium webcord gtkcord4 ventoy okular \
+                   qdirstat kdiskmark spotify vscodium discord gtkcord4 ventoy okular \
                    akregator epiphany cheese kweather ksysguard granatier kwrite viewnior \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
@@ -101,7 +101,7 @@ optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-
                     waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard clipman mako swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland-git tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-                    wine-wl-git polkit-kde-agent
+                    wine-wl-git webcord polkit-kde-agent
 
 ### for weather
 
