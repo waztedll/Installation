@@ -310,6 +310,11 @@ Backup your config files
     rsync -a --delete ~/.bashrc ~/backup/
     rsync -a --delete ~/.zshrc ~/backup/
 
+Prism Launcher offline fix
+-
+
+    echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
+
 # Error Solutions
 
 --------------------------------------------------
