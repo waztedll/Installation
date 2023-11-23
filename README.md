@@ -98,7 +98,7 @@ optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-
 # Hyprland
 
     yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-                    waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard clipman mako swaybg \
+                    waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist mako swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland-git tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
                     wine-wl-git webcord polkit-kde-agent
