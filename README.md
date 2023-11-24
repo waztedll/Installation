@@ -70,21 +70,17 @@ then updating the mirrors
 
     sudo systemctl enable --now tlp.service
 
-#### NvChad
-
-    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-
 ## applications:
 
-    sudo pacman -S pamac-nosnap antimicrox bitwarden easyeffects celluloid thunar audacity \
-                   alacritty kitty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
+    sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity \
+                   alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify vscodium discord gtkcord4 ventoy okular \
-                   akregator epiphany cheese kweather ksysguard granatier kwrite viewnior \
+                   akregator kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
-                   obsidian marker  harmonoid jre-openjdk jdk-openjdk --needed
+                   obsidian marker harmonoid jre-openjdk jdk-openjdk --needed
                    
-optional: `signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio syncthing armcord discover-overlay mousai soundux tokodon kdevelop handbrake 0ad osu`
+optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio syncthing armcord discover-overlay mousai soundux tokodon kdevelop handbrake 0ad osu`
 
 ## flatpak:
 
