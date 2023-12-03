@@ -80,7 +80,7 @@ then updating the mirrors
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio syncthing armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu`
+optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio syncthing armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
 
 ## flatpak:
 
