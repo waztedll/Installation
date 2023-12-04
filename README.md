@@ -64,7 +64,8 @@ then updating the mirrors
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
-                   neofetch dracula-gtk-theme-git gtk-layer-shell hardinfo flatpak --needed
+                   neofetch dracula-gtk-theme-git gtk-layer-shell hardinfo
+                   cava tty-clock flatpak --needed
 
 #### tlp
 
