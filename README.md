@@ -73,7 +73,7 @@ then updating the mirrors
 
 ## applications:
 
-    sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity \
+    sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
                    alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify vscodium discord gtkcord4 ventoy okular \
                    akregator kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
@@ -81,7 +81,7 @@ then updating the mirrors
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio syncthing armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
+optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
 
 ## flatpak:
 
