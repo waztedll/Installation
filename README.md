@@ -82,6 +82,8 @@ then updating the mirrors
                    
 optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin thorium-browser-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
 
+game: `mindustry`
+
 ## flatpak:
 
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
@@ -89,7 +91,9 @@ optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-pla
 
 ## AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin dol-git easyssh
+    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin easyssh
+
+game: `dol-git`
 
 # Hyprland
 
