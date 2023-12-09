@@ -82,7 +82,7 @@ then updating the mirrors
                    
 optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
 
-game: `mindustry`
+game: `mindustry wesnoth`
 
 ## flatpak:
 
