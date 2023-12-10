@@ -68,7 +68,7 @@ then updating the mirrors
 
 #### tlp
 
-    sudo systemctl enable --now tlp.service
+    sudo systemctl star tlp.service
 
 ## applications:
 
