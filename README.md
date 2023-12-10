@@ -2,15 +2,13 @@ The system has been installed, run:
 
     sudo pacman -Syu
 
-If you need refresh to keys:
--
+## If you need refresh to keys:
 
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 # Beginning install
 
-Configure & Speed Up Pacman
--
+## Configure & Speed Up Pacman
 
     sudo nano /etc/pacman.conf
 
@@ -30,8 +28,7 @@ Update pacman
 
     sudo pacman -Syu
 
-Updating mirrorlist
--
+## Updating mirrorlist
 
     sudo pacman -S reflector --noconfirm && sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu
 
@@ -109,8 +106,7 @@ game: `dol-git`
 
 # Installing Shells
 
-Install ZSH
--
+## Install ZSH
 
 first, installing zsh and changing default shell to zsh
 
@@ -132,15 +128,13 @@ then cloning required pluginsㅤ
 
       source .zshrc
 
-Installing fish
--
+## Installing fish
 
     sudo pacman -S fish fisher && fish && fisher install IlanCosman/tide@v6 && chsh -s /usr/bin/fish
 
 # System Modules
 
-Installing Zen kernel
--
+## Installing Zen kernel
 
 first downloading the packages
 
@@ -162,8 +156,7 @@ on the grub menu, select the linux-zen kernel. on the next time will automatical
 
 reboot
 
-Changing GRUB time
--
+## Changing GRUB time
 
     sudo nvim /etc/default/grub
 
@@ -174,8 +167,7 @@ make GRUB_TIMEOUT=0
 
 reboot
 
-Mounting Disk
--
+## Mounting Disk
 
 first, creating mount folder
 - `cd /mnt`
@@ -194,8 +186,7 @@ then
 
 reboot
 
-Adding SWAP (4GiB)
--
+## Adding SWAP (4GiB)
 
 - sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
 - sudo chmod 600 /swapfile
@@ -216,13 +207,11 @@ reboot
 
 # Useful utilities
 
-Connecting to Wi-Fi
--
+## Connecting to Wi-Fi
 
     nmtui
 
-Driver
--
+## Driver
 
 for dual gpus:
 
@@ -240,8 +229,7 @@ for bluetooth:
 
     yay -S bluez bluez-utils bluez-qt5 blueman
 
-Applying GTK & QT themes
--
+## Applying GTK & QT themes
 
 IMPORTANT: before the beginning be sure you have loaded ~/.themes and ~/.icons folders
 
@@ -258,8 +246,7 @@ first download the dracula kvantum and tokyonight-se icons [here](https://rentry
 - secondly, open the `kvantum` and select the Dracula folder and install it
 - then click the change theme and select the Dracula
 
-Applying GTK & icon themes on flatpak applications
--
+## Applying GTK & icon themes on flatpak applications
 
     flatpak override --filesystem=$HOME/.themes && flatpak override --filesystem=$HOME/.icons
 
@@ -267,37 +254,7 @@ then choosing the right theme & icons
 
     flatpak override --env=GTK_THEME=Dracula && flatpak override --env=ICON_THEME=TokyoNight-SE
 
-Showing stars on sudo password
--
-
-    sudo nvim /etc/sudoers
-
-add
-
-    Defaults pwfeedback
-
-Editing tuxi config
--
-
-`nvim /usr/bin/tuxi`
-
-line 18:
-
-    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
-
-line 886:
-      
-    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
-
-Removing color on noefetch
--
-
-    sudo nvim /home/taha/.config/neofetch/config.conf
-
-- Add # on **info cols**
-
-Backup your config files
--
+## Backup your config files
 
     mkdir ~/backup && mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons
 
@@ -310,16 +267,44 @@ Backup your config files
     rsync -a --delete ~/.bashrc ~/backup/
     rsync -a --delete ~/.zshrc ~/backup/
 
-Prism Launcher offline fix
--
+## Zapret
+
+## Showing stars on sudo password
+
+    sudo nvim /etc/sudoers
+
+add
+
+    Defaults pwfeedback
+
+## Editing tuxi config
+
+`nvim /usr/bin/tuxi`
+
+line 18:
+
+    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
+
+line 886:
+      
+    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
+
+## Removing color on noefetch
+
+    sudo nvim /home/taha/.config/neofetch/config.conf
+
+- Add # on **info cols**
+
+
+
+## Prism Launcher offline fix
 
     echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
 # Error Solutions
 
 --------------------------------------------------
-If bluetooth not working, run this commands
--
+## If bluetooth not working, run this commands
 
 - sudo rfkill list
 - sudo rfkill unblock bluetooth
@@ -330,8 +315,7 @@ If bluetooth not working, run this commands
 Check the PS3 controller, then click the ***Truth & Authorise*** notification
 
 --------------------------------------------------
-If notifications will not working correctly
--
+## If notifications will not working correctly
 
     sudo pacman -S knotifications5 knotifyconfig5
   
@@ -344,8 +328,7 @@ If clipboard will not working correctly
 - go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
 
 --------------------------------------------------
-KDE
--
+## KDE
 
 - Konsole
 
@@ -357,7 +340,7 @@ install tokyo night and set splash arch theme
 
 reboot.
 
-# *Shortcuts*
+# **Shortcuts**
 
 ```
 # kill active program
