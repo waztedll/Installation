@@ -77,18 +77,17 @@ then updating the mirrors
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp`
+optional: `antimicrox celluloid kitty epiphany cheese signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle granatier lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp parsec`
 
 game: `mindustry wesnoth`
 
 ## flatpak:
 
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
-    && flatpak install com.github.tchx84.Flatseal rustdesk com.parsecgaming.parsec com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app
+    flatpak install com.github.tchx84.Flatseal rustdesk com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app
 
 ## AUR:
 
-    yay -S cpufetch tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin easyssh
+    yay -S tuxi devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin
 
 game: `dol-git`
 
