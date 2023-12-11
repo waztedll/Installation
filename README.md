@@ -61,7 +61,7 @@ then updating the mirrors
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
                    neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp hardinfo
-                   cava tty-clock flatpak --needed
+                   cava tty-clock xdg-desktop-portal flatpak --needed
 
 #### tlp
 
@@ -94,7 +94,7 @@ game: `dol-git`
 
 # Hyprland
 
-    yay -S --needed hyprland xdg-desktop-portal xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
+    yay -S --needed hyprland xdg-desktop-portal-wlr xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
                     waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist mako swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland-git tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
