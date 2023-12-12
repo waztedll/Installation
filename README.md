@@ -4,13 +4,17 @@ The system has been installed, run:
 
 ## If you need refresh to keys:
 
-    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S archlinux-keyring vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+
+create mirrorlists
+
+    sudo touch /etc/pacman.d/mirrorlist && sudo touch /etc/pacman.d/chaotic-mirrorlist
 
 # Beginning install
 
 ## Configure & Speed Up Pacman
 
-    sudo nano /etc/pacman.conf
+    sudo vim /etc/pacman.conf
 
 Remove # on
 
@@ -28,25 +32,20 @@ Update pacman
 
     sudo pacman -Syu
 
-## Updating mirrorlist
-
-    sudo pacman -S reflector --noconfirm && sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syu
-
 # Chaotic AUR
+
 first, downloading required packages
 
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+
 then editing the pacman config
 
-    sudo nano /etc/pacman.conf
+    sudo vim /etc/pacman.conf
+
 include this codes
 
     [chaotic-aur]  
     Include = /etc/pacman.d/chaotic-mirrorlist
-
-then updating the mirrors
-
-    sudo pacman -S powerpill --noconfirm && sudo pacman -Sy && sudo powerpill -Su && sudo pacman -Su
 
 # Packages to Install
 
@@ -65,7 +64,7 @@ then updating the mirrors
 
 #### tlp
 
-    sudo systemctl start tlp.service
+    sudo systemctl enable --now tlp.service
 
 ## applications:
 
