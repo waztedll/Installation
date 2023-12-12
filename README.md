@@ -4,7 +4,7 @@ The system has been installed, run:
 
 ## If you need refresh to keys:
 
-    sudo pacman -S archlinux-keyring pacman-contrib vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S archlinux-keyring pacman-contrib rate-mirrors vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 create mirrorlists
 
@@ -94,7 +94,7 @@ game: `dol-git`
 
     yay -S --needed hyprland xdg-desktop-portal-wlr xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
                     waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist mako swaybg \
-                    swaylock-effects slurp grim rofi-lbonn-wayland-git tesseract tesseract-data-eng \
+                    swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
                     wine-wl-git webcord polkit-kde-agent
 
