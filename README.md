@@ -304,13 +304,13 @@ line 886:
 --------------------------------------------------
 ## If bluetooth not working, run this commands
 
-- sudo rfkill list
-- sudo rfkill unblock bluetooth
-- sudo systemctl status bluetooth
-- sudo systemctl start bluetooth
-- sudo systemctl status bluetooth
+    rfkill list
+    rfkill unblock bluetooth
+    systemctl status bluetooth
+    sudo systemctl start bluetooth
+    systemctl status bluetooth
 
-### If controller not connect to PC
+### If controller not connect to PC, run the following commands on bluetoothctl
 
     [bluetoothctl#] scan on
     [bluetoothctl#] pair <gamepad>
