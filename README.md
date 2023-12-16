@@ -93,7 +93,7 @@ game: `dol-git`
 # Hyprland
 
     yay -S --needed hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-                    waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist mako swaybg \
+                    waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst swaybg \
                     swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
                     wine-wl-git webcord polkit-kde-agent
