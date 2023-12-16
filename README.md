@@ -310,6 +310,13 @@ line 886:
 - sudo systemctl start bluetooth
 - sudo systemctl status bluetooth
 
+### If controller not connect to PC
+
+    [bluetoothctl#] scan on
+    [bluetoothctl#] pair <gamepad>
+    [bluetoothctl#] connect <gamepad>
+    [bluetoothctl#] trust <gamepad>
+
 Check the PS3 controller, then click the ***Truth & Authorise*** notification
 
 --------------------------------------------------
