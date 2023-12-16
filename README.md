@@ -4,7 +4,7 @@ The system has been installed, run:
 
 ## If you need refresh to keys:
 
-    sudo pacman -S archlinux-keyring pacman-contrib rate-mirrors vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S archlinux-keyring pacman-contrib vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 create mirrorlists
 
