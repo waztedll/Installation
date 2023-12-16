@@ -225,7 +225,7 @@ for printers:
 
 for bluetooth:
 
-    yay -S bluez bluez-utils bluez-qt5 blueman
+    yay -S bluez bluez-utils bluez-plugins bluez-qt5 blueman
 
 ## Applying GTK & QT themes
 
