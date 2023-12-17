@@ -1,4 +1,4 @@
-The system has been installed, run:
+<The system has been installed, run:
 
     sudo pacman -Syu
 
@@ -266,6 +266,15 @@ then choosing the right theme & icons
     rsync -a --delete ~/.zshrc ~/backup/
 
 ## Zapret
+
+    git clone https://github.com/bol-van/zapret
+    cd zapret
+
+checking and installing
+
+    sudo ./install_bin.sh
+    sudo ./blockcheck.sh
+    sudo ./install_easy.sh
 
 ## Showing stars on sudo password
 
