@@ -82,7 +82,7 @@ game: `mindustry wesnoth granatier`
 
 ## flatpak:
 
-    flatpak install com.github.tchx84.Flatseal rustdesk com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk org.localsend.localsend_app
+    flatpak install com.github.tchx84.Flatseal rustdesk com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
 
 ## AUR:
 
