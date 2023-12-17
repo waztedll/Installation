@@ -71,7 +71,7 @@ include this codes
     sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
                    alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark spotify vscodium discord gtkcord4 ventoy okular \
-                   newsflash kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
+                   kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
@@ -82,7 +82,7 @@ game: `mindustry wesnoth granatier`
 
 ## flatpak:
 
-    flatpak install com.github.tchx84.Flatseal rustdesk com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
+    flatpak install com.github.tchx84.Flatseal me.hyliu.fluentreader rustdesk com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
 
 ## AUR:
 
