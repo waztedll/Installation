@@ -82,11 +82,11 @@ game: `mindustry wesnoth granatier`
 
 ## flatpak:
 
-    flatpak install com.github.tchx84.Flatseal me.hyliu.fluentreader com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
+    flatpak install com.github.tchx84.Flatseal com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
 
 ## AUR:
 
-    yay -S tuxi-git devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin localsend-bin
+    yay -S tuxi-git devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin localsend-bin fluent-reader-bin
 
 game: `dol-git`
 
