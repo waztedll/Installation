@@ -271,6 +271,7 @@ then choosing the right theme & icons
     cd zapret
 
 check and install
+
     sudo ./install_bin.sh
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
