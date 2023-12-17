@@ -246,7 +246,7 @@ first download the dracula kvantum and tokyonight-se icons [here](https://rentry
 
 ## Applying GTK & icon themes on flatpak applications
 
-    flatpak override --filesystem=$HOME/.themes && flatpak override --filesystem=$HOME/.icons
+    sudo flatpak override --filesystem=$HOME/.themes && sudo flatpak override --filesystem=$HOME/.icons
 
 then choosing the right theme & icons
 
