@@ -276,6 +276,20 @@ checking and installing
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
+## Rofi
+
+### Theme
+
+- Download theme via: <https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-pink-dark.rasi>
+
+         sudo mv ~/Downloads/rounded-pink-dark.rasi /usr/share/rofi/themes/
+
+### Dictionary
+
+- Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
+
+        sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
+
 ## Showing stars on sudo password
 
     sudo nvim /etc/sudoers
