@@ -1,4 +1,4 @@
-<The system has been installed, run:
+The system has been installed, run:
 
     sudo pacman -Syu
 
