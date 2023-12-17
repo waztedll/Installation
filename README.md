@@ -270,8 +270,7 @@ then choosing the right theme & icons
     git clone https://github.com/bol-van/zapret
     cd zapret
 
-checking and installing
-
+check and install
     sudo ./install_bin.sh
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
