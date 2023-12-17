@@ -250,7 +250,7 @@ first download the dracula kvantum and tokyonight-se icons [here](https://rentry
 
 then choosing the right theme & icons
 
-    flatpak override --env=GTK_THEME=Dracula && flatpak override --env=ICON_THEME=TokyoNight-SE
+    sudo flatpak override --env=GTK_THEME=Dracula && sudo flatpak override --env=ICON_THEME=TokyoNight-SE
 
 ## Backup your config files
 
