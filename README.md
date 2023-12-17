@@ -76,7 +76,7 @@ include this codes
                    mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre`
+optional: `antimicrox celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino`
 
 game: `mindustry wesnoth granatier`
 
