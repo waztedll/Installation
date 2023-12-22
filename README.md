@@ -60,7 +60,7 @@ include this codes
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
                    neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp hardinfo
-                   cava tty-clock xdg-desktop-portal rate-mirrors --needed
+                   cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
 #### tlp
 
