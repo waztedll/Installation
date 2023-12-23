@@ -82,7 +82,7 @@ game: `mindustry wesnoth granatier`
 
 ## flatpak:
 
-    flatpak install com.github.tchx84.Flatseal com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
+    yay -S flatpak && flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install com.github.tchx84.Flatseal com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
 
 ## AUR:
 
