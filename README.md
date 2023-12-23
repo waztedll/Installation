@@ -280,9 +280,11 @@ check and install
 
 ### Theme
 
-- Download theme via: <https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-pink-dark.rasi>
+Download theme via:  
+<https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-pink-dark.rasi>  
+<https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-common.rasi>
 
-         sudo mv ~/Downloads/rounded-pink-dark.rasi /usr/share/rofi/themes/
+    mv ~/Downloads/rounded-common.rasi ~/.local/share/rofi/themes/ && mv ~/Downloads/rounded-pink-dark.rasi ~/.local/share/rofi/themes/
 
 ### Dictionary
 
