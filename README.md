@@ -4,7 +4,7 @@ FThe system has been installed, run:
 
 ## If you need refresh to keys:
 
-    sudo pacman -S archlinux-keyring pacman-contrib vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S archlinux-keyring vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 create mirrorlists
 
@@ -59,7 +59,7 @@ include this codes
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
                    pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
-                   neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp hardinfo
+                   neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib hardinfo \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
 #### tlp
