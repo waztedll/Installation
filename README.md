@@ -69,14 +69,14 @@ include this codes
 ## applications:
 
     sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
-                   alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark vscodium discord gtkcord4 ventoy okular \
+                   alacritty kdenlive kdeconnect thunderbird obs-stu<dio piper qbittorrent \
+                   qdirstat kdiskmark vscodium discord ventoy okular \
                    kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
-                   mangohud goverlay gnome-dictionary dialect wike thunar-archive-plugin \
+                   mangohud goverlay gnome-dictionary dialect thunar-archive-plugin \
                    obsidian marker harmonoid protonvpn-cli jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino`
+optional: `antimicrox celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4`
 
 game: `mindustry wesnoth granatier`
 
