@@ -1,4 +1,4 @@
-FThe system has been installed, run:
+The system has been installed, run:
 
     sudo pacman -Syu
 
@@ -208,6 +208,10 @@ reboot
 ## Connecting to Wi-Fi
 
     nmtui
+
+edit the connections and on ipv4 settings select the addresses only n enter the following ip addresses;
+
+    9.9.9.9, 149.112.112.112
 
 ## Driver
 
