@@ -51,7 +51,7 @@ include this codes
 
 ## requirements:
 
-    sudo pacman -S inxi linux-headers git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm \
                    netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
                    fastfetch pfetch rufetch ufetch-git corectrl zip unzip p7zip unrar nodejs make  \
                    podman gvfs libva xsensors cmatrix vi vim neovim starship iotop ufw tlp tlp-rdw \
