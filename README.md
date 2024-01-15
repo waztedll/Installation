@@ -86,7 +86,7 @@ game: `mindustry wesnoth granatier`
 
 ## AUR:
 
-    yay -S tuxi-git devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin localsend-bin fluent-reader-bin
+    yay -S tuxi-git devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin localsend-bin fluent-reader-electron-bin
 
 game: `dol-git`
 
