@@ -223,13 +223,13 @@ for open source amd & intel drivers:
 
     yay -S mesa lib32-mesa vulkan-radeon vulkan-intel lib32-vulkan-radeon lib32-vulkan-intel libva-mesa-driver lib32-libva-mesa-driver xf86-video-intel xf86-video-amdgpu vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-for printers:
-
-    yay -S cups
-
 for bluetooth:
 
     yay -S bluez bluez-utils bluez-plugins bluez-qt5 blueman
+
+for printers:
+
+    yay -S cups
 
 ## Applying GTK & QT themes
 
