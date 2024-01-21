@@ -58,7 +58,7 @@ include this codes
                    qt5ct qt6ct gnome-keyring otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
                    firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
-                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv \
+                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv mtpfs \
                    neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib hardinfo \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
@@ -70,7 +70,7 @@ include this codes
 
     sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
                    alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark vscodium discord ventoy okular \
+                   qdirstat kdiskmark vscodium discord ventoy okular thunar-volman \
                    kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect thunar-archive-plugin \
