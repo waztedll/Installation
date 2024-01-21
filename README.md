@@ -223,11 +223,11 @@ yay -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-intel lib32-vulk
 
 for intel gpu:
 
-    mesa lib32-mesa
+    mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
 
 for amd gpu:
 
-    mesa lib32-mesa
+    mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
 
 for bluetooth:
 
