@@ -219,9 +219,15 @@ for dual gpus:
 
     yay -S optimus-manager
 
-for open source amd & intel drivers:
+yay -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-intel lib32-vulkan-intel libva-mesa-driver lib32-libva-mesa-driver xf86-video-intel xf86-video-amdgpu vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-    yay -S mesa lib32-mesa vulkan-radeon vulkan-intel lib32-vulkan-radeon lib32-vulkan-intel libva-mesa-driver lib32-libva-mesa-driver xf86-video-intel xf86-video-amdgpu vulkan-icd-loader lib32-vulkan-icd-loader --needed
+for intel gpu:
+
+    mesa lib32-mesa
+
+for amd gpu:
+
+    mesa lib32-mesa
 
 for bluetooth:
 
