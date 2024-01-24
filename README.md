@@ -51,15 +51,15 @@ include this codes
 
 ## requirements:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay ksh tcsh fast pup scrcpy yt-dlp rofi npm \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp rofi npm \
                    netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
-                   fastfetch pfetch rufetch ufetch-git corectrl zip unzip p7zip unrar nodejs make  \
-                   podman gvfs libva xsensors cmatrix vi vim neovim starship iotop ufw tlp tlp-rdw \
-                   qt5ct qt6ct gnome-keyring otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
-                   speech-dispatcher translate-shell lsb-release network-manager-applet wine-stable \
-                   firefox-pwa python ffmpegthumbnailer tumbler brightnessctl playerctl pipewire \
-                   pipewire-pulse python-requests wireplumber pamixer pavucontrol kvantum mpv mtpfs \
-                   neofetch dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib hardinfo \
+                   fastfetch pfetch zip unzip p7zip unrar nodejs make gvfs libva xsensors cmatrix \
+                   vim neovim starship tlp tlp-rdw qt5ct qt6ct gnome-keyring firefox-pwa \
+                   otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji python neofetch \
+                   translate-shell lsb-release network-manager-applet wine-stable \
+                   ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
+                   python-requests wireplumber pamixer pavucontrol kvantum mpv mtpfs \
+                   dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
 #### tlp
@@ -68,15 +68,15 @@ include this codes
 
 ## applications:
 
-    sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
-                   alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   qdirstat kdiskmark vscodium discord ventoy okular thunar-volman \
+    sudo pacman -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity \
+                   syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
+                   kdiskmark vscodium discord ventoy thunar-volman thunar-archive-plugin \
                    kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
-                   mangohud goverlay gnome-dictionary dialect thunar-archive-plugin \
-                   obsidian marker qmmp protonvpn-cli jre-openjdk jdk-openjdk --needed
+                   goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
+                   jre-openjdk jdk-openjdk --needed
                    
-optional: `antimicrox celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui`
+optional: `gimp antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git`
 
 game: `mindustry wesnoth granatier`
 
@@ -86,7 +86,7 @@ game: `mindustry wesnoth granatier`
 
 ## AUR:
 
-    yay -S tuxi-git devour urn-git lyrebird spotube-bin waypaper-git sklauncher-bin localsend-bin fluent-reader-electron-bin
+    yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin
 
 game: `dol-git`
 
