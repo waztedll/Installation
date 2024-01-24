@@ -289,7 +289,7 @@ check and install
 
 ## Rofi
 
-### Theme
+### Theme (Fixed/In config folder)
 
 Download theme via:  
 <https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-pink-dark.rasi>  
