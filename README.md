@@ -71,7 +71,7 @@ include this codes
     sudo pacman -S firefox pamac-nosnap bitwarden easyeffects thunar audacity syncthing \
                    alacritty kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    qdirstat kdiskmark vscodium discord ventoy okular thunar-volman \
-                   kweather ksysguard kwrite viewnior lsp-plugins-lv2 \
+                   kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    mangohud goverlay gnome-dictionary dialect thunar-archive-plugin \
                    obsidian marker qmmp protonvpn-cli jre-openjdk jdk-openjdk --needed
