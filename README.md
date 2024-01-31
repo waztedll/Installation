@@ -58,7 +58,7 @@ include this codes
                    otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji python neofetch \
                    translate-shell lsb-release network-manager-applet wine-stable \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
-                   python-requests wireplumber pamixer pavucontrol kvantum mpv mtpfs \
+                   python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
                    dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
