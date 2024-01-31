@@ -56,7 +56,7 @@ include this codes
                    fastfetch pfetch zip unzip p7zip unrar nodejs make gvfs libva xsensors cmatrix \
                    vim neovim starship tlp tlp-rdw qt5ct qt6ct gnome-keyring firefox-pwa \
                    otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji python neofetch \
-                   translate-shell lsb-release network-manager-applet wine-stable \
+                   translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
                    python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
                    dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib \
@@ -92,11 +92,11 @@ game: `dol-git`
 
 # Hyprland
 
-    yay -S --needed hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-                    waybar hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst \
+    yay -S --needed hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
+                    hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst \
                     swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
                     tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-                    wine-wl-git webcord polkit-kde-agent
+                    webcord polkit-kde-agent
 
 ### for weather
 
