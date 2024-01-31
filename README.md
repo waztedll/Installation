@@ -76,7 +76,7 @@ include this codes
                    goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
                    jre-openjdk jdk-openjdk --needed
                    
-optional: `gimp antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git`
+optional: `gimp antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade`
 
 game: `mindustry wesnoth granatier`
 
@@ -366,21 +366,9 @@ Check the PS3 controller, then click the ***Truth & Authorise*** notification
 If clipboard will not working correctly
 -
 
-- go to clipboard setings and set keyboard shotcut "Show Items at Mouse Posittion"
+- go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
 --------------------------------------------------
-## KDE
-
-- Konsole
-
-install edna theme and set transparecsty %50
-
-- Plasma
-
-install tokyo night and set splash arch theme
-
-reboot.
-
 # **Shortcuts**
 
 ```
