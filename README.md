@@ -70,7 +70,7 @@ include this codes
 
     sudo pacman -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity \
                    syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   kdiskmark vscodium discord ventoy thunar-volman thunar-archive-plugin \
+                   kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
                    kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
                    krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
                    goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
