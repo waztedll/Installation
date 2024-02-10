@@ -68,7 +68,7 @@ include this codes
 
 ## applications:
 
-    sudo pacman -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity \
+    sudo pacman -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity anki \
                    syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
                    kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
                    kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
