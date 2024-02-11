@@ -51,10 +51,10 @@ include this codes
 
 ## requirements:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp rofi npm \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp rofi2 \
                    netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
-                   fastfetch pfetch zip unzip p7zip unrar nodejs make gvfs libva xsensors cmatrix \
-                   vim neovim starship tlp tlp-rdw qt5ct qt6ct gnome-keyring firefox-pwa \
+                   fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
+                   vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa \
                    otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji python neofetch \
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
