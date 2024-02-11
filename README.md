@@ -90,11 +90,13 @@ game: `mindustry wesnoth granatier`
 
 game: `dol-git`
 
-# i3
+# Installing WM
+
+## i3
 
     yay -S i3 polybar --needed
 
-# Hyprland
+## Hyprland
 
     yay -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
            hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst \
