@@ -68,15 +68,15 @@ include this codes
 
 ## applications:
 
-    sudo pacman -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity anki \
-                   syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-                   kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
-                   kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
-                   krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
-                   goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
-                   xarchiver jre-openjdk jdk-openjdk --needed
+    yay -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity anki \
+           syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
+           kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
+           kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
+           krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
+           goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
+           xarchiver jre-openjdk jdk-openjdk --needed
                    
-optional: `gimp ark antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter`
+optional: `gimp antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter`
 
 game: `mindustry wesnoth granatier`
 
@@ -90,13 +90,17 @@ game: `mindustry wesnoth granatier`
 
 game: `dol-git`
 
+# i3
+
+    yay -S i3 polybar --needed
+
 # Hyprland
 
-    yay -S --needed hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-                    hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst \
-                    swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
-                    tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-                    webcord polkit-kde-agent
+    yay -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
+           hyprpaper hyprpicker grimblast nwg-look wl-clipboard cliphist dunst \
+           swaylock-effects slurp grim rofi-lbonn-wayland tesseract tesseract-data-eng \
+           tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
+           webcord polkit-kde-agent --needed
 
 ### for weather
 
