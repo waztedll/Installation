@@ -102,10 +102,6 @@ game: `dol-git`
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
            webcord polkit-kde-agent --needed
 
-### for weather
-
-    curl -s https://raw.githubusercontent.com/yusufipk/hyprconf/master/waybar/modules/weather.sh | sh
-
 # Installing Shells
 
 ## Install ZSH
