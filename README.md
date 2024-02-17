@@ -106,6 +106,10 @@ game: `dol-git`
 
 # Installing Shells
 
+## Install fish
+
+    sudo pacman -S fish fisher && fish && fisher install IlanCosman/tide@v6 && chsh -s /usr/bin/fish
+
 ## Install ZSH
 
 first, installing zsh and changing default shell to zsh
@@ -127,10 +131,6 @@ then cloning required pluginsㅤ
 - `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
       source .zshrc
-
-## Installing fish
-
-    sudo pacman -S fish fisher && fish && fisher install IlanCosman/tide@v6 && chsh -s /usr/bin/fish
 
 # System Modules
 
