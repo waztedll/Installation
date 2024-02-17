@@ -68,14 +68,16 @@ include this codes
 
 ## applications:
 
-    yay -S firefox alacritty pamac-nosnap bitwarden easyeffects thunar audacity anki \
+    yay -S firefox alacritty pamac-nosnap bitwarden  thunar  anki \
            syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
            kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
-           kweather ksysguard gnome-system-monitor kwrite viewnior lsp-plugins-lv2 \
+           kweather ksysguard gnome-system-monitor viewnior  \
            krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
            goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
            xarchiver jre-openjdk jdk-openjdk --needed
-                   
+
+audio: `easyeffects audacity lsp-plugins-lv2`
+
 optional: `gimp antimicrox qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter`
 
 game: `mindustry wesnoth granatier`
