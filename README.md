@@ -51,15 +51,15 @@ include this codes
 
 ## requirements:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp rofi2 \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp \
                    netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
                    fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
                    vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa \
-                   otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji python neofetch \
+                   otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
                    python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
-                   dracula-gtk-theme-git gtk-layer-shell gvfs gvfs-mtp pacman-contrib \
+                   dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
 #### tlp
@@ -96,7 +96,7 @@ game: `dol-git`
 
 ## i3
 
-    yay -S i3 polybar --needed
+    yay -S i3 polybar rofi --needed
 
 ## Hyprland
 
