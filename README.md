@@ -105,7 +105,7 @@ game: `dol-git`
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
            webcord polkit-kde-agent --needed
 
-# Installing Shells
+# Installing Shell
 
 ## fish
 
