@@ -66,12 +66,12 @@ include this codes
 
 ## applications:
 
-    yay -S firefox alacritty pamac-nosnap bitwarden  thunar  anki \
-           syncthing kdenlive kdeconnect thunderbird obs-studio piper qbittorrent \
-           kdiskmark vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
-           kweather ksysguard gnome-system-monitor viewnior  \
-           krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
-           goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
+    yay -S firefox alacritty pamac-nosnap bitwarden thunar anki syncthing kdenlive \
+           kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
+           vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
+           kweather ksysguard gnome-system-monitor viewnior krita steam upscayl \
+           ungoogled-chromium youtube-music metadata-cleaner goverlay gnome-dictionary \
+           dialect okular obsidian marker qmmp protonvpn-cli \
            xarchiver jre-openjdk --needed
 
 audio: `easyeffects audacity lsp-plugins-lv2`
