@@ -210,7 +210,7 @@ reboot
 
 reboot
 
-# Useful utilities
+# Useful things
 
 ## Connecting to Wi-Fi
 
@@ -293,6 +293,10 @@ check and install
     sudo ./install_bin.sh
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
+
+## Adblock
+
+    sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
 ## Rofi
 
