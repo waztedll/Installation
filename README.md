@@ -6,10 +6,6 @@ The system has been installed, run:
 
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
-create mirrorlists
-
-    sudo touch /etc/pacman.d/mirrorlist && sudo touch /etc/pacman.d/chaotic-mirrorlist
-
 # Beginning install
 
 ## Configure & Speed Up Pacman
