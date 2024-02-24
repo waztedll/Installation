@@ -54,7 +54,7 @@ include this codes
 ## requirements:
 
     sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp ytfzf \
-                   netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
+                   netctl dialog bind recode net-tools jq wget locate htop btop android-tools \
                    fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
                    vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa \
                    otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
