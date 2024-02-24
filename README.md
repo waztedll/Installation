@@ -76,7 +76,7 @@ include this codes
            kweather ksysguard gnome-system-monitor viewnior  \
            krita steam upscayl ungoogled-chromium youtube-music metadata-cleaner \
            goverlay gnome-dictionary dialect okular obsidian marker qmmp protonvpn-cli \
-           xarchiver jre-openjdk jdk-openjdk --needed
+           xarchiver jre-openjdk --needed
 
 audio: `easyeffects audacity lsp-plugins-lv2`
 
