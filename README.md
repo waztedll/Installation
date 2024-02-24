@@ -26,17 +26,17 @@ Remove # on
 `[multilib]`  
 `Include = /etc/pacman.d/mirrorlist`
 
-Add  
+add  
 
     ILoveCandy
 
-Update pacman
+then update pacman
 
     sudo pacman -Syu
 
 # Chaotic AUR
 
-first, downloading required packages
+firstly, downloading required packages
 
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
@@ -53,7 +53,7 @@ include this codes
 
 ## requirements:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp ytfzf \
                    netctl dialog bind recode net-tools jq wget cargo locate htop btop android-tools \
                    fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
                    vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa \
@@ -92,6 +92,7 @@ game: `mindustry wesnoth granatier`
 
     yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin
 
+tool: `sherlock-git`
 game: `dol-git`
 
 # Installing WM
@@ -110,11 +111,11 @@ game: `dol-git`
 
 # Installing Shells
 
-## Install fish
+## fish
 
     sudo pacman -S fish fisher && fish && fisher install IlanCosman/tide@v6 && chsh -s /usr/bin/fish
 
-## Install ZSH
+## Zsh
 
 first, installing zsh and changing default shell to zsh
 
