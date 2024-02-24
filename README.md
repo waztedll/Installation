@@ -92,7 +92,7 @@ game: `mindustry wesnoth granatier`
 
     yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin
 
-tool: `sherlock-git`
+tool: `sherlock-git`  
 game: `dol-git`
 
 # Installing WM
