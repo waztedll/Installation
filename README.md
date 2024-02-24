@@ -61,7 +61,7 @@ include this codes
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
                    python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
-                   dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib \
+                   dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib thefuck \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
 #### tlp
