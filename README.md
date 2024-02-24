@@ -4,7 +4,7 @@ The system has been installed, run:
 
 ## If you need refresh to keys:
 
-    sudo pacman -S archlinux-keyring vim && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 create mirrorlists
 
@@ -14,7 +14,9 @@ create mirrorlists
 
 ## Configure & Speed Up Pacman
 
-    sudo vim /etc/pacman.conf
+Install vim and start
+
+    sudo pacman -S vim && sudo vim /etc/pacman.conf
 
 Remove # on
 
