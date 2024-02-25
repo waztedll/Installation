@@ -326,7 +326,7 @@ add
 
 ## Editing tuxi config
 
-`nvim /usr/bin/tuxi`
+`sudo nvim /usr/bin/tuxi`
 
 line 18:
 
