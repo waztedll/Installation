@@ -168,6 +168,12 @@ make GRUB_TIMEOUT=0
 
 reboot
 
+## Changing Limine time
+
+    sudo nvim /boot/limine.cfg
+
+make TIMEOUT=0
+
 ## Mounting Disk
 
 first, creating mount folder
