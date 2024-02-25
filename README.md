@@ -274,7 +274,7 @@ then choosing the right theme & icons
 
 ## Backup your config files
 
-    mkdir ~/backup && mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons
+    mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons
 
     rsync -a --delete ~/.config/ ~/backup/.config/
     rsync -a --delete ~/.mozilla/ ~/backup/.mozilla/
