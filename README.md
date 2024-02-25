@@ -314,7 +314,7 @@ Download theme via:
 
 - Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
 
-        sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
+      sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
 
 ## Showing stars on sudo password
 
