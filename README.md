@@ -180,7 +180,7 @@ list disks uuid
 then
 - `sudo nvim /etc/fstab`
 
-      UUID=uuid_paste_here              /mnt/Depo     ntfs     defaults      0 0
+      UUID=paste_uuid_here              /mnt/Depo     ntfs     defaults      0 0
   
 - `systemctl daemon-reload`
 - `sudo mount -a`
