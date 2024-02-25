@@ -302,14 +302,6 @@ check and install
 
 ## Rofi
 
-### Theme (Fixed/In config folder)
-
-Download theme via:  
-<https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-pink-dark.rasi>  
-<https://github.com/newmanls/rofi-themes-collection/blob/master/themes/rounded-common.rasi>
-
-    mv ~/Downloads/rounded-common.rasi ~/.local/share/rofi/themes/ && mv ~/Downloads/rounded-pink-dark.rasi ~/.local/share/rofi/themes/
-
 ### Dictionary
 
 - Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
