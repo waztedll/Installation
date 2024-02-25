@@ -12,7 +12,7 @@ The system has been installed, run:
 
 Install vim and start
 
-    sudo pacman -S vim && sudo vim /etc/pacman.conf
+    sudo pacman -S vim --noconfirm && sudo vim /etc/pacman.conf
 
 Remove # on
 
