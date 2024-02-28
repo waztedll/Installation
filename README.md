@@ -70,7 +70,7 @@ include this codes
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
            kweather ksysguard gnome-system-monitor viewnior krita steam upscayl \
-           ungoogled-chromium youtube-music metadata-cleaner gnome-dictionary \
+           ungoogled-chromium youtube-music-git metadata-cleaner gnome-dictionary \
            dialect okular obsidian marker qmmp protonvpn-cli \
            xarchiver neovide jre-openjdk --needed
 
