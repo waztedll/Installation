@@ -53,7 +53,7 @@ include this codes
                    netctl dialog bind recode net-tools jq wget locate htop btop android-tools \
                    fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
                    rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa fzf \
-                   otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
+                   ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
                    python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
