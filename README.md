@@ -95,7 +95,7 @@ game: `dol-git`
 
 ## i3
 
-    yay -S i3 polybar rofi --needed
+    yay -S i3 polybar picom xcolor rofi --needed
 
 ## Hyprland
 
