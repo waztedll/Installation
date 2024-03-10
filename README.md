@@ -68,7 +68,7 @@ include this codes
 
     yay -S firefox alacritty pamac-nosnap bitwarden thunar anki syncthing \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent cpu-x \
-           vscodium-electron discord ventoy thunar-volman thunar-archive-plugin \
+           vscodium discord ventoy thunar-volman thunar-archive-plugin \
            kweather ksysguard gnome-system-monitor viewnior krita steam upscayl \
            ungoogled-chromium youtube-music-git metadata-cleaner gnome-dictionary \
            dialect okular obsidian marker qmmp protonvpn-cli \
