@@ -95,7 +95,7 @@ game: `dol-git`
 
 ## i3
 
-    yay -S i3 polybar picom scrot xclip xorg-xclipboard xcolor xwallpaper rofi --needed
+    yay -S i3 polybar rofi picom scrot xclip xorg-xclipboard xcolor xwallpaper --needed
 
 ## Hyprland
 
