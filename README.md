@@ -246,14 +246,12 @@ for printers:
 
 ## Applying GTK & QT themes
 
-IMPORTANT: before the beginning be sure you have loaded ~/.themes and ~/.icons folders
+for dracula kvantum: <https://store.kde.org/p/1370681/>  
+for tokyonight-se icons: <https://github.com/ljmill/tokyo-night-icons>
 
 ### GTK
 
 first download the dracula kvantum and tokyonight-se icons
-
-for dracula kvantum: <https://store.kde.org/p/1370681/>  
-for tokyonight-se icons: <https://github.com/ljmill/tokyo-night-icons>
 
 - firstly, extract the `TokyoNight-SE.tar.bz2` into `/usr/share/icons`
 - secondly, open the `nwg-look` on wayland then select the `Dracula` into widgets, in icons select the `Tokyo Night-SE`
