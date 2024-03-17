@@ -100,7 +100,7 @@ game: `dol-git`
 ## Hyprland
 
     yay -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
-           hyprpaper hyprpicker grimblast slurp grim nwg-look wl-clipboard cliphist dunst \
+           hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
            swaylock-effects rofi-lbonn-wayland tesseract tesseract-data-eng \
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
            polkit-kde-agent --needed
