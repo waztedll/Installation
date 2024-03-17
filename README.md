@@ -95,7 +95,7 @@ game: `dol-git`
 
 ## i3
 
-    yay -S i3 polybar rofi picom scrot xclip xorg-xclipboard xcolor xwallpaper --needed
+    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper polkit-kde-agent --needed
 
 ## Hyprland
 
@@ -103,7 +103,7 @@ game: `dol-git`
            hyprpaper hyprpicker grimblast slurp grim nwg-look wl-clipboard cliphist dunst \
            swaylock-effects rofi-lbonn-wayland tesseract tesseract-data-eng \
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-           webcord polkit-kde-agent --needed
+           polkit-kde-agent --needed
 
 # Installing Shell
 
