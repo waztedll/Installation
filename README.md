@@ -76,7 +76,7 @@ include this codes
 
 audio: `easyeffects audacity lsp-plugins-lv2`
 
-optional: `gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark`
+optional: `gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo`
 
 game: `mindustry wesnoth granatier`
 
