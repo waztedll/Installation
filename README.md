@@ -95,7 +95,7 @@ game: `dol-git`
 
 ## i3
 
-    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper polkit-kde-agent --needed
+    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper lxappearance polkit-kde-agent --needed
 
 ## Hyprland
 
