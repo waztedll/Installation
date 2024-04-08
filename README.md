@@ -56,7 +56,7 @@ include this codes
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
-                   python-requests wireplumber pamixer pavucontrol kvantum mpv mpv-mpris mtpfs \
+                   python-requests wireplumber pamixer pavucontrol kvantum kvantum-qt5 mpv mpv-mpris mtpfs \
                    dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib thefuck \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
