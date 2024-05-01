@@ -1,3 +1,5 @@
+## Contents
+
 The system has been installed, run:
 
     sudo pacman -Syu
