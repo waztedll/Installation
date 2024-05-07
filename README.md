@@ -276,16 +276,16 @@ then choosing the right theme & icons
 
 ## Backup your config files
 
-    mkdir ~/backup/.config && mkdir ~/backup/.mozilla && mkdir ~/backup/.thunderbird && mkdir ~/backup/.themes && mkdir ~/backup/.icons
+    mkdir ~/dotbak/.config && mkdir ~/dotbak/.mozilla && mkdir ~/dotbak/.thunderbird && mkdir ~/dotbak/.themes && mkdir ~/dotbak/.icons
 
-    rsync -a --delete ~/.config/ ~/backup/.config/
-    rsync -a --delete ~/.mozilla/ ~/backup/.mozilla/
-    rsync -a --delete ~/.thunderbird/ ~/backup/.thunderbird/
-    rsync -a --delete ~/.themes/ ~/backup/.themes/
-    rsync -a --delete ~/.icons/ ~/backup/.icons/
-    rsync -a --delete ~/.aliases ~/backup/
-    rsync -a --delete ~/.bashrc ~/backup/
-    rsync -a --delete ~/.zshrc ~/backup/
+    rsync -a --delete ~/.config/ ~/dotbak/.config/
+    rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/
+    rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/
+    rsync -a --delete ~/.themes/ ~/dotbak/.themes/
+    rsync -a --delete ~/.icons/ ~/dotbak/.icons/
+    rsync -a --delete ~/.aliases ~/dotbak/
+    rsync -a --delete ~/.bashrc ~/dotbak/
+    rsync -a --delete ~/.zshrc ~/dotbak/
 
 ## Zapret
 
