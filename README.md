@@ -277,7 +277,7 @@ then choosing the right theme & icons
 ## Backup your config files
 
     mkdir ~/dotbak/.config && mkdir ~/dotbak/.mozilla && mkdir ~/dotbak/.thunderbird && mkdir ~/dotbak/.themes && mkdir ~/dotbak/.icons
-
+---
     rsync -a --delete ~/.config/ ~/dotbak/.config/
     rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/
     rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/
@@ -344,7 +344,7 @@ line 886:
 
 # Error Solutions
 
---------------------------------------------------
+---
 ## If bluetooth not working, run this commands
 
     rfkill list
@@ -362,20 +362,20 @@ line 886:
 
 Check the PS3 controller, then click the ***Truth & Authorise*** notification
 
---------------------------------------------------
+---
 ## If notifications will not working correctly
 
     sudo pacman -S knotifications5 knotifyconfig5
   
 - go to settings and notifications then enable all authentication pushs
 
---------------------------------------------------
+---
 If clipboard will not working correctly
 -
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
---------------------------------------------------
+---
 # **Shortcuts**
 
 ```
