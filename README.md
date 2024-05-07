@@ -276,7 +276,7 @@ then choosing the right theme & icons
 
 ## Backup your config files
 
-    mkdir ~/dotbak/.config && mkdir ~/dotbak/.mozilla && mkdir ~/dotbak/.thunderbird && mkdir ~/dotbak/.themes && mkdir ~/dotbak/.icons
+    mkdir ~/dotbak && mkdir ~/dotbak/.config && mkdir ~/dotbak/.mozilla && mkdir ~/dotbak/.thunderbird && mkdir ~/dotbak/.themes && mkdir ~/dotbak/.icons
 ---
     rsync -a --delete ~/.config/ ~/dotbak/.config/
     rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/
