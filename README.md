@@ -344,7 +344,6 @@ line 886:
 
 # Error Solutions
 
----
 ## If bluetooth not working, run this commands
 
     rfkill list
@@ -353,16 +352,21 @@ line 886:
     sudo systemctl start bluetooth
     systemctl status bluetooth
 
-### If controller not connect to PC, run the following commands on bluetoothctl
+---
+## If controller doesn't connect to PC, run the following commands in bluetoothctl
 
     [bluetoothctl#] scan on
+    [bluetoothctl#] devices
     [bluetoothctl#] pair <gamepad>
     [bluetoothctl#] connect <gamepad>
     [bluetoothctl#] trust <gamepad>
 
-Check the PS3 controller, then click the ***Truth & Authorise*** notification
-
 ---
+## If controller asks for PIN code, add this lines into /etc/bluetooth/input.conf
+
+    [General]
+    ClassicBondedOnly=false
+
 ## If notifications will not working correctly
 
     sudo pacman -S knotifications5 knotifyconfig5
@@ -370,8 +374,7 @@ Check the PS3 controller, then click the ***Truth & Authorise*** notification
 - go to settings and notifications then enable all authentication pushs
 
 ---
-If clipboard will not working correctly
--
+## If clipboard will not working correctly
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
@@ -419,7 +422,7 @@ $: pamac-manager
 # Firefox config
 
 ```
-- Needed
+## Needed
 
 extensions.pocket.enabled = false
 browser.send_pings = false
@@ -430,13 +433,13 @@ beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled = false
 network.IDN_show_punycode = true
     
-- For Google IP
+## For Google IP
     
 geo.enabled = false
 geo.wifi.uri = blank
 browser.search.geoip.url = blank
     
-- For ultra super privacy
+## For ultra super privacy
     
 browser.safebrowsing.enabled = false
 browser.safebrowsing.phishing.enabled = false
