@@ -242,7 +242,7 @@ for amd gpu:
 
 for bluetooth:
 
-    yay -S bluez bluez-utils bluez-plugins bluez-qt5 blueman
+    yay -S bluez bluez-utils blueman
 
 for printers:
 
