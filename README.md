@@ -1,15 +1,9 @@
 ## Contents
 
+- [Beginning install](#beginning-install)
 - [Error Solutions](#error-solutions)
 
 
-The system has been installed, run:
-
-    sudo pacman -Syu
-
-## If you need refresh to keys:
-
-    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 # Beginning install
 
@@ -347,7 +341,7 @@ line 886:
 
 # Error Solutions
 
-## If bluetooth not working, run this commands
+## If bluetooth not working
 
     rfkill list
     rfkill unblock bluetooth
@@ -356,7 +350,7 @@ line 886:
     systemctl status bluetooth
 
 ---
-## If controller doesn't connect to PC, run the following commands in bluetoothctl
+## If controller doesn't connect to PC
 
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
@@ -370,6 +364,12 @@ line 886:
     [General]
     ClassicBondedOnly=false
 
+---
+## If you need refresh to keys:
+
+    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+
+---
 ## If notifications will not working correctly
 
     sudo pacman -S knotifications5 knotifyconfig5
@@ -381,7 +381,6 @@ line 886:
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
----
 # **Shortcuts**
 
 ```
