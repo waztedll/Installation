@@ -1,14 +1,15 @@
 ## Contents
 
 - [Beginning install](#beginning-install)
-    - [Configure Pacman](#configure---speed-up-pacman)
+    - [Configure Pacman](#pacman-tweaks)
+        - [Chaotic AUR](#chaotic-aur)
 - [Error Solutions](#error-solutions)
 
 
 
 # Beginning install
 
-## Configure & Speed Up Pacman
+## Pacman Tweaks
 
 Install vim and start
 
@@ -30,7 +31,7 @@ then update pacman
 
     sudo pacman -Syu
 
-# Chaotic AUR
+### Chaotic AUR
 
 firstly, downloading required packages
 
