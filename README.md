@@ -1,16 +1,22 @@
 ## Contents
 
-- [Beginning install](#beginning-install)
-    - [Configure Pacman](#pacman-tweaks)
-        - [Basic Tweaks](#basic-tweaks)
-        - [Chaotic AUR](#chaotic-aur)
+- [Configure Pacman](#configure-pacman)
+    - [Basic Tweaks](#basic-tweaks)
+    - [Chaotic AUR](#chaotic-aur)
+- [Packages to Install](#packages-to-install)
+    - [Necessary Packages](#necessary-packages)
+    - [Applications](#applications)
+        - [General](#general)
+        - [Audio](#audio)
+        - [Other](Other)
+        - [Game](#game)
+    - [Flatpak](#flatpak)
+    - [AUR](#aur)
 - [Error Solutions](#error-solutions)
 
 
 
-# Beginning install
-
-## Pacman Tweaks
+## Configure Pacman
 
 ### Basic Tweaks
 
@@ -49,9 +55,9 @@ include this codes
     [chaotic-aur]  
     Include = /etc/pacman.d/chaotic-mirrorlist
 
-# Packages to Install
+## Packages to Install
 
-## requirements:
+### Necessary Packages:
 
     sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp ytfzf \
                    netctl dialog bind recode net-tools jq wget locate htop btop android-tools \
@@ -64,11 +70,13 @@ include this codes
                    dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib thefuck \
                    cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
 
-#### tlp
+> don't forget the enable tlp
+>
+>     sudo systemctl enable --now tlp.service
 
-    sudo systemctl enable --now tlp.service
+### Applications
 
-## applications:
+#### General:
 
     yay -S firefox alacritty pamac-nosnap bitwarden thunar anki syncthing \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent cpu-x \
@@ -78,24 +86,35 @@ include this codes
            dialect okular obsidian marker qmmp protonvpn-cli \
            xarchiver neovide jre-openjdk --needed
 
-audio: `easyeffects audacity lsp-plugins-lv2`
+#### Audio:
 
-optional: `gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo tgpt`
+    yay -S easyeffects audacity lsp-plugins-lv2
 
-game: `mindustry wesnoth granatier`
+#### Other:
 
-## flatpak:
+    yay -S gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany \
+           signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin \
+           tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
+           duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
+           stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop \
+           handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
+           github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
+           waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
+           hardinfo tgpt
+
+#### Game:
+
+    yay -S mindustry wesnoth granatier dol-git
+
+### Flatpak:
 
     yay -S flatpak && flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install com.github.tchx84.Flatseal com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
 
-## AUR:
+### AUR:
 
-    yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin
+    yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin sherlock-git
 
-tool: `sherlock-git`  
-game: `dol-git`
-
-# Installing WM
+### Window Manager
 
 ## i3
 
