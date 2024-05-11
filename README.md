@@ -12,6 +12,12 @@
         - [Game](#game)
     - [Flatpak](#flatpak)
     - [AUR](#aur)
+    - [Window Manager](#window-manager)
+        - [i3](#i3)
+        - [Hyprland](#hyprland)
+    - [Shell](#shell)
+        - [Fish](#fish)
+        - [Zsh](#zsh)
 - [Error Solutions](#error-solutions)
 
 
@@ -116,11 +122,11 @@ include this codes
 
 ### Window Manager
 
-## i3
+#### i3
 
     yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper lxappearance polkit-kde-agent --needed
 
-## Hyprland
+#### Hyprland
 
     yay -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
            hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
@@ -128,15 +134,15 @@ include this codes
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
            polkit-kde-agent --needed
 
-# Installing Shell
+### Shell
 
-## fish
+#### fish
 
     sudo pacman -S fish fisher  
     fisher install IlanCosman/tide@v6  
     chsh -s /usr/bin/fish
 
-## Zsh
+#### Zsh
 
 first, installing zsh and changing default shell to zsh
 
