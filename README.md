@@ -44,7 +44,7 @@
 - [Error Solutions](#error-solutions)
     - [If pacman gives PGP error](#if-pacman-gives-pgp-error)
     - [If bluetooth not working](#if-bluetooth-not-working)
-    - [If controller doesn't connect to PC](#if-controller-doesn-t-connect-to-pc)
+    - [If controller doesn't connect to PC](#if-controller-doesnt-connect-to-pc)
     - [If controller asks for PIN code](#if-controller-asks-for-pin-code)
     - [If notifications not work correctly on KDE](#if-notifications-not-work-correctly-on-kde)
     - [If clipboard not work correctly](#if-clipboard-not-work-correctly)
