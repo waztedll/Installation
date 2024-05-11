@@ -8,7 +8,7 @@
     - [Applications](#applications)
         - [General](#general)
         - [Audio](#audio)
-        - [Other](Other)
+        - [Other](#other)
         - [Game](#game)
     - [Flatpak](#flatpak)
     - [AUR](#aur)
