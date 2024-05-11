@@ -37,6 +37,10 @@
     - [Backup Files](#backup-files)
     - [DPI Bypass](#dpi-bypass)
     - [Adblock](#adblock)
+    - [Dictionary](#dictionary)
+    - [Show Stars on Sudo Password](#show-stars-on-sudo-password)
+    - [Tuxi Config Fix](#tuxi-config-fix)
+    - [Prism Launcher Offline Bypass](#prism-launcher-offline-bypass)
 - [Error Solutions](#error-solutions)
 
 
@@ -92,8 +96,8 @@ include this codes
                    translate-shell lsb-release network-manager-applet wine-stable kdialog \
                    ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
                    python-requests wireplumber pamixer pavucontrol kvantum kvantum-qt5 mpv mpv-mpris mtpfs \
-                   dracula-gtk-theme-git gtk-layer-shell gvfs-mtp pacman-contrib thefuck \
-                   cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed
+                   gvfs-mtp pacman-contrib thefuck cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk \
+                   rate-mirrors --needed
 
 > don't forget the enable tlp
 >
@@ -151,7 +155,7 @@ include this codes
            hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
            hyprlock rofi-lbonn-wayland tesseract tesseract-data-eng \
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-           polkit-kde-agent --needed
+           gtk-layer-shell polkit-kde-agent --needed
 
 ### Shell
 
@@ -330,7 +334,7 @@ Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
 - download the $theme and extract the anywhere
-- open up `kvantum` and select the $theme folder and install it
+- open up `kvantum` and select the folder that includes $theme and install it
 - then click the change theme and select the $theme
 - open up qt5ct and qt6ct and select the kvantum
 
@@ -366,15 +370,13 @@ check and install
 
     sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
-## Rofi
-
 ### Dictionary
 
 - Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
 
       sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
 
-## Showing stars on sudo password
+### Show Stars on Sudo Password
 
     sudo nvim /etc/sudoers
 
@@ -382,7 +384,7 @@ add
 
     Defaults pwfeedback
 
-## Editing tuxi config
+### Tuxi Config Fix
 
 `sudo nvim /usr/bin/tuxi`
 
@@ -394,21 +396,13 @@ line 886:
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
-## Removing color on noefetch
-
-    sudo nvim /home/taha/.config/neofetch/config.conf
-
-- Add # on **info cols**
-
-
-
-## Prism Launcher offline fix
+### Prism Launcher Offline Bypass
 
     echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
-# Error Solutions
+## Error Solutions
 
-## If bluetooth not working
+### If bluetooth not working
 
     rfkill list
     rfkill unblock bluetooth
@@ -417,7 +411,7 @@ line 886:
     systemctl status bluetooth
 
 ---
-## If controller doesn't connect to PC
+### If controller doesn't connect to PC
 
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
@@ -426,25 +420,25 @@ line 886:
     [bluetoothctl#] trust <gamepad>
 
 ---
-## If controller asks for PIN code, add this lines into /etc/bluetooth/input.conf
+### If controller asks for PIN code, add this lines into /etc/bluetooth/input.conf
 
     [General]
     ClassicBondedOnly=false
 
 ---
-## If you need refresh to keys:
+### If you need refresh to keys:
 
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
 ---
-## If notifications will not working correctly
+### If notifications will not working correctly
 
     sudo pacman -S knotifications5 knotifyconfig5
   
 - go to settings and notifications then enable all authentication pushs
 
 ---
-## If clipboard will not working correctly
+### If clipboard will not working correctly
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
