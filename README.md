@@ -2,6 +2,7 @@
 
 - [Beginning install](#beginning-install)
     - [Configure Pacman](#pacman-tweaks)
+        - [Basic Tweaks](#basic-tweaks)
         - [Chaotic AUR](#chaotic-aur)
 - [Error Solutions](#error-solutions)
 
@@ -10,6 +11,8 @@
 # Beginning install
 
 ## Pacman Tweaks
+
+### Basic Tweaks
 
 Install vim and start
 
