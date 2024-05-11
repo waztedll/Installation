@@ -18,6 +18,12 @@
     - [Shell](#shell)
         - [Fish](#fish)
         - [Zsh](#zsh)
+- [System Modules](#system-modules)
+    - [Zen Kernel](#zen-kernel)
+    - [Changing GRUB time](#changing-grub-time)
+    - [Changing Limine time](#changing-limine-time)
+    - [Mounting Disk](#mounting-disk)
+    - [Adding SWAP](#adding-swap)
 - [Error Solutions](#error-solutions)
 
 
@@ -136,7 +142,7 @@ include this codes
 
 ### Shell
 
-#### fish
+#### Fish
 
     sudo pacman -S fish fisher  
     fisher install IlanCosman/tide@v6  
@@ -164,9 +170,9 @@ then cloning required pluginsㅤ
 
       source .zshrc
 
-# System Modules
+## System Modules
 
-## Installing Zen kernel
+### Zen Kernel
 
 first downloading the packages
 
@@ -176,11 +182,9 @@ then editing the grub
 
     sudo nvim /etc/default/grub
 
-/GRUB_SAVEDEFAULT="true"  
-remove # (uncomment)
-
-/GRUB_DEFAULT=0  
-make GRUB_DEFAULT=saved
+> GRUB_SAVEDEFAULT="true"  
+> remove # (uncomment)  
+> make GRUB_DEFAULT=saved
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -188,31 +192,30 @@ on the grub menu, select the linux-zen kernel. on the next time will automatical
 
 reboot
 
-## Changing GRUB time
+### Changing GRUB time
 
     sudo nvim /etc/default/grub
 
-/GRUB_TIMEOUT=5  
-make GRUB_TIMEOUT=0
+> make GRUB_TIMEOUT=0
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 reboot
 
-## Changing Limine time
+### Changing Limine time
 
     sudo nvim /boot/limine.cfg
 
-make TIMEOUT=0
+> make TIMEOUT=0
 
-## Mounting Disk
+### Mounting Disk
 
 first, creating mount folder
 - `cd /mnt`
 - `sudo mkdir Depo`
 
 list disks uuid
-- `lsblk -f` or `ls -l /dev/disk/by-uuid`              
+- type `lsblk -f` and copy the uuid
 
 then
 - `sudo nvim /etc/fstab`
@@ -224,20 +227,39 @@ then
 
 reboot
 
-## Adding SWAP (4GiB)
+### Adding SWAP
 
-- sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
-- sudo chmod 600 /swapfile
-- sudo mkswap /swapfile
-- sudo swapon /swapfile
-- swapon --show
-- sudo nvim /etc/fstab
+create a swap file
 
-      /swapfile                                 none           swap    defaults         0 0
+    sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+
+set to file permission 600
+
+    sudo chmod 600 /swapfile
+
+make swap
+
+    sudo mkswap /swapfile
+
+turn the swap on
+
+    sudo swapon /swapfile
+
+verify process
+
+    swapon --show
+
+add swap file to fstab
+
+    sudo nvim /etc/fstab
+
+paste this into last line
+
+    /swapfile                                 none           swap    defaults         0 0
 
 reboot
 
-**Deleting Swap file**
+if you want to delete swap
 
     sudo swapoff -v /swapfile && sudo rm /swapfile
 
