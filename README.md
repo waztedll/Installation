@@ -1,5 +1,8 @@
 ## Contents
 
+- [Error Solutions](#error-solutions)
+
+
 The system has been installed, run:
 
     sudo pacman -Syu
