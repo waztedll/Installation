@@ -1,6 +1,7 @@
 ## Contents
 
 - [Beginning install](#beginning-install)
+    - [Configure Pacman](#configure---speed-up-pacman)
 - [Error Solutions](#error-solutions)
 
 
