@@ -31,6 +31,12 @@
         - [AMD](#amd)
         - [Bluetooth](#bluetooth)
         - [Printers](#printers)
+    - [Apply Themes](#apply-themes)
+        - [GTK](#gtk)
+        - [QT](#qt)
+    - [Backup Files](#backup-files)
+    - [DPI Bypass](#dpi-bypass)
+    - [Adblock](#adblock)
 - [Error Solutions](#error-solutions)
 
 
@@ -316,30 +322,26 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
 Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
-- download the Dracula gtk and extract the .zip file to the `~/.themes`
-- open up `lxappearance` and then select the Dracula into widgets.
+- download the $theme and extract the .zip file to the `~/.themes`
+- open up `lxappearance` and then select the $theme into widgets.
 
 #### QT
 
 Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
-- extract the `Dracula.tar.xz` anywhere
-- open up `kvantum` and select the Dracula folder and install it
-- then click the change theme and select the Dracula
+- download the $theme and extract the anywhere
+- open up `kvantum` and select the $theme folder and install it
+- then click the change theme and select the $theme
 - open up qt5ct and qt6ct and select the kvantum
 
-## Applying GTK & icon themes on flatpak applications
+### Backup Files
 
-    sudo flatpak override --filesystem=$HOME/.themes && sudo flatpak override --filesystem=$HOME/.icons
-
-then choosing the right theme & icons
-
-    sudo flatpak override --env=GTK_THEME=Dracula && sudo flatpak override --env=ICON_THEME=TokyoNight-SE
-
-## Backup your config files
+create folders for backup
 
     mkdir ~/dotbak && mkdir ~/dotbak/.config && mkdir ~/dotbak/.mozilla && mkdir ~/dotbak/.thunderbird && mkdir ~/dotbak/.themes && mkdir ~/dotbak/.icons
----
+
+backup the config files
+
     rsync -a --delete ~/.config/ ~/dotbak/.config/
     rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/
     rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/
@@ -349,7 +351,7 @@ then choosing the right theme & icons
     rsync -a --delete ~/.bashrc ~/dotbak/
     rsync -a --delete ~/.zshrc ~/dotbak/
 
-## Zapret
+### DPI Bypass
 
     git clone https://github.com/bol-van/zapret
     cd zapret
@@ -360,7 +362,7 @@ check and install
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
-## Adblock
+### Adblock
 
     sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
