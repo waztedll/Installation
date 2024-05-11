@@ -42,8 +42,13 @@
     - [Tuxi Config Fix](#tuxi-config-fix)
     - [Prism Launcher Offline Bypass](#prism-launcher-offline-bypass)
 - [Error Solutions](#error-solutions)
-
-
+    - [If pacman gives PGP error](#if-pacman-gives-pgp-error)
+    - [If bluetooth not working](#if-bluetooth-not-working)
+    - [If controller doesn't connect to PC](#if-controller-doesn-t-connect-to-pc)
+    - [If controller asks for PIN code](#if-controller-asks-for-pin-code)
+    - [If notifications not work correctly on KDE](#if-notifications-not-work-correctly-on-kde)
+    - [If clipboard not work correctly](#if-clipboard-not-work-correctly)
+- [Firefox Config](#firefox-config)
 
 ## Configure Pacman
 
@@ -402,6 +407,11 @@ line 886:
 
 ## Error Solutions
 
+### If pacman gives PGP error
+
+    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+
+---
 ### If bluetooth not working
 
     rfkill list
@@ -420,72 +430,29 @@ line 886:
     [bluetoothctl#] trust <gamepad>
 
 ---
-### If controller asks for PIN code, add this lines into /etc/bluetooth/input.conf
+### If controller asks for PIN code
+
+add this lines into /etc/bluetooth/input.conf
 
     [General]
     ClassicBondedOnly=false
 
 ---
-### If you need refresh to keys:
-
-    sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
-
----
-### If notifications will not working correctly
+### If notifications not work correctly on KDE
 
     sudo pacman -S knotifications5 knotifyconfig5
   
 - go to settings and notifications then enable all authentication pushs
 
 ---
-### If clipboard will not working correctly
+### If clipboard not work correctly
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
-# **Shortcuts**
+## Firefox Config
 
 ```
-# kill active program
-$alt+q
-$: killactive
-
-# rofi
-$alt+r
-$: rofi -modi drun -show drun -show-icons
-
-# start browser (gecko)
-$mod+w
-$: firefox
-
-# start browser (webkit-gtk)
-$mod_shift+w
-$: epiphany
-
-# start terminal
-$mod+return
-$: alacritty
-
-# start file manager
-$mod+e
-$: thunar
-
-# start mail client
-$mod+g
-$: thunderbird
-
-# start system monitor
-$mod+h
-$: ksysguard
-    
-# start package manager
-$mod_shift+p
-$: pamac-manager
-```
-
-# Firefox config
-
-```
-## Needed
+### Needed
 
 extensions.pocket.enabled = false
 browser.send_pings = false
@@ -496,13 +463,13 @@ beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled = false
 network.IDN_show_punycode = true
     
-## For Google IP
+### For Google IP
     
 geo.enabled = false
 geo.wifi.uri = blank
 browser.search.geoip.url = blank
     
-## For ultra super privacy
+### For ultra super privacy
     
 browser.safebrowsing.enabled = false
 browser.safebrowsing.phishing.enabled = false
@@ -529,3 +496,5 @@ browser.safebrowsing.provider.google.gethashURL = blank
 browser.safebrowsing.provider.google.advisoryURL = blank
 browser.safebrowsing.downloads.remote.url = blank
 ```
+
+<a href="#top">Back to top</a>
