@@ -24,6 +24,13 @@
     - [Changing Limine time](#changing-limine-time)
     - [Mounting Disk](#mounting-disk)
     - [Adding SWAP](#adding-swap)
+- [Useful Things](#useful-things)
+    - [Connect to Wi-Fi](#connect-to-wi-fi)
+    - [Install Driver](#install-driver)
+        - [Intel](#intel)
+        - [AMD](#amd)
+        - [Bluetooth](#bluetooth)
+        - [Printers](#printers)
 - [Error Solutions](#error-solutions)
 
 
@@ -265,55 +272,61 @@ if you want to delete swap
 
 reboot
 
-# Useful things
+## Useful things
 
-## Connecting to Wi-Fi
+### Connect to Wi-Fi
+
+with network manager
 
     nmtui
 
-edit the connections and on ipv4 settings select the addresses only n enter the following ip addresses;
+with iwctl
+
+    [iwd]# device list
+    [iwd]# station wlan0 scan
+    [iwd]# station wlan0 get-networks
+    [iwd]# station wlan0 connect <network>
+    [iwd]# station wlan0 show
+
+change dns by edit the connections and on ipv4 settings select the addresses only n enter the following ip addresses;
 
     9.9.9.9, 149.112.112.112
 
-## Driver
+### Install Driver
 
-for dual gpus:
-
-    yay -S optimus-manager
-
-for intel gpu:
+#### Intel:
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-for amd gpu:
+#### AMD:
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-for bluetooth:
+#### Bluetooth:
 
     yay -S bluez bluez-utils blueman
 
-for printers:
+#### Printers:
 
     yay -S cups
 
-## Applying GTK & QT themes
+### Apply Themes
 
-for dracula kvantum: <https://store.kde.org/p/1370681/>  
-for tokyonight-se icons: <https://github.com/ljmill/tokyo-night-icons>
+#### GTK
 
-### GTK
+Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
-first download the dracula kvantum and tokyonight-se icons
+- download the Dracula gtk and extract the .zip file to the `~/.themes`
+- open up `lxappearance` and then select the Dracula into widgets.
 
-- firstly, extract the `TokyoNight-SE.tar.bz2` into `/usr/share/icons`
-- secondly, open the `nwg-look` on wayland then select the `Dracula` into widgets, in icons select the `Tokyo Night-SE`
+#### QT
 
-### QT
+Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
-- firstly, extract the `Dracula.tar.xz`
-- secondly, open the `kvantum` and select the Dracula folder and install it
+- extract the `Dracula.tar.xz` anywhere
+- open up `kvantum` and select the Dracula folder and install it
 - then click the change theme and select the Dracula
+- open up qt5ct and qt6ct and select the kvantum
 
 ## Applying GTK & icon themes on flatpak applications
 
