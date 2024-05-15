@@ -3,7 +3,7 @@
 - [Configure Pacman](#configure-pacman)
     - [Basic Tweaks](#basic-tweaks)
     - [Chaotic AUR](#chaotic-aur)
-- [Packages to Install](#packages-to-install)
+- [Install Packages](#install-packages)
     - [Necessary Packages](#necessary-packages)
     - [Applications](#applications)
         - [General](#general)
@@ -89,7 +89,7 @@ include this codes
     [chaotic-aur]  
     Include = /etc/pacman.d/chaotic-mirrorlist
 
-## Packages to Install
+## Install Packages
 
 ### Necessary Packages:
 
