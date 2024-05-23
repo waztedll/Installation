@@ -39,6 +39,7 @@
     - [Adblock](#adblock)
     - [Dictionary](#dictionary)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
+    - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
     - [Tuxi config fix](#tuxi-config-fix)
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
 - [Error Solutions](#error-solutions)
@@ -393,7 +394,7 @@ add
 
     /etc/X11/xorg.conf.d/00-keyboard.conf
 
-change lines into this
+change lines to this
 
         Option "XkbLayout" "tr,us"
         Option "XkbOptions" "grp:alt_shift_toggle"
