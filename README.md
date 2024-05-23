@@ -26,21 +26,21 @@
     - [Adding SWAP](#adding-swap)
 - [Useful Things](#useful-things)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
-    - [Install Driver](#install-driver)
+    - [Install driver](#install-driver)
         - [Intel](#intel)
         - [AMD](#amd)
         - [Bluetooth](#bluetooth)
         - [Printers](#printers)
-    - [Apply Themes](#apply-themes)
+    - [Apply themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
-    - [Backup Files](#backup-files)
-    - [DPI Bypass](#dpi-bypass)
+    - [Backup files](#backup-files)
+    - [DPI bypass](#dpi-bypass)
     - [Adblock](#adblock)
     - [Dictionary](#dictionary)
-    - [Show Stars on Sudo Password](#show-stars-on-sudo-password)
-    - [Tuxi Config Fix](#tuxi-config-fix)
-    - [Prism Launcher Offline Bypass](#prism-launcher-offline-bypass)
+    - [Show stars on sudo password](#show-stars-on-sudo-password)
+    - [Tuxi config fix](#tuxi-config-fix)
+    - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
 - [Error Solutions](#error-solutions)
     - [If pacman gives PGP error](#if-pacman-gives-pgp-error)
     - [If bluetooth not working](#if-bluetooth-not-working)
@@ -307,7 +307,7 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
     9.9.9.9, 149.112.112.112
 
-### Install Driver
+### Install driver
 
 #### Intel:
 
@@ -325,7 +325,7 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
     yay -S cups
 
-### Apply Themes
+### Apply themes
 
 #### GTK
 
@@ -343,7 +343,7 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 - then click the change theme and select the $theme
 - open up qt5ct and qt6ct and select the kvantum
 
-### Backup Files
+### Backup files
 
 create folders for backup
 
@@ -360,7 +360,7 @@ backup the config files
     rsync -a --delete ~/.bashrc ~/dotbak/
     rsync -a --delete ~/.zshrc ~/dotbak/
 
-### DPI Bypass
+### DPI bypass
 
     git clone https://github.com/bol-van/zapret
     cd zapret
@@ -381,7 +381,7 @@ check and install
 
       sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
 
-### Show Stars on Sudo Password
+### Show stars on sudo password
 
     sudo nvim /etc/sudoers
 
@@ -389,7 +389,16 @@ add
 
     Defaults pwfeedback
 
-### Tuxi Config Fix
+### Change keyboard layout on X11
+
+    /etc/X11/xorg.conf.d/00-keyboard.conf
+
+change lines into this
+
+        Option "XkbLayout" "tr,us"
+        Option "XkbOptions" "grp:alt_shift_toggle"
+
+### Tuxi config fix
 
 `sudo nvim /usr/bin/tuxi`
 
@@ -401,7 +410,7 @@ line 886:
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
 
-### Prism Launcher Offline Bypass
+### Prism Launcher offline bypass
 
     echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
