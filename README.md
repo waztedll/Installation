@@ -159,9 +159,9 @@ include this codes
 
     yay -S hyprland waybar xdg-desktop-portal-hyprland qt5-wayland qt6-wayland \
            hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
-           hyprlock rofi-lbonn-wayland tesseract tesseract-data-eng \
-           tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-           gtk-layer-shell polkit-gnome --needed
+           hyprlock rofi-lbonn-wayland tesseract tesseract-data-eng tesseract-data-tur \
+           tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
+           polkit-gnome --needed
 
 ### Shell
 
