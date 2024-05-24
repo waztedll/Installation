@@ -152,7 +152,7 @@ include this codes
 
 #### i3
 
-    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper lxappearance polkit-kde-agent --needed
+    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper lxappearance polkit-gnome --needed
 
 #### Hyprland
 
@@ -160,7 +160,7 @@ include this codes
            hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
            hyprlock rofi-lbonn-wayland tesseract tesseract-data-eng \
            tesseract-data-tur tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout \
-           gtk-layer-shell polkit-kde-agent --needed
+           gtk-layer-shell polkit-gnome --needed
 
 ### Shell
 
