@@ -8,10 +8,9 @@
     - [Applications](#applications)
         - [General](#general)
         - [Audio](#audio)
-        - [Other](#other)
         - [Game](#game)
-    - [Flatpak](#flatpak)
-    - [AUR](#aur)
+        - [Other](#other)
+    - [Flatpak](#flatpak)    - [AUR](#aur)
     - [Window Manager](#window-manager)
         - [i3](#i3)
         - [Hyprland](#hyprland)
@@ -125,6 +124,10 @@ include this codes
 
     yay -S easyeffects audacity lsp-plugins-lv2
 
+#### Game:
+
+    yay -S mindustry wesnoth granatier dol-git
+
 #### Other:
 
     yay -S gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany \
@@ -136,10 +139,6 @@ include this codes
            github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
            hardinfo tgpt
-
-#### Game:
-
-    yay -S mindustry wesnoth granatier dol-git
 
 ### Flatpak:
 
