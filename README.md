@@ -112,25 +112,25 @@ include this codes
 
 #### General:
 
-    yay -S firefox alacritty pamac-nosnap bitwarden thunar anki syncthing \
-           kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent cpu-x \
+    yay -S firefox alacritty bitwarden thunar anki syncthing \
+           kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
-           kweather ksysguard gnome-system-monitor viewnior krita steam upscayl \
-           ungoogled-chromium youtube-music-git metadata-cleaner gnome-dictionary \
-           dialect okular obsidian marker qmmp protonvpn-cli \
-           xarchiver neovide jre-openjdk --needed
+           kweather gnome-system-monitor viewnior gimp steam upscayl \
+           ungoogled-chromium youtube-music-git metadata-cleaner \
+           dialect okular obsidian marker protonvpn-cli \
+           xarchiver jre-openjdk --needed
 
 #### Audio:
 
-    yay -S easyeffects audacity lsp-plugins-lv2
+    yay -S easyeffects audacity lsp-plugins-lv2 --needed
 
 #### Game:
 
-    yay -S mindustry wesnoth granatier dol-git
+    yay -S mindustry wesnoth granatier dol-git --needed
 
 #### Other:
 
-    yay -S gimp kdenlive antimicrox goverlay qdirstat celluloid kitty epiphany \
+    yay -S kdenlive krita antimicrox goverlay qdirstat celluloid kitty epiphany \
            signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin \
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
@@ -138,15 +138,15 @@ include this codes
            handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
            github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
-           hardinfo tgpt
+           hardinfo pamac-aur cpu-x ksysguard gnome-dictionary --needed
 
 ### Flatpak:
 
-    yay -S flatpak && flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install com.github.tchx84.Flatseal com.github.k4zmu2a.spacecadetpinball io.gitlab.jstest_gtk.jstest_gtk
+    yay -S flatpak && flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
 
 ### AUR:
 
-    yay -S tuxi-git urn-git lyrebird sklauncher-bin localsend-bin fluent-reader-electron-bin sherlock-git
+    yay -S tgpt-bin tuxi-git urn-git sklauncher-bin localsend-bin fluent-reader-electron-bin sherlock-git lyrebird --needed
 
 ### Window Manager
 
