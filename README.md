@@ -96,14 +96,13 @@ include this codes
 
     sudo pacman -S inxi linux-headers man-db git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
-                   neofetch fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
-                   rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring \
+                   neofetch fastfetch pfetch zip unzip p7zip unrar make libva xsensors cmatrix \
+                   rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
-                   translate-shell lsb-release network-manager-applet wine-stable \
-                   ffmpegthumbnailer tumbler pipewire pipewire-pulse \
-                   python-requests pavucontrol kvantum kvantum-qt5 mpv mpv-mpris mtpfs \
-                   gvfs-mtp pacman-contrib thefuck cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk \
-                   rate-mirrors --needed
+                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
+                   pavucontrol pipewire pipewire-pulse protonvpn-cli python-requests \
+                   kvantum kvantum-qt5 mpv mpv-mpris gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
+                   tty-clock xdg-desktop-portal xdg-desktop-portal-gtk rate-mirrors --needed\
 
 > don't forget the enable tlp
 >
@@ -118,7 +117,7 @@ include this codes
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
            kweather gnome-system-monitor viewnior gimp steam upscayl \
            ungoogled-chromium youtube-music-git metadata-cleaner \
-           dialect okular obsidian marker protonvpn-cli \
+           dialect okular obsidian marker \
            xarchiver jre-openjdk --needed
 
 #### Audio:
@@ -127,7 +126,7 @@ include this codes
 
 #### Game:
 
-    yay -S mindustry wesnoth granatier dol-git --needed
+    yay -S 0ad osu mindustry wesnoth granatier dol-git --needed
 
 #### Other:
 
@@ -136,7 +135,7 @@ include this codes
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
            stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop \
-           handbrake 0ad osu ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
+           handbrake ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
            github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
            hardinfo pamac-aur cpu-x ksysguard gnome-dictionary --needed
