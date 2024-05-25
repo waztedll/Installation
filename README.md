@@ -94,7 +94,7 @@ include this codes
 
 ### Necessary Packages:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
+    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
                    neofetch fastfetch pfetch zip unzip p7zip unrar make libva xsensors cmatrix \
                    rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
