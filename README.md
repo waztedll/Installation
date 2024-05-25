@@ -102,9 +102,11 @@ include this codes
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
                    pavucontrol pipewire pipewire-pulse protonvpn-cli python-requests \
                    kvantum kvantum-qt5 mpv mpv-mpris gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
-                   tty-clock rate-mirrors --needed\
+                   tty-clock rate-mirrors --needed
 
-> don't forget the enable tlp
+> ⚠️ Install xdg-desktop-portal also if it neccessary
+
+> Don't forget the enable tlp
 >
 >     sudo systemctl enable --now tlp.service
 
@@ -117,8 +119,7 @@ include this codes
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
            kweather gnome-system-monitor viewnior gimp steam upscayl \
            ungoogled-chromium youtube-music-git metadata-cleaner \
-           dialect okular obsidian marker \
-           xarchiver jre-openjdk --needed
+           dialect okular obsidian marker xarchiver jre-openjdk --needed
 
 #### Audio:
 
