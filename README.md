@@ -94,14 +94,14 @@ include this codes
 
 ### Necessary Packages:
 
-    sudo pacman -S inxi linux-headers man-db git base-devel yay fast pup scrcpy yt-dlp ytfzf \
-                   netctl dialog bind recode net-tools jq wget locate htop btop android-tools \
-                   fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
-                   rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring firefox-pwa fzf \
-                   ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji neofetch \
-                   translate-shell lsb-release network-manager-applet wine-stable kdialog \
-                   ffmpegthumbnailer tumbler brightnessctl playerctl pipewire pipewire-pulse \
-                   python-requests wireplumber pamixer pavucontrol kvantum kvantum-qt5 mpv mpv-mpris mtpfs \
+    sudo pacman -S inxi linux-headers man-db git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
+                   netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
+                   neofetch fastfetch pfetch zip unzip p7zip unrar make gvfs libva xsensors cmatrix \
+                   rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring \
+                   ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
+                   translate-shell lsb-release network-manager-applet wine-stable \
+                   ffmpegthumbnailer tumbler pipewire pipewire-pulse \
+                   python-requests pavucontrol kvantum kvantum-qt5 mpv mpv-mpris mtpfs \
                    gvfs-mtp pacman-contrib thefuck cava tty-clock xdg-desktop-portal xdg-desktop-portal-gtk \
                    rate-mirrors --needed
 
@@ -161,7 +161,7 @@ include this codes
            hyprpaper hyprpicker grim slurp nwg-look wl-clipboard cliphist dunst \
            hyprlock rofi-lbonn-wayland tesseract tesseract-data-eng tesseract-data-tur \
            tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
-           polkit-gnome --needed
+           brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
 
 ### Shell
 
