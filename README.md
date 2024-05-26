@@ -403,6 +403,8 @@ change lines to this
 
 ### Tuxi config fix
 
+> ready binary here: <https://gist.github.com/waztedll/0d3856ca7e583949ace73245a234f5d4>
+
 `sudo nvim /usr/bin/tuxi`
 
 line 18:
