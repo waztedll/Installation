@@ -141,7 +141,7 @@ include this codes
            handbrake ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
            github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
-           hardinfo pamac-aur cpu-x ksysguard gnome-dictionary --needed
+           hardinfo pamac-aur cpu-x ksysguard gnome-dictionary waydroid --needed
 
 ### Flatpak:
 
