@@ -104,8 +104,10 @@ include this codes
                    kvantum kvantum-qt5 mpv mpv-mpris gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
                    tty-clock rate-mirrors --needed
 
-> ⚠️ Install xdg-desktop-portal also if it neccessary
+> [!WARNING]
+> Install xdg-desktop-portal also if you use flatpak
 
+> [!NOTE]
 > Don't forget the enable tlp
 >
 >     sudo systemctl enable --now tlp.service
