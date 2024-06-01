@@ -63,13 +63,12 @@ Remove # on
 
 `Color`  
 `Parallel Downloads = 5`
+`[multilib]`  
+`Include = /etc/pacman.d/mirrorlist`
 
 with this command
 
-    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf
-
-`[multilib]`  
-`Include = /etc/pacman.d/mirrorlist`
+    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sed -i '88,89s/#//' pacman.conf
 
 add  
 
