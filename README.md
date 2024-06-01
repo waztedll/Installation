@@ -171,7 +171,7 @@ then cloning required pluginsㅤ
     nvim ~/.zshrc
 
 /plugins
-- `plugins=( git zsh-autosuggestions zsh-syntax-highlighting )`
+- `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
 
 /ZSH_THEME
 - `ZSH_THEME="powerlevel10k/powerlevel10k"`
