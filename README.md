@@ -62,9 +62,9 @@ Install vim and start
 Remove # on
 
 `Color`  
-`Parallel Downloads = 5`
+`Parallel Downloads = 5`  
 `[multilib]`  
-`Include = /etc/pacman.d/mirrorlist`
+`Include = /etc/pacman.d/mirrorlist`  
 
 with this command
 
