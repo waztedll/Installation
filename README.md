@@ -69,14 +69,9 @@ firstly, downloading required packages
 
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
-then editing the pacman config
+enable chaotic aur
 
-    sudo vim /etc/pacman.conf
-
-include this codes
-
-    [chaotic-aur]  
-    Include = /etc/pacman.d/chaotic-mirrorlist
+    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
 ## Install Packages
 
