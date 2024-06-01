@@ -55,24 +55,9 @@
 
 ### Basic Tweaks
 
-Install vim and start
+enable multilib and make pacman colorful
 
-    sudo pacman -S vim --noconfirm && sudo vim /etc/pacman.conf
-
-Remove # on
-
-`Color`  
-`Parallel Downloads = 5`  
-`[multilib]`  
-`Include = /etc/pacman.d/mirrorlist`  
-
-with this command
-
-    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sudo sed -i '88,89s/#//' /etc/pacman.conf
-
-add  
-
-    ILoveCandy
+    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sudo sed -i '88,89s/#//' /etc/pacman.conf; echo "ILoveCandy" | sed -i '33i\ILoveCandy' pacman.conf
 
 then update pacman
 
