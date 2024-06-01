@@ -57,7 +57,7 @@
 
 enable multilib and make pacman colorful
 
-    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sudo sed -i '88,89s/#//' /etc/pacman.conf; echo "ILoveCandy" | sed -i '33i\ILoveCandy' pacman.conf
+    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sudo sed -i '88,89s/#//' /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i '33i\ILoveCandy' pacman.conf
 
 then update pacman
 
