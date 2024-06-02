@@ -373,15 +373,7 @@ change lines to this
 
 > ready binary here: <https://gist.github.com/waztedll/0d3856ca7e583949ace73245a234f5d4>
 
-`sudo nvim /usr/bin/tuxi`
-
-line 18:
-
-    [ -n "$TUXI_LANG" ] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"
-
-line 886:
-      
-    user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
+    sudo sed -i '18c\[ -n "$TUXI_LANG" \] && LANGUAGE="$TUXI_LANG" || LANGUAGE="tr"' /usr/bin/tuxi && sudo sed -i '886c\user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"' /usr/bin/tuxi
 
 ## Error Solutions
 
