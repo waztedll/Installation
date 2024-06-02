@@ -329,14 +329,7 @@ create folders for backup
 
 backup the config files
 
-    rsync -a --delete ~/.config/ ~/dotbak/.config/
-    rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/
-    rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/
-    rsync -a --delete ~/.themes/ ~/dotbak/.themes/
-    rsync -a --delete ~/.icons/ ~/dotbak/.icons/
-    rsync -a --delete ~/.aliases ~/dotbak/
-    rsync -a --delete ~/.bashrc ~/dotbak/
-    rsync -a --delete ~/.zshrc ~/dotbak/
+    rsync -a --delete ~/.config/ ~/dotbak/.config/ && rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/ && rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/ && rsync -a --delete ~/.themes/ ~/dotbak/.themes/ && rsync -a --delete ~/.icons/ ~/dotbak/.icons/ && rsync -a --delete ~/.aliases ~/dotbak/ && rsync -a --delete ~/.bashrc ~/dotbak/ && rsync -a --delete ~/.zshrc ~/dotbak/ ; echo 'All config files backed up successfully.'
 
 ### DPI bypass
 
