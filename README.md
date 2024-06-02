@@ -402,10 +402,7 @@ change lines to this
 ---
 ### If controller asks for PIN code
 
-add this lines into /etc/bluetooth/input.conf
-
-    [General]
-    ClassicBondedOnly=false
+    echo -e "[General]\nClassicBondedOnly=false" | sudo tee -a /etc/bluetooth/input.conf
 
 ---
 ### If notifications not work correctly on KDE
