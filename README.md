@@ -128,11 +128,11 @@ enable chaotic aur
 
 ### Flatpak:
 
-    yay -S flatpak && flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
+    yay -S flatpak && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
 
 ### AUR:
 
-    yay -S tgpt-bin tuxi-git urn-git sklauncher-bin localsend-bin fluent-reader-electron-bin sherlock-git lyrebird --needed
+    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git lyrebird --needed
 
 ### Window Manager
 
