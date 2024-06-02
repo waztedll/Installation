@@ -40,8 +40,8 @@
     - [Dictionary](#dictionary)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
-    - [Tuxi config fix](#tuxi-config-fix)
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
+    - [Tuxi config fix](#tuxi-config-fix)
 - [Error Solutions](#error-solutions)
     - [If pacman gives PGP error](#if-pacman-gives-pgp-error)
     - [If bluetooth not working](#if-bluetooth-not-working)
@@ -354,11 +354,7 @@ check and install
 
 ### Show stars on sudo password
 
-    sudo nvim /etc/sudoers
-
-add
-
-    Defaults pwfeedback
+    echo "Defaults pwfeedback" | sudo tee -a /etc/sudoers
 
 ### Change keyboard layout on X11
 
@@ -368,6 +364,10 @@ change lines to this
 
         Option "XkbLayout" "tr,us"
         Option "XkbOptions" "grp:alt_shift_toggle"
+
+### Prism Launcher offline bypass
+
+    echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
 ### Tuxi config fix
 
@@ -382,10 +382,6 @@ line 18:
 line 886:
       
     user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36"
-
-### Prism Launcher offline bypass
-
-    echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
 ## Error Solutions
 
