@@ -57,7 +57,7 @@
 
 enable multilib and make pacman colorful
 
-    sudo sed -i '/#Color/s/^#//g' /etc/pacman.conf; sudo sed -i '/#ParallelDownloads = 5/s/^#//g' /etc/pacman.conf; sudo sed -i '88,89s/#//' /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i '33i\ILoveCandy' /etc/pacman.conf
+    sudo sed -i "/#Color/s/^#//g" /etc/pacman.conf; sudo sed -i "/#ParallelDownloads = 5/s/^#//g" /etc/pacman.conf; sudo sed -i "88,89s/#//" /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i "33i\ILoveCandy" /etc/pacman.conf
 
 then update pacman
 
@@ -185,30 +185,24 @@ then cloning required pluginsㅤ
 first downloading the packages
 
     sudo pacman -S linux-zen linux-zen-headers
-    
-then editing the grub
 
-    sudo nvim /etc/default/grub
+then adjust grub for zen kernel
 
-> GRUB_SAVEDEFAULT="true"  
-> remove # (uncomment)  
-> make GRUB_DEFAULT=saved
+    sudo sed -i "s/GRUB_DEFAULT=0/GRUB_DEFAULT=saved/g" /etc/default/grub; sudo sed -i "/#GRUB_SAVEDEFAULT=true/s/^#//g" /etc/default/grub
+
+update grub
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-on the grub menu, select the linux-zen kernel. on the next time will automatically select the zen kernel
-
-reboot
+reboot to grub and select the linux-zen kernel. on the next time will automatically select the zen kernel
 
 ### Changing GRUB time
 
-    sudo nvim /etc/default/grub
+    sudo sed -i "s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g /etc/default/grub
 
-> make GRUB_TIMEOUT=0
+update grub and reboot
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-reboot
 
 ### Changing Limine time
 
