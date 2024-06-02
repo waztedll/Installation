@@ -99,7 +99,7 @@ enable chaotic aur
 
 #### General:
 
-    yay -S firefox alacritty bitwarden thunar anki syncthing \
+    yay -S firefox alacritty bitwarden thunar syncthing \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
            kweather gnome-system-monitor viewnior gimp steam upscayl \
@@ -132,7 +132,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git lyrebird --needed
+    yay -S tgpt-bin anki-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git lyrebird --needed
 
 ### Window Manager
 
