@@ -112,7 +112,7 @@ enable chaotic aur
 
 #### Game:
 
-    yay -S 0ad osu mindustry wesnoth openttd openra openloco openage granatier dol-git --needed
+    yay -S 0ad osu mindustry wesnoth openttd openrct2 openra openloco openage granatier dol-git --needed
 
 #### Other:
 
