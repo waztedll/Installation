@@ -116,15 +116,15 @@ enable chaotic aur
 
 #### Other:
 
-    yay -S kdenlive krita antimicrox goverlay qdirstat celluloid kitty epiphany \
-           signal-desktop nuclear-player-bin xdman lutris heroic-games-launcher-bin \
+    yay -S kdenlive krita antimicrox goverlay qdirstat celluloid epiphany \
+           signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin \
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
-           stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop \
+           stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol cpu-x \
-           github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
+           github-desktop harmonoid protonlaunch minecraft-launcher mcpelauncher-linux-git \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
-           hardinfo pamac-aur cpu-x ksysguard gnome-dictionary waydroid --needed
+           hardinfo pamac-aur ksysguard gnome-dictionary waydroid --needed
 
 ### Flatpak:
 
