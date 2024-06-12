@@ -121,7 +121,7 @@ enable chaotic aur
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
            stremio armcord discover-overlay mousai songrec soundux tokodon kdevelop \
-           handbrake ppsspp rustdesk parsec calibre dino wike gtkcord4 cpu-x \
+           handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol cpu-x \
            github-desktop harmonoid davinci-resolve protonlaunch mcpelauncher-ui \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
            hardinfo pamac-aur cpu-x ksysguard gnome-dictionary waydroid --needed
