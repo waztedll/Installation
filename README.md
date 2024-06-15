@@ -328,9 +328,11 @@ create folders for backup
     mkdir -p ~/dotbak/.config ~/dotbak/.mozilla ~/dotbak/.thunderbird ~/dotbak/.themes ~/dotbak/.icons
     mkdir -p ~/Backup/Backup2lte ~/Backup/DCIM ~/Backup/Music ~/Backup/Notes ~/Backup/Pictures ~/Backup/Videos
 
-backup the config files
+backup the files
 
     rsync -a --delete ~/.config/ ~/dotbak/.config/ && rsync -a --delete ~/.mozilla/ ~/dotbak/.mozilla/ && rsync -a --delete ~/.thunderbird/ ~/dotbak/.thunderbird/ && rsync -a --delete ~/.themes/ ~/dotbak/.themes/ && rsync -a --delete ~/.icons/ ~/dotbak/.icons/ && rsync -a --delete ~/.aliases ~/dotbak/ && rsync -a --delete ~/.bashrc ~/dotbak/ && rsync -a --delete ~/.zshrc ~/dotbak/ ; echo 'All config files backed up successfully.'
+
+    rsync -a --delete ~/Backup2lte/ ~/Backup/Backup2lte/ && rsync -a --delete ~/DCIM/ ~/Backup/DCIM/ && rsync -a --delete ~/Music/ ~/Backup/Music/ && rsync -a --delete ~/Notes/ ~/Backup/Notes/ && rsync -a --delete ~/Pictures/ ~/Backup/Pictures/ && rsync -a --delete ~/Videos/ ~/Backup/Videos/ ; echo 'All sync files backed up successfully.'
 
 ### DPI bypass
 
