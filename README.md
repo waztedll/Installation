@@ -326,6 +326,7 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 create folders for backup
 
     mkdir -p ~/dotbak/.config ~/dotbak/.mozilla ~/dotbak/.thunderbird ~/dotbak/.themes ~/dotbak/.icons
+    mkdir -p ~/Backup/Backup2lte ~/Backup/DCIM ~/Backup/Music ~/Backup/Notes ~/Backup/Pictures ~/Backup/Videos
 
 backup the config files
 
