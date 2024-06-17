@@ -138,7 +138,7 @@ enable chaotic aur
 
 #### i3
 
-    yay -S i3 polybar rofi picom dunst scrot xclip xorg-xclipboard xcolor xwallpaper lxappearance polkit-gnome --needed
+    yay -S i3 polybar rofi picom dunst scrot clipmenu xcolor xwallpaper lxappearance polkit-gnome --needed
 
 #### Hyprland
 
