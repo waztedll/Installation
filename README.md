@@ -99,7 +99,7 @@ enable chaotic aur
 
 #### General:
 
-    yay -S firefox alacritty bitwarden thunar syncthing anki \
+    yay -S firefox alacritty thunar syncthing anki \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
            kweather gnome-system-monitor viewnior gimp steam upscayl \
@@ -116,7 +116,7 @@ enable chaotic aur
 
 #### Other:
 
-    yay -S kdenlive krita antimicrox goverlay qdirstat celluloid epiphany \
+    yay -S kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
            signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin \
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
