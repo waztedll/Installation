@@ -85,7 +85,7 @@ enable chaotic aur
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
                    pavucontrol pipewire pipewire-pulse protonvpn-cli python-requests \
                    kvantum kvantum-qt5 mpv mpv-mpris gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
-                   tty-clock rate-mirrors --needed
+                   redshift tty-clock rate-mirrors --needed
 
 > [!WARNING]
 > Install xdg-desktop-portal also if you use flatpak
@@ -138,7 +138,7 @@ enable chaotic aur
 
 #### i3
 
-    yay -S i3 polybar rofi picom dunst scrot xsel xcolor xwallpaper clipmenu lxappearance polkit-gnome --needed
+    yay -S i3 polybar rofi picom dunst scrot xsel xcolor xwallpaper clipmenu redshift lxappearance polkit-gnome --needed
 
 #### Hyprland
 
