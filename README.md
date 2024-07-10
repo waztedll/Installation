@@ -1,4 +1,4 @@
-## Contents
+## Index
 
 - [Configure Pacman](#configure-pacman)
     - [Basic Tweaks](#basic-tweaks)
