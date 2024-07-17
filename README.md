@@ -83,7 +83,7 @@ enable chaotic aur
                    rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
-                   pavucontrol pipewire pipewire-pulse protonvpn-cli python-requests \
+                   pavucontrol pipewire pipewire-pulse python-requests \
                    kvantum kvantum-qt5 mpv mpv-mpris gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
                    redshift tty-clock rate-mirrors --needed
 
@@ -132,7 +132,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git lyrebird hydroxide --needed
+    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli lyrebird hydroxide --needed
 
 ### Window Manager
 
