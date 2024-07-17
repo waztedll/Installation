@@ -132,7 +132,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli lyrebird hydroxide --needed
+    yay -S tgpt-bin localsend-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
 
 ### Window Manager
 
