@@ -144,7 +144,7 @@ enable chaotic aur
 
     yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
            grim slurp nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland \
-           rofi-lbonn-wayland tesseract tesseract-data-eng tesseract-data-tur \
+           rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
            tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
            brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
 
