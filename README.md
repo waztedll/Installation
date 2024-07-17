@@ -276,6 +276,8 @@ with network manager
 with iwctl
 
     [iwd]# device list
+    [iwd]# adapter phy0 set-property Powered on
+    [iwd]# device wlan0 set-property Powered on
     [iwd]# station wlan0 scan
     [iwd]# station wlan0 get-networks
     [iwd]# station wlan0 connect <network>
