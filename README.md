@@ -299,11 +299,11 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
 #### Bluetooth:
 
-    yay -S bluez bluez-utils blueman
+    yay -S bluez bluez-utils blueman --needed
 
 #### Printers:
 
-    yay -S cups
+    yay -S cups --needed
 
 ### Apply themes
 
