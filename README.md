@@ -311,16 +311,16 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
 Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
-- download the $theme and extract the .zip file to the `~/.themes`
-- open up `lxappearance` and then select the $theme into widgets.
+- download the $THEME and extract the .zip file to the `~/.themes`
+- open up `lxappearance` and then select the $THEME into widgets.
 
 #### QT
 
 Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
-- download the $theme and extract the anywhere
-- open up `kvantum` and select the folder that includes $theme and install it
-- then click the change theme and select the $theme
+- download the $THEME and extract the anywhere
+- open up `kvantum` and select the folder that includes $THEME and install it
+- then click the change theme and select the $THEME
 - open up qt5ct and qt6ct and select the kvantum
 
 ### Backup files
