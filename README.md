@@ -138,7 +138,7 @@ enable chaotic aur
 
 #### i3
 
-    yay -S i3 polybar rofi picom dunst scrot xsel xcolor xwallpaper clipmenu redshift lxappearance polkit-gnome --needed
+    yay -S i3 polybar rofi picom dunst scrot xsel xcolor xwallpaper clipmenu redshift lxappearance polkit-gnome tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
 
 #### Hyprland
 
