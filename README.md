@@ -34,6 +34,7 @@
     - [Apply themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
+    - [Configure LightDM](#configure-lightdm)
     - [Backup files](#backup-files)
     - [DPI bypass](#dpi-bypass)
     - [Adblock](#adblock)
@@ -322,6 +323,8 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 - open up `kvantum` and select the folder that includes $THEME and install it
 - then click the change theme and select the $THEME
 - open up qt5ct and qt6ct and select the kvantum
+
+### Configure LightDM
 
 ### Backup files
 
