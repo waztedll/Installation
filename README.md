@@ -24,20 +24,19 @@
     - [Changing Limine time](#changing-limine-time)
     - [Mounting Disk](#mounting-disk)
     - [Adding SWAP](#adding-swap)
-- [Useful Things](#useful-things)
+- [Useful Utilities](#useful-utilities)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
-    - [Install driver](#install-driver)
+    - [Install Drivers](#install-drivers)
         - [Intel](#intel)
         - [AMD](#amd)
         - [Bluetooth](#bluetooth)
         - [Printers](#printers)
-    - [Apply themes](#apply-themes)
+    - [Apply Themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
-    - [Configure LightDM](#configure-lightdm)
-    - [Backup files](#backup-files)
-    - [DPI bypass](#dpi-bypass)
-    - [Adblock](#adblock)
+    - [Backup Files](#backup-files)
+    - [DPI Bypass](#dpi-bypass)
+    - [AdBlock](#adblock)
     - [Dictionary](#dictionary)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
@@ -266,7 +265,7 @@ if you want to delete swap
 
 reboot
 
-## Useful things
+## Useful Utilities
 
 ### Connect to Wi-Fi
 
@@ -288,25 +287,25 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
     9.9.9.9, 149.112.112.112
 
-### Install driver
+### Install Drivers
 
-#### Intel:
+#### Intel
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-#### AMD:
+#### AMD
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-#### Bluetooth:
+#### Bluetooth
 
     yay -S bluez bluez-utils blueman --needed
 
-#### Printers:
+#### Printers
 
     yay -S cups --needed
 
-### Apply themes
+### Apply Themes
 
 #### GTK
 
@@ -324,9 +323,7 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 - then click the change theme and select the $THEME
 - open up qt5ct and qt6ct and select the kvantum
 
-### Configure LightDM
-
-### Backup files
+### Backup Files
 
 backup the files using rsync
 
@@ -334,7 +331,7 @@ backup the files using rsync
 
     rsync -a --delete ~/Backup2lte/ ~/Backup/Backup2lte/ && rsync -a --delete ~/DCIM/ ~/Backup/DCIM/ && rsync -a --delete ~/Music/ ~/Backup/Music/ && rsync -a --delete ~/Notes/ ~/Backup/Notes/ && rsync -a --delete ~/Pictures/ ~/Backup/Pictures/ && rsync -a --delete ~/Videos/ ~/Backup/Videos/ ; echo 'All sync files backed up successfully.'
 
-### DPI bypass
+### DPI Bypass
 
     git clone https://github.com/bol-van/zapret
     cd zapret
@@ -345,7 +342,7 @@ check and install
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
-### Adblock
+### AdBlock
 
     sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
