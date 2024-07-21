@@ -36,7 +36,7 @@
         - [QT](#qt)
     - [Backup Files](#backup-files)
     - [DPI Bypass](#dpi-bypass)
-    - [AdBlock](#adblock)
+    - [Ad Block](#ad-block)
     - [Dictionary](#dictionary)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
@@ -342,7 +342,7 @@ check and install
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
-### AdBlock
+### Ad Block
 
     sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
