@@ -102,9 +102,10 @@ enable chaotic aur
     yay -S firefox alacritty thunar syncthing anki localsend \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            vscodium discord ventoy thunar-volman thunar-archive-plugin \
-           kweather gnome-system-monitor viewnior gimp steam upscayl \
-           ungoogled-chromium youtube-music-git metadata-cleaner \
-           dialect okular obsidian marker xarchiver jre-openjdk --needed
+           gtkhash-thunar kweather gnome-system-monitor viewnior gimp  \
+           steam upscayl ungoogled-chromium youtube-music-git \
+           dialect okular obsidian marker xarchiver jre-openjdk \
+           metadata-cleaner --needed
 
 #### Audio:
 
