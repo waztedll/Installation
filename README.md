@@ -124,7 +124,7 @@ enable chaotic aur
            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol cpu-x \
            github-desktop harmonoid protonlaunch minecraft-launcher mcpelauncher-linux-git \
            waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark \
-           hardinfo pamac-aur ksysguard gnome-dictionary waydroid zed screenkey --needed
+           hardinfo pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt --needed
 
 ### Flatpak:
 
