@@ -117,7 +117,7 @@ enable chaotic aur
 #### Other:
 
     yay -S kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-           signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin \
+           signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin zathura \
            tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader \
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
            stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
