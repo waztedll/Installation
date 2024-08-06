@@ -4,7 +4,7 @@
     - [Basic Tweaks](#basic-tweaks)
     - [Chaotic AUR](#chaotic-aur)
 - [Install Packages](#install-packages)
-    - [Necessary Packages](#necessary-packages)
+    - [Base Packages](#base-packages)
     - [Drivers](#drivers)
         - [Intel](#intel)
         - [AMD](#amd)
@@ -75,7 +75,7 @@ enable chaotic aur
 
 ## Install Packages
 
-### Necessary Packages:
+### Base Packages:
 
     sudo pacman -S inxi linux-headers man-db tldr git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
