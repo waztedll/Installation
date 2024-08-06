@@ -5,6 +5,11 @@
     - [Chaotic AUR](#chaotic-aur)
 - [Install Packages](#install-packages)
     - [Necessary Packages](#necessary-packages)
+    - [Drivers](#drivers)
+        - [Intel](#intel)
+        - [AMD](#amd)
+        - [Bluetooth](#bluetooth)
+        - [Printers](#printers)
     - [Applications](#applications)
         - [General](#general)
         - [Audio](#audio)
@@ -26,11 +31,6 @@
     - [Adding SWAP](#adding-swap)
 - [Useful Utilities](#useful-utilities)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
-    - [Install Drivers](#install-drivers)
-        - [Intel](#intel)
-        - [AMD](#amd)
-        - [Bluetooth](#bluetooth)
-        - [Printers](#printers)
     - [Apply Themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
@@ -94,6 +94,24 @@ enable chaotic aur
 > Don't forget the enable tlp
 >
 >     sudo systemctl enable --now tlp.service
+
+### Drivers
+
+#### Intel
+
+    yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
+
+#### AMD
+
+    yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
+
+#### Bluetooth
+
+    yay -S bluez bluez-utils blueman --needed
+
+#### Printers
+
+    yay -S cups --needed
 
 ### Applications
 
@@ -287,24 +305,6 @@ with iwctl
 change dns by edit the connections and on ipv4 settings select the addresses only n enter the following ip addresses;
 
     9.9.9.9, 149.112.112.112
-
-### Install Drivers
-
-#### Intel
-
-    yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
-
-#### AMD
-
-    yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
-
-#### Bluetooth
-
-    yay -S bluez bluez-utils blueman --needed
-
-#### Printers
-
-    yay -S cups --needed
 
 ### Apply Themes
 
