@@ -90,7 +90,7 @@ enable chaotic aur
 > [!WARNING]
 > Install xdg-desktop-portal also if you use flatpak
 
-> [!NOTE]
+> [!TIP]
 > Don't forget the enable tlp
 >
 >     sudo systemctl enable --now tlp.service
