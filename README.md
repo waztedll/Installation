@@ -87,7 +87,7 @@ enable chaotic aur
                    gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
                    redshift tty-clock rate-mirrors --needed
 
-> [!WARNING]
+> [!NOTE]
 > Install xdg-desktop-portal also if you use flatpak
 
 > [!TIP]
