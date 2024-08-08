@@ -83,9 +83,8 @@ enable chaotic aur
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
-                   pavucontrol mpv mpv-mpris python-requests kvantum kvantum-qt5 \
-                   gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava \
-                   redshift tty-clock rate-mirrors --needed
+                   pavucontrol mpv mpv-mpris python-requests kvantum kvantum-qt5 redshift \
+                   gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava tty-clock rate-mirrors --needed \
 
 > [!NOTE]
 > Install xdg-desktop-portal also if you use flatpak
