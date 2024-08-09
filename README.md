@@ -432,16 +432,21 @@ media.eme.enabled = false
 media.navigator.enabled = false
 beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled = false
-network.IDN_show_punycode = true
-    
+
 ### For Google IP
-    
+
 geo.enabled = false
 geo.wifi.uri = blank
 browser.search.geoip.url = blank
-    
+
+### Miscellaneous
+
+dom.event.contextmenu.enabled = false
+dom.event.clipboardevents.enabled = false
+network.IDN_show_punycode
+
 ### For ultra super privacy
-    
+
 browser.safebrowsing.enabled = false
 browser.safebrowsing.phishing.enabled = false
 browser.safebrowsing.malware.enabled = false
