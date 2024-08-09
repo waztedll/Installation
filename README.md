@@ -436,6 +436,7 @@ beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled = false
 network.IDN_show_punycode = true
 toolkit.telemetry.cachedClientID = blank
+privacy.resistFingerprinting = true
 
 ### For Google IP
 
