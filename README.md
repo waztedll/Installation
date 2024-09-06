@@ -82,7 +82,7 @@ enable chaotic aur
                    neofetch fastfetch pfetch zip unzip p7zip unrar make libva libva-utils xsensors \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
-                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable \
+                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt \
                    pavucontrol mpv mpv-mpris python-requests kvantum kvantum-qt5 redshift \
                    gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava tty-clock rate-mirrors --needed \
 
@@ -150,7 +150,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S tgpt-bin sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
+    yay -S sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
 
 ### Window Manager
 
