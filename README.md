@@ -118,8 +118,8 @@ enable chaotic aur
 
     yay -S firefox alacritty thunar syncthing anki localsend \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
-           vscodium discord ventoy thunar-volman thunar-archive-plugin \
-           gtkhash-thunar kweather gnome-system-monitor viewnior gimp  \
+           discord ventoy thunar-volman thunar-archive-plugin \
+           gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
            steam upscayl ungoogled-chromium youtube-music-git \
            dialect okular obsidian marker xarchiver jre-openjdk \
            metadata-cleaner --needed
