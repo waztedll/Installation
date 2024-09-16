@@ -383,8 +383,8 @@ check and install
 
 change lines to this
 
-        Option "XkbLayout" "tr,us"
-        Option "XkbOptions" "grp:alt_shift_toggle"
+            Option "XkbLayout" "tr,us"
+            Option "XkbOptions" "grp:alt_shift_toggle"
 
 ### Prism Launcher offline bypass
 
