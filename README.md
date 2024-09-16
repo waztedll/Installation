@@ -25,9 +25,9 @@
         - [Zsh](#zsh)
 - [System Modules](#system-modules)
     - [Enable VA-API](#enable-va-api)
-        - [Intel](#intel)
-        - [AMD](#amd)
-        - [NVIDIA](#nvidia)
+        - [Intel graphics](#intel-graphics)
+        - [AMD graphics](#amd-graphics)
+        - [NVIDIA graphics](#nvidia-graphics)
     - [Zen Kernel](#zen-kernel)
     - [Changing GRUB time](#changing-grub-time)
     - [Changing Limine time](#changing-limine-time)
@@ -206,16 +206,16 @@ then cloning required pluginsㅤ
 
 override the driver for VA-API in `/etc/environment`
 
-#### Intel
+#### Intel graphics
 
     LIBVA_DRIVER_NAME=i965 # for libva-intel-driver
     LIBVA_DRIVER_NAME=iHD # for intel-media-driver
 
-#### AMD
+#### AMD graphics
 
     LIBVA_DRIVER_NAME=radeonsi # for AMDGPU driver
 
-#### NVIDIA
+#### NVIDIA graphics
 
     LIBVA_DRIVER_NAME=nouveau # for Nouveau
     LIBVA_DRIVER_NAME=vdpau # for NVIDIA VDPAU
