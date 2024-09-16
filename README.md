@@ -287,11 +287,11 @@ reboot
 
 ### Connect to Wi-Fi
 
-via NetworkManager
+via `NetworkManager`
 
     nmtui
 
-via iwctl
+via `iwctl`
 
     [iwd]# device list
     [iwd]# adapter phy0 set-property Powered on
