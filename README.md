@@ -84,7 +84,7 @@ enable chaotic aur
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt \
                    pavucontrol mpv mpv-mpris python-requests kvantum kvantum-qt5 redshift \
-                   gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava tty-clock rate-mirrors --needed \
+                   gvfs gvfs-mtp mtpfs pacman-contrib thefuck cava tty-clock rate-mirrors --needed
 
 > [!NOTE]
 > Install `xdg-desktop-portal` also if you use flatpak
