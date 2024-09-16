@@ -224,7 +224,7 @@ update grub and reboot
 
 ### Changing Limine time
 
-    sudo sed -i "s/TIMEOUT=5/TIMEOUT=0/g" /boot/limine.cfg
+    sudo sed -i "s/timeout: 5/timeout: 0/g" /boot/limine.conf
 
 ### Mounting Disk
 
