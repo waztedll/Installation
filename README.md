@@ -350,9 +350,7 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
 backup the files using rsync
 
-    rsync -a --delete ~/.config/ ~/Backup/Configs/.config/ && rsync -a --delete ~/.mozilla/ ~/Backup/Configs/.mozilla/ && rsync -a --delete ~/.thunderbird/ ~/Backup/Configs/.thunderbird/ && rsync -a --delete ~/.themes/ ~/Backup/Configs/.themes/ && rsync -a --delete ~/.icons/ ~/Backup/Configs/.icons/ && rsync -a --delete ~/.aliases ~/Backup/Configs/ && rsync -a --delete ~/.bashrc ~/Backup/Configs/ && rsync -a --delete ~/.zshrc ~/Backup/Configs/ && rsync -a --delete ~/.xprofile ~/Backup/Configs/ ; echo 'All config files backed up successfully.'
-
-    rsync -a --delete ~/Backup2lte/ ~/Backup/Backup2lte/ && rsync -a --delete ~/DCIM/ ~/Backup/DCIM/ && rsync -a --delete ~/Music/ ~/Backup/Music/ && rsync -a --delete ~/Notes/ ~/Backup/Notes/ && rsync -a --delete ~/Pictures/ ~/Backup/Pictures/ && rsync -a --delete ~/Videos/ ~/Backup/Videos/ ; echo 'All sync files backed up successfully.'
+    rynsc -a --delete /path/to/files/ /path/to/backup/
 
 ### DPI Bypass
 
