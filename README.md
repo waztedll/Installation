@@ -87,7 +87,7 @@ enable chaotic aur
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
                    lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt \
-                   pavucontrol mpv mpv-mpris python-requests kvantum kvantum-qt5 redshift xdg-utils \
+                   pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift xdg-utils \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock rate-mirrors --needed
 
 > [!NOTE]
