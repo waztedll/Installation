@@ -86,7 +86,7 @@ enable chaotic aur
                    neofetch fastfetch pfetch zip unzip p7zip unrar make libva libva-utils xsensors \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
-                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt \
+                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt acpi \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift xdg-utils \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock rate-mirrors --needed
 
