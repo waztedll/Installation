@@ -145,7 +145,7 @@ enable chaotic aur
            stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
            github-desktop protonlaunch umu-launcher minecraft-launcher mcpelauncher-linux-git \
-           waypaper-git shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
+           waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt --needed
 
 ### Flatpak:
