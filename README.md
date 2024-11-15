@@ -124,9 +124,8 @@ enable chaotic aur
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
            discord ventoy thunar-volman thunar-archive-plugin \
            gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
-           steam upscayl ungoogled-chromium youtube-music-git \
-           dialect okular obsidian marker xarchiver jre-openjdk \
-           metadata-cleaner --needed
+           steam upscayl youtube-music-git dialect okular obsidian \
+           marker xarchiver jre-openjdk metadata-cleaner --needed \
 
 #### Audio:
 
@@ -154,7 +153,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S sklauncher-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
+    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
 
 ### Window Manager
 
