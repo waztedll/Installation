@@ -139,13 +139,14 @@ enable chaotic aur
 
     yay -S kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
            signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin gallery-dl \
-           tor-browser-bin librewolf epiphany octopi prismlauncher video-downloader vscodium \
-           duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin zathura \
+           tor-browser-bin librewolf epiphany octopi ferium prismlauncher modrinth-app \
+           duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
            stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
            github-desktop protonlaunch umu-launcher minecraft-launcher mcpelauncher-linux-git \
            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
-           pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour --needed
+           pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
+           zathura video-downloader vscodium --needed
 
 ### Flatpak:
 
