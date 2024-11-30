@@ -122,9 +122,9 @@ enable chaotic aur
 
     yay -S firefox alacritty thunar syncthing anki localsend \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
-           discord ventoy thunar-volman thunar-archive-plugin \
+           discord ventoy thunar-volman thunar-archive-plugin obsidian \
            gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
-           steam upscayl youtube-music-git dialect okular obsidian \
+           steam umu-launcher upscayl youtube-music-git dialect okular \
            marker xarchiver jre-openjdk metadata-cleaner --needed \
 
 #### Audio:
@@ -143,10 +143,10 @@ enable chaotic aur
            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
            stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
-           github-desktop protonlaunch umu-launcher minecraft-launcher mcpelauncher-linux-git \
+           github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
-           zathura video-downloader vscodium --needed
+           zathura vscodium --needed
 
 ### Flatpak:
 
