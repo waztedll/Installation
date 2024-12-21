@@ -146,7 +146,7 @@ enable chaotic aur
            github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
-           zathura vscodium --needed
+           zathura authenticator vscodium --needed
 
 ### Flatpak:
 
