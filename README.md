@@ -154,7 +154,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
+    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
 
 ### Window Manager
 
