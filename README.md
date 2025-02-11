@@ -129,7 +129,8 @@ enable chaotic aur
 
 ### Applications
 
-#### General:
+<details id="general">
+    <summary><strong>General</strong></summary>
 
     yay -S firefox alacritty thunar obsidian syncthing anki localsend \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
@@ -138,15 +139,24 @@ enable chaotic aur
            steam umu-launcher upscayl youtube-music-git dialect okular \
            marker xarchiver discord metadata-cleaner wine-stable --needed \
 
-#### Audio:
+</details>
+
+<details id="audio">
+    <summary><strong>Audio</strong></summary>
 
     yay -S easyeffects audacity lsp-plugins-lv2 --needed
 
-#### Game:
+</details>
+
+<details id="game">
+    <summary><strong>Game</strong></summary>
 
     yay -S 0ad osu mindustry wesnoth openttd openrct2 openra openloco openage granatier dol-git --needed
 
-#### Other:
+</details>
+
+<details id="other">
+    <summary><strong>Other</strong></summary>
 
     yay -S kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
            signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin gallery-dl \
@@ -158,6 +168,8 @@ enable chaotic aur
            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
            zathura authenticator vscodium xdman-beta-bin --needed
+
+</details>
 
 ### Flatpak:
 
@@ -206,13 +218,17 @@ enable chaotic aur
 
 ### Shell
 
-#### Fish
+<details id="fish">
+    <summary><strong>Fish</strong></summary>
 
     sudo pacman -S fish fisher  
     fisher install IlanCosman/tide@v6  
     chsh -s /usr/bin/fish
 
-#### Zsh
+</details>
+
+<details id="zsh">
+    <summary><strong>Zsh</strong></summary>
 
 first, installing zsh and changing default shell to zsh
 
@@ -233,6 +249,8 @@ then cloning required pluginsㅤ
 - `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
       source .zshrc
+
+</details>
 
 ## System Modules
 
