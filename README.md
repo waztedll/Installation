@@ -479,7 +479,7 @@ change lines to this
     systemctl status bluetooth
 
 ---
-### If controller doesn't connect to PC
+### If controller doesn't connect to the PC
 
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
@@ -488,21 +488,22 @@ change lines to this
     [bluetoothctl#] trust <gamepad>
 
 ---
-### If controller asks for PIN code
+### If controller asks for a PIN code
 
     echo -e "[General]\nClassicBondedOnly=false\nUserspaceHID=false" | sudo tee /etc/bluetooth/input.conf.bak
 
 ---
-### If notifications not work correctly on KDE
+### If notifications not working correctly on KDE
 
     sudo pacman -S knotifications5 knotifyconfig5
   
 - go to settings and notifications then enable all authentication pushs
 
 ---
-### If clipboard not work correctly
+### If clipboard not working correctly
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
+---
 
 <details id="firefox-config">
     <summary><strong>Firefox about:config</strong></summary>
