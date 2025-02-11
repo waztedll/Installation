@@ -264,6 +264,8 @@ override the gpu driver for VA-API via `/etc/environment`
     LIBVA_DRIVER_NAME=i965 # for libva-intel-driver
     LIBVA_DRIVER_NAME=iHD # for intel-media-driver
 
+</details>
+
 #### AMD graphics
 
     LIBVA_DRIVER_NAME=radeonsi # for AMDGPU driver
