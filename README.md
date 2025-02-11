@@ -55,7 +55,7 @@
     - [If controller asks for PIN code](#if-controller-asks-for-pin-code)
     - [If notifications not work correctly on KDE](#if-notifications-not-work-correctly-on-kde)
     - [If clipboard not work correctly](#if-clipboard-not-work-correctly)
-- [Firefox Config](#firefox-config)
+- [Firefox about:config](#firefox-config)
 
 ## Configure Pacman
 
