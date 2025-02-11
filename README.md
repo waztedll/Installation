@@ -266,15 +266,21 @@ override the gpu driver for VA-API via `/etc/environment`
 
 </details>
 
-#### AMD graphics
+<details id="amd-graphics">
+    <summary><strong>AMD graphics</strong></summary>
 
     LIBVA_DRIVER_NAME=radeonsi # for AMDGPU driver
 
-#### NVIDIA graphics
+</details>
+
+<details id="nvidia-graphics">
+    <summary><strong>NVIDIA graphics</strong></summary>
 
     LIBVA_DRIVER_NAME=nouveau # for Nouveau
     LIBVA_DRIVER_NAME=vdpau # for NVIDIA VDPAU
     LIBVA_DRIVER_NAME=nvidia # for NVIDIA NVDEC
+
+</details>
 
 ### Zen Kernel
 
@@ -341,7 +347,7 @@ turn the swap on
 
     sudo swapon /swapfile
 
-verify process
+verify the process
 
     swapon --show
 
@@ -385,14 +391,18 @@ change dns by edit the connections and on ipv4 settings select the addresses onl
 
 ### Apply Themes
 
-#### GTK
+<details id="gtk">
+    <summary><strong>GTK</strong></summary>
 
 Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
 - download the $THEME and extract the .zip file to the `~/.themes`
 - open up `lxappearance` and then select the $THEME into widgets.
 
-#### QT
+</details>
+
+<details id="qt">
+    <summary><strong>QT</strong></summary>
 
 Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
@@ -400,6 +410,8 @@ Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 - open up `kvantum` and select the folder that includes $THEME and install it
 - then click the change theme and select the $THEME
 - open up qt5ct and qt6ct and select the kvantum
+
+</details>
 
 ### Backup Files
 
@@ -492,7 +504,8 @@ change lines to this
 
 - go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
 
-## Firefox Config
+<details id="firefox-config">
+    <summary><strong>Firefox about:config</strong></summary>
 
 ```
 ### Needed
