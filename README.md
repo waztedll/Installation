@@ -562,4 +562,6 @@ browser.safebrowsing.provider.google.advisoryURL = blank
 browser.safebrowsing.downloads.remote.url = blank
 ```
 
+</details>
+
 <a href="#top">Back to top</a>
