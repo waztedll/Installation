@@ -17,7 +17,9 @@
         - [Other](#other)
     - [Flatpak](#flatpak)
     - [AUR](#aur)
-    - [Window Manager](#window-manager)
+    - [Environment](#environment)
+        - [GNOME](#gnome)
+        - [KDE](#kde)
         - [i3](#i3)
         - [Hyprland](#hyprland)
     - [Shell](#shell)
@@ -153,7 +155,11 @@ enable chaotic aur
 
     yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
 
-### Window Manager
+### Environment
+
+#### GNOME
+
+#### KDE
 
 #### i3
 
