@@ -256,9 +256,10 @@ then cloning required pluginsㅤ
 
 ### Enable VA-API
 
-override the driver for VA-API in `/etc/environment`
+override the gpu driver for VA-API via `/etc/environment`
 
-#### Intel graphics
+<details id="intel-graphics">
+    <summary><strong>Intel graphics</strong></summary>
 
     LIBVA_DRIVER_NAME=i965 # for libva-intel-driver
     LIBVA_DRIVER_NAME=iHD # for intel-media-driver
