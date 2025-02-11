@@ -157,21 +157,31 @@ enable chaotic aur
 
 ### Environment
 
-#### GNOME
+<details id="gnome">
+    <summary><strong>GNOME</strong></summary>
 
-#### KDE
+</details>
 
-#### i3
+<details>
+    <summary><strong>KDE</strong></summary>
+
+</details>
+
+<details>
+    <summary><strong>i3</strong></summary>
 
     yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+</details>
 
-#### Hyprland
+<details>
+    <summary><strong>Hyprland</strong></summary>
 
     yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
            grim slurp nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland \
            rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
            tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
            brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
+</details>
 
 ### Shell
 
