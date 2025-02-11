@@ -511,18 +511,21 @@ change lines to this
 ```
 ### Needed
 
-extensions.pocket.enabled = false
+beacon.enabled = false
+browser.cache.offline.enable = false
 browser.send_pings = false
+browser.urlbar.speculativeConnect.enabled = false
 dom.battery.enabled = false
 dom.event.contextmenu.enabled = false
 dom.event.clipboardevents.enabled = false
+dom.private-attribution.submission.enabled = false
+extensions.pocket.enabled = false
 media.eme.enabled = false
 media.navigator.enabled = false
-beacon.enabled = false
-browser.safebrowsing.downloads.remote.enabled = false
 network.IDN_show_punycode = true
-toolkit.telemetry.cachedClientID = blank
+privacy.firstparty.isolate = true
 privacy.resistFingerprinting = true
+toolkit.telemetry.cachedClientID = blank
 
 ### For Google IP
 
@@ -536,6 +539,7 @@ browser.safebrowsing.enabled = false
 browser.safebrowsing.phishing.enabled = false
 browser.safebrowsing.malware.enabled = false
 browser.safebrowsing.downloads.enabled = false
+browser.safebrowsing.downloads.remote.enabled = false
 browser.safebrowsing.provider.google4.dataSharing.enabled = false
 browser.safebrowsing.provider.google4.updateURL = blank
 browser.safebrowsing.provider.google4.reportURL = blank
