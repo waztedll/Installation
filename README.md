@@ -86,15 +86,12 @@ enable chaotic aur
                    neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors openal \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji \
-                   lsb-release network-manager-applet ffmpegthumbnailer tumbler wine-stable tgpt acpi tree \
+                   lsb-release network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
 
-> [!NOTE]
-> Install `xdg-desktop-portal` also if you use flatpak
-
 > [!TIP]
-> Don't forget the enable tlp
+> Don't forget to enable tlp
 >
 >     sudo systemctl enable --now tlp.service
 
@@ -120,12 +117,12 @@ enable chaotic aur
 
 #### General:
 
-    yay -S firefox alacritty thunar syncthing anki localsend \
+    yay -S firefox alacritty thunar obsidian syncthing anki localsend \
            kdeconnect kdiskmark thunderbird obs-studio piper qbittorrent \
-           discord ventoy thunar-volman thunar-archive-plugin obsidian \
+           ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
            gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
            steam umu-launcher upscayl youtube-music-git dialect okular \
-           marker xarchiver jre-openjdk metadata-cleaner --needed \
+           marker xarchiver discord metadata-cleaner wine-stable --needed \
 
 #### Audio:
 
@@ -154,7 +151,7 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide --needed
+    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
 
 ### Window Manager
 
