@@ -153,27 +153,35 @@ enable chaotic aur
 
 ### AUR:
 
-    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
+    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin \
+           tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
 
 ### Environment
 
 <details id="gnome">
     <summary><strong>GNOME</strong></summary>
 
+    yay -S --needed
+
 </details>
 
-<details>
+<details id="kde">
     <summary><strong>KDE</strong></summary>
 
+    yay -S --needed
+
 </details>
 
-<details>
+<details id="i3">
     <summary><strong>i3</strong></summary>
 
-    yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+    yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
+           clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
+           tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+
 </details>
 
-<details>
+<details id="hyprland">
     <summary><strong>Hyprland</strong></summary>
 
     yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
@@ -181,6 +189,7 @@ enable chaotic aur
            rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
            tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
            brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
+
 </details>
 
 ### Shell
