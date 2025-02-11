@@ -99,21 +99,33 @@ enable chaotic aur
 
 ### Drivers
 
-#### Intel
+<details id="intel">
+    <summary><strong>Intel</strong></summary>
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-#### AMD
+</details>
+
+<details id="amd">
+    <summary><strong>AMD</strong></summary>
 
     yay -S mesa lib32-mesa libva-mesa-driver lib32-libva-mesa-driver xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
 
-#### Bluetooth
+</details>
+
+<details id="bluetooth">
+    <summary><strong>Bluetooth</strong></summary>
 
     yay -S bluez bluez-utils blueman --needed
 
-#### Printers
+</details>
+
+<details id="printers">
+    <summary><strong>Printers</strong></summary>
 
     yay -S cups --needed
+
+</details>
 
 ### Applications
 
