@@ -185,7 +185,8 @@ enable chaotic aur
 <details id="gnome">
     <summary><strong>GNOME</strong></summary>
 
-    yay -S --needed
+    yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
+           dconf-editor gdm --needed
 
 </details>
 
