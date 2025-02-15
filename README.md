@@ -55,7 +55,8 @@
     - [Controller asking for a PIN code](#controller-asks-pin)
     - [Notifications not working correctly on KDE](#notification-issue-kde)
     - [Clipboard not working correctly on KDE](#clipboard-issue-kde)
-- [Firefox Tweaks](#firefox-config)
+- [Firefox Tweaks](#firefox-tweaks)
+    - [about:config](#firefox-config)
 
 ## Configure Pacman
 
