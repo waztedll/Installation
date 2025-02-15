@@ -55,7 +55,7 @@
     - [Controller asking for a PIN code](#controller-asks-pin)
     - [Notifications not working correctly on KDE](#notification-issue-kde)
     - [Clipboard not working correctly on KDE](#clipboard-issue-kde)
-- [Firefox about:config](#firefox-config)
+- [Firefox Tweaks](#firefox-config)
 
 ## Configure Pacman
 
@@ -518,8 +518,10 @@ go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion
 
 </details>
 
+## Firefox Tweaks
+
 <details id="firefox-config">
-    <summary><strong>Firefox about:config</strong></summary>
+    <summary><strong>about:config</strong></summary>
 
 ```
 ### Needed
