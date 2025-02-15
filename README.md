@@ -49,12 +49,12 @@
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
     - [Tuxi config fix](#tuxi-config-fix)
 - [Error Solutions](#error-solutions)
-    - [If pacman gives PGP error](#if-pacman-gives-pgp-error)
-    - [If bluetooth not working](#if-bluetooth-not-working)
-    - [If controller doesn't connect to PC](#if-controller-doesnt-connect-to-pc)
-    - [If controller asks for PIN code](#if-controller-asks-for-pin-code)
-    - [If notifications not work correctly on KDE](#if-notifications-not-work-correctly-on-kde)
-    - [If clipboard not work correctly](#if-clipboard-not-work-correctly)
+    - [Pacman gives PGP error](#pacman-pgp-error)
+    - [Bluetooth not working](#bluetooth-not-working)
+    - [Controller doesn't connect to the PC](#controller-not-connecting)
+    - [Controller asking for a PIN code](#controller-asks-pin)
+    - [Notifications not working correctly on KDE](#notification-issue-kde)
+    - [Clipboard not working correctly on KDE](#clipboard-issue-kde)
 - [Firefox about:config](#firefox-config)
 
 ## Configure Pacman
@@ -466,12 +466,15 @@ change lines to this
 
 ## Error Solutions
 
-### If pacman gives PGP error
+<details id="pacman-pgp-error">
+    <summary><strong>Pacman gives PGP error</strong></summary>
 
     sudo pacman -S archlinux-keyring && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
 
----
-### If bluetooth not working
+</details>
+
+<details id="bluetooth-not-working">
+    <summary><strong>Bluetooth not working</strong></summary>
 
     rfkill list
     rfkill unblock bluetooth
@@ -479,8 +482,10 @@ change lines to this
     sudo systemctl start bluetooth
     systemctl status bluetooth
 
----
-### If controller doesn't connect to the PC
+</details>
+
+<details id="controller-not-connecting">
+    <summary><strong>Controller doesn't connect to the PC</strong></summary>
 
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
@@ -488,23 +493,30 @@ change lines to this
     [bluetoothctl#] connect <gamepad>
     [bluetoothctl#] trust <gamepad>
 
----
-### If controller asks for a PIN code
+</details>
 
-    echo -e "[General]\nClassicBondedOnly=false\nUserspaceHID=false" | sudo tee /etc/bluetooth/input.conf.bak
+<details id="controller-asks-pin">
+    <summary><strong>Controller asking for a PIN code</strong></summary>
 
----
-### If notifications not working correctly on KDE
+    echo -e "[General]\nClassicBondedOnly=false\nUserspaceHID=false" | sudo tee /etc/bluetooth/input.conf
+
+</details>
+
+<details id="notification-issue-kde">
+    <summary><strong>Notifications not working correctly on KDE</strong></summary>
 
     sudo pacman -S knotifications5 knotifyconfig5
   
-- go to settings and notifications then enable all authentication pushs
+go to settings -> notifications then enable all authentication pushs
 
----
-### If clipboard not working correctly
+</details>
 
-- go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
----
+<details id="clipboard-issue-kde">
+    <summary><strong>Clipboard not working correctly on KDE</strong></summary>
+
+go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion"
+
+</details>
 
 <details id="firefox-config">
     <summary><strong>Firefox about:config</strong></summary>
