@@ -388,22 +388,22 @@ via `iwctl`
 <details id="gtk">
     <summary><strong>GTK</strong></summary>
 
-Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
+> Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
 - download the $THEME and extract the .zip file to the `~/.themes`
-- open up `lxappearance` and then select the $THEME into widgets.
+- open up `lxappearance` and select the $THEME in widgets.
 
 </details>
 
 <details id="qt">
     <summary><strong>QT</strong></summary>
 
-Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
+> Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
 - download the $THEME and extract the anywhere
 - open up `kvantum` and select the folder that includes $THEME and install it
-- then click the change theme and select the $THEME
-- open up qt5ct and qt6ct and select the kvantum
+- click the change theme and select the $THEME
+- open up qt5ct and qt6ct and select the `kvantum`
 
 </details>
 
@@ -430,7 +430,7 @@ check and install
 
 ### Dictionary
 
-- Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
+> Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
 
       sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
 
@@ -440,12 +440,14 @@ check and install
 
 ### Change keyboard layout on X11
 
-    /etc/X11/xorg.conf.d/00-keyboard.conf
-
-change lines to this
-
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/X11/xorg.conf.d/00-keyboard.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
+Section "InputClass"
             Option "XkbLayout" "tr,us"
             Option "XkbOptions" "grp:alt_shift_toggle"
+            ...
+EndSection
+</pre>
 
 ### Prism Launcher offline bypass
 
