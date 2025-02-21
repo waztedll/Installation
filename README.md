@@ -5,6 +5,11 @@
     - [Chaotic-AUR](#chaotic-aur)
 - [Install Packages](#install-packages)
     - [Base Packages](#base-packages)
+    - [Environment](#environment)
+        - [GNOME](#gnome)
+        - [KDE](#kde)
+        - [i3](#i3)
+        - [Hyprland](#hyprland)
     - [Drivers](#drivers)
         - [Intel](#intel)
         - [AMD](#amd)
@@ -17,11 +22,6 @@
         - [Other](#other)
     - [Flatpak](#flatpak)
     - [AUR](#aur)
-    - [Environment](#environment)
-        - [GNOME](#gnome)
-        - [KDE](#kde)
-        - [i3](#i3)
-        - [Hyprland](#hyprland)
     - [Shell](#shell)
         - [Fish](#fish)
         - [Zsh](#zsh)
@@ -97,6 +97,43 @@ enable `chaotic-aur`
 > Don't forget to enable tlp
 >
 >     sudo systemctl enable --now tlp.service
+
+### Environment
+
+<details id="gnome">
+    <summary><strong>GNOME</strong></summary>
+
+    yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
+           dconf-editor extension-manager --needed; yay -Rdd nautilus
+
+</details>
+
+<details id="kde">
+    <summary><strong>KDE</strong></summary>
+
+    yay -S plasma-desktop --needed
+
+</details>
+
+<details id="i3">
+    <summary><strong>i3</strong></summary>
+
+    yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
+           clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
+           tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+
+</details>
+
+<details id="hyprland">
+    <summary><strong>Hyprland</strong></summary>
+
+    yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
+           grim slurp nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland \
+           rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
+           tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
+           brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
+
+</details>
 
 ### Drivers
 
@@ -180,43 +217,6 @@ enable `chaotic-aur`
 
     yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin \
            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
-
-### Environment
-
-<details id="gnome">
-    <summary><strong>GNOME</strong></summary>
-
-    yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-           dconf-editor extension-manager --needed; yay -Rdd nautilus
-
-</details>
-
-<details id="kde">
-    <summary><strong>KDE</strong></summary>
-
-    yay -S plasma-desktop --needed
-
-</details>
-
-<details id="i3">
-    <summary><strong>i3</strong></summary>
-
-    yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
-           clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
-           tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
-
-</details>
-
-<details id="hyprland">
-    <summary><strong>Hyprland</strong></summary>
-
-    yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
-           grim slurp nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland \
-           rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
-           tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
-           brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
-
-</details>
 
 ### Shell
 
