@@ -40,11 +40,11 @@
         - [GTK](#gtk)
         - [QT](#qt)
     - [Backup Files](#backup-files)
-    - [DPI Bypass](#dpi-bypass)
     - [Ad Block](#ad-block)
+    - [DPI Bypass](#dpi-bypass)
     - [Dictionary](#dictionary)
-    - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
+    - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
     - [Tuxi config fix](#tuxi-config-fix)
 - [Error Solutions](#error-solutions)
@@ -413,6 +413,10 @@ backup the files using rsync
 
     rynsc -a --delete /path/to/files/ /path/to/backup/
 
+### Ad Block
+
+    sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
 ### DPI Bypass
 
     git clone https://github.com/bol-van/zapret
@@ -424,19 +428,11 @@ check and install
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
-### Ad Block
-
-    sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-
 ### Dictionary
 
 > Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
 
       sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
-
-### Show stars on sudo password
-
-    echo "Defaults pwfeedback" | sudo tee -a /etc/sudoers
 
 ### Change keyboard layout on X11
 
@@ -448,6 +444,10 @@ Section "InputClass"
     ...
 EndSection
 </pre>
+
+### Show stars on sudo password
+
+    echo "Defaults pwfeedback" | sudo tee -a /etc/sudoers
 
 ### Prism Launcher offline bypass
 
