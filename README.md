@@ -33,7 +33,7 @@
     - [Zen Kernel](#zen-kernel)
     - [Change GRUB time](#change-grub-time)
     - [Mount Disks](#mount-disks)
-    - [Add SWAP](#add-swap)
+    - [Create SWAP](#create-swap)
 - [Useful Utilities](#useful-utilities)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
     - [Apply Themes](#apply-themes)
@@ -92,7 +92,6 @@ enable `chaotic-aur`
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
 
-> [!NOTE]
 > Don't forget to enable tlp
 >
 >     sudo systemctl enable --now tlp.service
@@ -316,20 +315,21 @@ first, creating the mount folder
 
     sudo mkdir -p /mnt/Storage
 
-list disks uuid
-- type `lsblk -f` and copy the uuid
+copy the UUID by listing disks
 
-then
-- `sudo nvim /etc/fstab`
+    lsblk -f
+    
+write UUID to the appropriate place
+> in this example, the ntfs used for the disk used by Windows
 
-      UUID=paste_uuid_here              /mnt/Depo     ntfs     defaults      0 0
-  
-- `systemctl daemon-reload`
-- `sudo mount -a`
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/fstab</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">UUID=paste_uuid_here              /mnt/Storage     ntfs     defaults      0 0</pre>
 
-reboot
+make the system recognize the new disk
 
-### Adding Swap
+    sudo systemctl daemon-reload; sudo mount -a
+
+### Create Swap
 
 create a swap file
 
