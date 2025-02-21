@@ -33,7 +33,7 @@
     - [Zen Kernel](#zen-kernel)
     - [Change GRUB time](#change-grub-time)
     - [Mount Disks](#mount-disks)
-    - [Create SWAP](#create-swap)
+    - [Create Swap](#create-swap)
 - [Useful Utilities](#useful-utilities)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
     - [Apply Themes](#apply-themes)
@@ -335,7 +335,7 @@ create a swap file
 
     sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
 
-set to file permission 600
+change the permissions
 
     sudo chmod 600 /swapfile
 
@@ -343,7 +343,7 @@ make swap
 
     sudo mkswap /swapfile
 
-turn the swap on
+enable the swap
 
     sudo swapon /swapfile
 
@@ -351,21 +351,16 @@ verify the process
 
     swapon --show
 
-add swap file to fstab
+paste swap to end of the file
 
-    sudo nvim /etc/fstab
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/fstab</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">/swapfile                                 none           swap    defaults         0 0</pre>
 
-paste this into last line
+reboot to see the changes
 
-    /swapfile                                 none           swap    defaults         0 0
-
-reboot
-
-if you want to delete swap
+> if you want to delete swap just type this
 
     sudo swapoff -v /swapfile && sudo rm /swapfile
-
-reboot
 
 ## Useful Utilities
 
