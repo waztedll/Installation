@@ -443,9 +443,9 @@ check and install
 <pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/X11/xorg.conf.d/00-keyboard.conf</pre>
 <pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
 Section "InputClass"
-            Option "XkbLayout" "tr,us"
-            Option "XkbOptions" "grp:alt_shift_toggle"
-            ...
+    Option "XkbLayout" "tr,us"
+    Option "XkbOptions" "grp:alt_shift_toggle"
+    ...
 EndSection
 </pre>
 
