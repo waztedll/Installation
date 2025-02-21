@@ -368,7 +368,10 @@ reboot to see the changes
 
 via `NetworkManager`
 
-    nmtui
+    $ nmcli device status
+    $ nmcli device wifi list
+    $ nmcli device wifi connect <SSID> password <password>
+    $ nmcli general status
 
 via `iwctl`
 
@@ -379,10 +382,6 @@ via `iwctl`
     [iwd]# station wlan0 get-networks
     [iwd]# station wlan0 connect <network>
     [iwd]# station wlan0 show
-
-change dns by edit the connections and on ipv4 settings select the addresses only n enter the following ip addresses;
-
-    9.9.9.9, 149.112.112.112
 
 ### Apply Themes
 
