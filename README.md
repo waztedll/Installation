@@ -31,10 +31,9 @@
         - [AMD graphics](#amd-graphics)
         - [NVIDIA graphics](#nvidia-graphics)
     - [Zen Kernel](#zen-kernel)
-    - [Changing GRUB time](#changing-grub-time)
-    - [Changing Limine time](#changing-limine-time)
-    - [Mounting Disk](#mounting-disk)
-    - [Adding SWAP](#adding-swap)
+    - [Change GRUB time](#change-grub-time)
+    - [Mount Disks](#mount-disks)
+    - [Add SWAP](#add-swap)
 - [Useful Utilities](#useful-utilities)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
     - [Apply Themes](#apply-themes)
@@ -258,7 +257,7 @@ then cloning required pluginsㅤ
 
 ### Enable VA-API
 
-override the gpu driver for VA-API via `/etc/environment`
+> override the gpu driver for VA-API via `/etc/environment`
 
 <details id="intel-graphics">
     <summary><strong>Intel graphics</strong></summary>
@@ -286,37 +285,36 @@ override the gpu driver for VA-API via `/etc/environment`
 
 ### Zen Kernel
 
-first downloading the packages
+download required packages
 
     sudo pacman -S linux-zen linux-zen-headers
 
-then adjust grub for zen kernel
+then adjust GRUB for the zen kernel
 
     sudo sed -i "s/GRUB_DEFAULT=0/GRUB_DEFAULT=saved/g" /etc/default/grub; sudo sed -i "/#GRUB_SAVEDEFAULT=true/s/^#//g" /etc/default/grub
 
-update grub
+update GRUB
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-reboot to grub and select the linux-zen kernel. on the next time will automatically select the zen kernel
+reboot to bootloader and select the `linux-zen` kernel. on the next, time it will automatically select the zen kernel
 
-### Changing GRUB time
+### Change GRUB time
+
+> to skip the 5 second hold
 
     sudo sed -i "s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g" /etc/default/grub
 
-update grub and reboot
+update GRUB and reboot
 
-    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    sudo grub-mkconfig -o /boot/grub/grub.cfg; reboot
 
-### Changing Limine time
+### Mount Disks
 
-    sudo sed -i "s/timeout: 5/timeout: 0/g" /boot/limine.conf
+first, creating the mount folder
+> replace `Storage` with whatever you want
 
-### Mounting Disk
-
-first, creating mount folder
-- `cd /mnt`
-- `sudo mkdir Depo`
+    sudo mkdir -p /mnt/Storage
 
 list disks uuid
 - type `lsblk -f` and copy the uuid
