@@ -84,7 +84,7 @@ enable `chaotic-aur`
 
 ### Base Packages
 
-    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
+    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay fast scrcpy yt-dlp fzf ytfzf gdm \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
                    neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors openal \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw \
@@ -172,11 +172,11 @@ enable `chaotic-aur`
 
 </details>
 
-### Flatpak:
+### Flatpak
 
     yay -S flatpak && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
 
-### AUR:
+### AUR
 
     yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin \
            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird hydroxide varia --needed
@@ -187,7 +187,7 @@ enable `chaotic-aur`
     <summary><strong>GNOME</strong></summary>
 
     yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-           dconf-editor gdm extension-manager --needed; yay -Rdd nautilus
+           dconf-editor extension-manager --needed; yay -Rdd nautilus
 
 </details>
 
