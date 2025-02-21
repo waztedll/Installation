@@ -2,7 +2,7 @@
 
 - [Configure Pacman](#configure-pacman)
     - [Basic Tweaks](#basic-tweaks)
-    - [Chaotic AUR](#chaotic-aur)
+    - [Chaotic-AUR](#chaotic-aur)
 - [Install Packages](#install-packages)
     - [Base Packages](#base-packages)
     - [Drivers](#drivers)
@@ -66,23 +66,23 @@ enable multilib, detailed process, parallel downloads, and make pacman more colo
 
     sudo sed -i "/#Color/s/^#//g" /etc/pacman.conf; sudo sed -i "/#VerbosePkgLists/s/^#//g" /etc/pacman.conf; sudo sed -i "/#ParallelDownloads = 5/s/^#//g" /etc/pacman.conf; sudo sed -i "90,91s/#//" /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i "34i\ILoveCandy" /etc/pacman.conf
 
-then update pacman and see effects
+update pacman to see the effects
 
     sudo pacman -Syu
 
-### Chaotic AUR
+### Chaotic-AUR
 
-firstly, downloading required packages
+download required packages
 
     sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
-enable chaotic aur
+enable `chaotic-aur`
 
-    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf; sudo pacman -Syu
 
 ## Install Packages
 
-### Base Packages:
+### Base Packages
 
     sudo pacman -S inxi linux-headers man-db tldr git base-devel yay fast scrcpy yt-dlp fzf ytfzf \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
@@ -93,7 +93,7 @@ enable chaotic aur
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
 
-> [!TIP]
+> [!NOTE]
 > Don't forget to enable tlp
 >
 >     sudo systemctl enable --now tlp.service
