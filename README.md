@@ -62,9 +62,9 @@
 
 ### Basic Tweaks
 
-enable multilib, parallel downloads and make pacman more colorful
+enable multilib, detailed process, parallel downloads, and make pacman more colorful
 
-    sudo sed -i "/#Color/s/^#//g" /etc/pacman.conf; sudo sed -i "/#ParallelDownloads = 5/s/^#//g" /etc/pacman.conf; sudo sed -i "90,91s/#//" /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i "34i\ILoveCandy" /etc/pacman.conf
+    sudo sed -i "/#Color/s/^#//g" /etc/pacman.conf; sudo sed -i "/#VerbosePkgLists/s/^#//g" /etc/pacman.conf; sudo sed -i "/#ParallelDownloads = 5/s/^#//g" /etc/pacman.conf; sudo sed -i "90,91s/#//" /etc/pacman.conf; echo "ILoveCandy" | sudo sed -i "34i\ILoveCandy" /etc/pacman.conf
 
 then update pacman and see effects
 
