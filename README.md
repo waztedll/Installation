@@ -194,7 +194,7 @@ enable chaotic aur
 <details id="kde">
     <summary><strong>KDE</strong></summary>
 
-    yay -S --needed
+    yay -S plasma-desktop --needed
 
 </details>
 
