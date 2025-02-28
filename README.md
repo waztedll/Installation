@@ -102,7 +102,8 @@ enable `chaotic-aur`
     <summary><strong>GNOME</strong></summary>
 
     yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-           dconf-editor polkit-gnome extension-manager --needed; yay -Rdd nautilus
+           gnome-bluetooth-3.0 power-profiles-daemon dconf-editor polkit-gnome extension-manager \
+           --needed; yay -Rdd nautilus
 
 </details>
 
