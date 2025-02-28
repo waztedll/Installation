@@ -92,7 +92,7 @@ enable `chaotic-aur`
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
 
-> Don't forget to enable tlp
+> Don't forget to enable `tlp`.
 >
 >     sudo systemctl enable --now tlp.service
 
@@ -102,8 +102,13 @@ enable `chaotic-aur`
     <summary><strong>GNOME</strong></summary>
 
     yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-           gnome-bluetooth-3.0 power-profiles-daemon gnome-remote-desktop switcheroo-control \
-           dconf-editor polkit-gnome extension-manager --needed; yay -Rdd nautilus
+           gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
+           polkit-gnome extension-manager --needed; yay -Rdd nautilus
+
+
+> Enable `switcheroo-control` if its not enabled.
+>
+>     sudo systemctl enable --now switcheroo-control.service
 
 </details>
 
