@@ -88,7 +88,7 @@ enable `chaotic-aur`
                    neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors openal \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
-                   network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools \
+                   network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
 
