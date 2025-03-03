@@ -83,7 +83,7 @@ enable `chaotic-aur`
 
 ### Base Packages
 
-    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay scrcpy yt-dlp fzf ytfzf gdm \
+    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay scrcpy yt-dlp fzf ytfzf gdm gdm-settings \
                    netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
                    neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors openal \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw \
