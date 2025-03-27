@@ -77,7 +77,7 @@ download required packages
 
 enable `chaotic-aur`
 
-    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf; sudo pacman -Syu
+    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf; sudo pacman -Syu --noconfirm
 
 ## Install Packages
 
