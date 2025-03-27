@@ -436,9 +436,13 @@ check and install
 
 ### Dictionary
 
-> Download database via: <https://github.com/metwse/rofi-tdk.sh/releases/>
+download the database
 
-      sudo mv ~/Downloads/rofi-tdk.tar.gz /var/
+    wget https://github.com/metwse/rofi-tdk.sh/releases/download/v1/rofi-tdk.tar.gz
+
+then move it into the required directory
+
+    sudo mv ~/rofi-tdk.tar.gz /var/
 
 ### Change keyboard layout on X11
 
