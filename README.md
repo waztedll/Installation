@@ -90,7 +90,7 @@ enable `chaotic-aur`
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
                    network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
-                   gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava tty-clock xdg-utils rate-mirrors --needed
+                   gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava xdg-utils rate-mirrors --needed
 
 > Don't forget to enable `tlp`.
 >
@@ -219,8 +219,8 @@ enable `chaotic-aur`
 
 ### AUR
 
-    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin \
-           tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia --needed
+    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git \
+           sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock --needed
 
 ### Shell
 
