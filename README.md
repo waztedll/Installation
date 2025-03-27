@@ -103,7 +103,7 @@ enable `chaotic-aur`
 
     yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
            gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
-           polkit-gnome extension-manager --needed; yay -Rdd nautilus
+           polkit-gnome extension-manager --needed
 
 
 > Enable `switcheroo-control` if its not enabled.
