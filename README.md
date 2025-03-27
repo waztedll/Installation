@@ -364,7 +364,7 @@ paste swap to end of the file
 
 reboot to see the changes
 
-> if you want to delete swap just type this
+> if you want to delete the swap, just type
 
     sudo swapoff -v /swapfile && sudo rm /swapfile
 
