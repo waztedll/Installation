@@ -179,7 +179,7 @@ enable `chaotic-aur`
            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
            gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
            steam umu-launcher upscayl youtube-music-git dialect okular \
-           marker xarchiver metadata-cleaner wine-stable --needed
+           marker xarchiver metadata-cleaner wine-stable ungoogled-chromium-bin --needed
 
 </details>
 
@@ -219,8 +219,8 @@ enable `chaotic-aur`
 
 ### AUR
 
-    yay -S sklauncher-bin ungoogled-chromium-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git \
-           sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock --needed
+    yay -S sklauncher-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git \
+           protonvpn-cli-community lyrebird fast hydroxide varia tty-clock --needed
 
 ### Shell
 
