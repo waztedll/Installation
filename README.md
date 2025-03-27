@@ -175,11 +175,11 @@ enable `chaotic-aur`
     <summary><strong>General</strong></summary>
 
     yay -S firefox alacritty thunar obsidian syncthing anki localsend \
-            kdiskmark thunderbird obs-studio piper qbittorrent \
+           kdiskmark discord thunderbird obs-studio piper qbittorrent \
            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
            gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
            steam umu-launcher upscayl youtube-music-git dialect okular \
-           marker xarchiver discord metadata-cleaner wine-stable --needed \
+           marker xarchiver metadata-cleaner wine-stable --needed \
 
 </details>
 
