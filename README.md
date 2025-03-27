@@ -83,10 +83,10 @@ enable `chaotic-aur`
 
 ### Base Packages
 
-    sudo pacman -S inxi linux-headers man-db tldr git base-devel yay scrcpy yt-dlp fzf ytfzf gdm gdm-settings \
-                   netctl dialog bind net-tools pup recode jq curl wget locate htop btop android-tools \
-                   neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors openal \
-                   cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw \
+    sudo pacman -S inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
+                   gdm gdm-settings netctl dialog bind net-tools pup recode jq curl wget locate htop btop \
+                   android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors \
+                   cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
                    network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
