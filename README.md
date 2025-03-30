@@ -26,6 +26,7 @@
         - [Fish](#fish)
         - [Zsh](#zsh)
 - [System Modules](#system-modules)
+    - [Bootsplash](#bootsplash)
     - [Enable VA-API](#enable-va-api)
         - [Intel graphics](#intel-graphics)
         - [AMD graphics](#amd-graphics)
@@ -260,6 +261,8 @@ then cloning required pluginsㅤ
 </details>
 
 ## System Modules
+
+### Bootsplash
 
 ### Enable VA-API
 
