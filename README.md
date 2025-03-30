@@ -273,7 +273,7 @@ then cloning required pluginsㅤ
 
       sudo mkinitcpio -P
 
-- now edit your bootloader config and append `loglevel=3 quiet splash` to your cmdline. the result should look like this in limine
+- now edit your bootloader config and append `quiet splash loglevel=3` to your cmdline. the result should look like this in limine
 
       cmdline: cryptdevice=PARTUUID=d5dd7183-f8df-4b85-9b39-a634174f56ce:root root=/dev/mapper/root rw quiet splash loglevel=3 rootfstype=ext4
 
