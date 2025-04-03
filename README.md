@@ -187,7 +187,7 @@ enable repo
             kdiskmark discord thunderbird obs-studio piper qbittorrent xsensors \
             ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-            mpv mpv-mpris upscayl youtube-music-git dialect okular marker xarchiver  \
+            mpv mpv-mpris upscayl youtube-music-git okular marker xarchiver \
             lact metadata-cleaner wine-stable ungoogled-chromium-bin
 
 </details>
@@ -218,7 +218,7 @@ enable repo
             handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
             github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
             waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
-            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
+            pamac-aur ksysguard gnome-dictionary dialect waydroid zed screenkey veracrypt lmms ardour \
             zathura authenticator vscodium xdman-beta-bin kdeconnect kweather
 
 </details>
