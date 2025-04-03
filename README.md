@@ -90,7 +90,7 @@ enable repo
             android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
-            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree intel-gpu-tools joyutils \
+            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils \
             pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
             recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
             rate-mirrors
@@ -151,8 +151,8 @@ enable repo
     <summary><strong>Intel</strong></summary>
 
     yay -S --needed \
-            mesa-amber lib32-mesa-amber libva-intel-driver lib32-libva-intel-driver xf86-video-intel \
-            vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
+            mesa-amber lib32-mesa-amber libva-intel-driver lib32-libva-intel-driver intel-media-driver \
+            xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader intel-gpu-tools
 
 </details>
 
