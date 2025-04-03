@@ -179,9 +179,9 @@ enable `chaotic-aur`
     yay -S firefox alacritty thunar obsidian syncthing anki localsend \
            kdiskmark discord thunderbird obs-studio piper qbittorrent \
            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
-           gtkhash-thunar gnome-system-monitor viewnior gimp \
-           steam umu-launcher upscayl youtube-music-git dialect okular \
-           marker xarchiver metadata-cleaner wine-stable ungoogled-chromium-bin --needed
+           gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
+           upscayl youtube-music-git dialect okular marker xarchiver \
+           metadata-cleaner wine-stable ungoogled-chromium-bin --needed
 
 </details>
 
