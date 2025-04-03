@@ -511,7 +511,7 @@ EndSection
 <details id="pacman-pgp-error">
     <summary><strong>Pacman gives PGP error</strong></summary>
 
-    sudo pacman -S archlinux-keyring --noconfirm --needed && sudo pacman-key --refresh && sudo pacman-key --list-keys brett@i--b.com
+    sudo pacman -S --noconfirm --needed archlinux-keyring && sudo pacman-key --refresh
 
 </details>
 
