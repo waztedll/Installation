@@ -91,7 +91,7 @@ enable repo
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
             network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils \
-            pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
+              python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
             recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
             rate-mirrors
 
@@ -184,12 +184,12 @@ enable repo
     <summary><strong>General</strong></summary>
 
     yay -S --needed \
-            firefox alacritty thunar obsidian syncthing anki localsend \
+            firefox alacritty thunar obsidian syncthing anki localsend pavucontrol \
             kdiskmark discord thunderbird obs-studio piper qbittorrent xsensors \
             ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-            upscayl youtube-music-git dialect okular marker xarchiver lact \
-            metadata-cleaner wine-stable ungoogled-chromium-bin
+            mpv mpv-mpris upscayl youtube-music-git dialect okular marker xarchiver  \
+            lact metadata-cleaner wine-stable ungoogled-chromium-bin
 
 </details>
 
