@@ -126,18 +126,18 @@ enable `chaotic-aur`
 
     yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
            clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
-           tesseract tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+           tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
 
 </details>
 
 <details id="hyprland">
     <summary><strong>Hyprland</strong></summary>
 
-    yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst \
-           grim slurp nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland \
-           rofi-wayland tesseract tesseract-data-eng tesseract-data-tur \
-           tesseract-data-rus tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell \
-           brightnessctl playerctl wireplumber pamixer polkit-gnome --needed
+    yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst grim slurp \
+           nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland rofi-wayland \
+           tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus \
+           tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell brightnessctl \
+           playerctl wireplumber pamixer polkit-gnome --needed
 
 </details>
 
@@ -179,7 +179,7 @@ enable `chaotic-aur`
     yay -S firefox alacritty thunar obsidian syncthing anki localsend \
            kdiskmark discord thunderbird obs-studio piper qbittorrent \
            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
-           gtkhash-thunar kweather gnome-system-monitor viewnior gimp \
+           gtkhash-thunar gnome-system-monitor viewnior gimp \
            steam umu-launcher upscayl youtube-music-git dialect okular \
            marker xarchiver metadata-cleaner wine-stable ungoogled-chromium-bin --needed
 
@@ -211,7 +211,7 @@ enable `chaotic-aur`
            github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
-           zathura authenticator vscodium xdman-beta-bin kdeconnect --needed
+           zathura authenticator vscodium xdman-beta-bin kdeconnect kweather --needed
 
 </details>
 
