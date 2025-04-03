@@ -87,7 +87,7 @@ enable repo
     sudo pacman -S --needed \
             inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
             xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget xdg-utils \
-            android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors \
+            android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
             network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
@@ -185,7 +185,7 @@ enable repo
 
     yay -S --needed \
             firefox alacritty thunar obsidian syncthing anki localsend \
-            kdiskmark discord thunderbird obs-studio piper qbittorrent \
+            kdiskmark discord thunderbird obs-studio piper qbittorrent xsensors \
             ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
             upscayl youtube-music-git dialect okular marker xarchiver \
