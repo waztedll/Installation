@@ -74,7 +74,7 @@ update pacman to see the effects
 
 download required packages
 
-    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
+    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && sudo pacman-key --lsign-key 3056513887B78AEB && sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
 enable repo
 
@@ -85,14 +85,14 @@ enable repo
 ### Base Packages
 
     sudo pacman -S inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
-                   xorg-server xorg-xauth xf86-input-libinput gdm gdm-settings netctl dialog bind net-tools wget \
+                   xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget xdg-utils \
                    android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors \
                    cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
                    ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
                    network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
                    pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
                    recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
-                   xdg-utils rate-mirrors --needed
+                   rate-mirrors --needed
 
 > Don't forget to enable `tlp`.
 >
@@ -105,7 +105,7 @@ enable repo
 
     yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
            gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
-           polkit-gnome extension-manager --needed
+           polkit-gnome extension-manager gdm gdm-settings --needed
 
 
 > Enable `switcheroo-control` if its not enabled.
