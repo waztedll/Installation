@@ -86,14 +86,13 @@ enable repo
 
     sudo pacman -S --needed \
             inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
-            xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget xdg-utils \
+            xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget curl xdg-utils \
             android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
-            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils \
-              python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
-            recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
-            rate-mirrors
+            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils fdupes recode jq pup \
+            python-pip python-requests kvantum kvantum-qt5 redshift imagemagick htop btop gvfs gvfs-mtp mtpfs \
+            pacman-contrib thefuck cava rate-mirrors
 
 > Don't forget to enable `tlp`.
 >
