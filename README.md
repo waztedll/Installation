@@ -211,7 +211,7 @@ enable repo
 
     yay -S --needed \
             kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-            signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin gallery-dl \
+            signal-desktop lutris heroic-games-launcher-bin gallery-dl \
             tor-browser-bin librewolf epiphany octopi ferium prismlauncher modrinth-app \
             duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
             stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
@@ -230,8 +230,8 @@ enable repo
 ### AUR
 
     yay -S --needed \
-            sklauncher-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git \
-            protonvpn-cli-community lyrebird fast hydroxide varia tty-clock
+            sklauncher-bin fluent-reader-electron-bin kando-bin nuclear-player-bin \
+            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock
 
 ### Shell
 
