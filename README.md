@@ -90,7 +90,7 @@ enable repo
             android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
-            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
+            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree intel-gpu-tools joyutils \
             pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
             recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
             rate-mirrors
@@ -188,7 +188,7 @@ enable repo
             kdiskmark discord thunderbird obs-studio piper qbittorrent xsensors \
             ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-            upscayl youtube-music-git dialect okular marker xarchiver \
+            upscayl youtube-music-git dialect okular marker xarchiver lact \
             metadata-cleaner wine-stable ungoogled-chromium-bin
 
 </details>
