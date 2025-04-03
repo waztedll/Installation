@@ -84,15 +84,16 @@ enable repo
 
 ### Base Packages
 
-    sudo pacman -S inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
-                   xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget xdg-utils \
-                   android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors \
-                   cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
-                   ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
-                   network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
-                   pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
-                   recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
-                   rate-mirrors --needed
+    sudo pacman -S --needed \
+            inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf \
+            xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget xdg-utils \
+            android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils xsensors \
+            cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
+            ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
+            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree lact intel-gpu-tools joyutils \
+            pavucontrol mpv mpv-mpris python-pip python-requests kvantum kvantum-qt5 redshift imagemagick \
+            recode jq curl pup locate htop btop gvfs gvfs-mtp mtpfs fdupes pacman-contrib thefuck cava \
+            rate-mirrors
 
 > Don't forget to enable `tlp`.
 >
@@ -103,12 +104,13 @@ enable repo
 <details id="gnome">
     <summary><strong>GNOME</strong></summary>
 
-    yay -S gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-           gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
-           polkit-gnome extension-manager gdm gdm-settings --needed
+    yay -S --needed \
+            gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
+            gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
+            polkit-gnome extension-manager gdm gdm-settings
 
 
-> Enable `switcheroo-control` if its not enabled.
+> Enable `switcheroo-control` if it's not enabled.
 >
 >     sudo systemctl enable --now switcheroo-control.service
 
@@ -117,27 +119,29 @@ enable repo
 <details id="kde">
     <summary><strong>KDE</strong></summary>
 
-    yay -S plasma-desktop --needed
+    yay -S --needed plasma-desktop
 
 </details>
 
 <details id="i3">
     <summary><strong>i3</strong></summary>
 
-    yay -S i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
-           clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
-           tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu --needed
+    yay -S --needed \
+            i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
+            clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
+            tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu
 
 </details>
 
 <details id="hyprland">
     <summary><strong>Hyprland</strong></summary>
 
-    yay -S hyprland hyprpaper hyprlock hyprpicker waybar dunst grim slurp \
-           nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland rofi-wayland \
-           tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus \
-           tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell brightnessctl \
-           playerctl wireplumber pamixer polkit-gnome --needed
+    yay -S --needed \
+            hyprland hyprpaper hyprlock hyprpicker waybar dunst grim slurp \
+            nwg-look wl-clipboard cliphist qt5-wayland qt6-wayland rofi-wayland \
+            tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus \
+            tesseract-data-deu wlrobs-hg wlogout gtk-layer-shell brightnessctl \
+            playerctl wireplumber pamixer polkit-gnome 
 
 </details>
 
@@ -146,28 +150,31 @@ enable repo
 <details id="intel">
     <summary><strong>Intel</strong></summary>
 
-    yay -S mesa-amber lib32-mesa-amber libva-intel-driver lib32-libva-intel-driver xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader --needed
+    yay -S --needed \
+            mesa-amber lib32-mesa-amber libva-intel-driver lib32-libva-intel-driver xf86-video-intel \
+            vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader
 
 </details>
 
 <details id="amd">
     <summary><strong>AMD</strong></summary>
 
-    yay -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader --needed
+    yay -S --needed \
+            mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
 
 </details>
 
 <details id="bluetooth">
     <summary><strong>Bluetooth</strong></summary>
 
-    yay -S bluez bluez-utils blueman --needed
+    yay -S --needed bluez bluez-utils blueman
 
 </details>
 
 <details id="printers">
     <summary><strong>Printers</strong></summary>
 
-    yay -S cups --needed
+    yay -S --needed cups
 
 </details>
 
@@ -176,61 +183,66 @@ enable repo
 <details id="general">
     <summary><strong>General</strong></summary>
 
-    yay -S firefox alacritty thunar obsidian syncthing anki localsend \
-           kdiskmark discord thunderbird obs-studio piper qbittorrent \
-           ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
-           gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-           upscayl youtube-music-git dialect okular marker xarchiver \
-           metadata-cleaner wine-stable ungoogled-chromium-bin --needed
+    yay -S --needed \
+            firefox alacritty thunar obsidian syncthing anki localsend \
+            kdiskmark discord thunderbird obs-studio piper qbittorrent \
+            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
+            gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
+            upscayl youtube-music-git dialect okular marker xarchiver \
+            metadata-cleaner wine-stable ungoogled-chromium-bin
 
 </details>
 
 <details id="audio">
     <summary><strong>Audio</strong></summary>
 
-    yay -S easyeffects audacity lsp-plugins-lv2 --needed
+    yay -S --needed easyeffects audacity lsp-plugins-lv2
 
 </details>
 
 <details id="game">
     <summary><strong>Game</strong></summary>
 
-    yay -S 0ad osu mindustry wesnoth openttd openrct2 openra openloco openage granatier dol-git --needed
+    yay -S --needed 0ad osu mindustry wesnoth openttd openrct2 openra openloco openage granatier dol-git
 
 </details>
 
 <details id="other">
     <summary><strong>Other</strong></summary>
 
-    yay -S kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-           signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin gallery-dl \
-           tor-browser-bin librewolf epiphany octopi ferium prismlauncher modrinth-app \
-           duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
-           stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
-           handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
-           github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
-           waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
-           pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
-           zathura authenticator vscodium xdman-beta-bin kdeconnect kweather --needed
+    yay -S --needed \
+            kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
+            signal-desktop nuclear-player-bin lutris heroic-games-launcher-bin gallery-dl \
+            tor-browser-bin librewolf epiphany octopi ferium prismlauncher modrinth-app \
+            duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
+            stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
+            handbrake ppsspp rustdesk parsec calibre dino wike dissent amberol harmonoid cpu-x \
+            github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
+            waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
+            pamac-aur ksysguard gnome-dictionary waydroid zed screenkey veracrypt lmms ardour \
+            zathura authenticator vscodium xdman-beta-bin kdeconnect kweather
 
 </details>
 
 ### Flatpak
 
-    yay -S flatpak && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
+    yay -S --needed flatpak && flatpak install com.github.tchx84.Flatseal io.gitlab.jstest_gtk.jstest_gtk com.github.k4zmu2a.spacecadetpinball
 
 ### AUR
 
-    yay -S sklauncher-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git \
-           protonvpn-cli-community lyrebird fast hydroxide varia tty-clock --needed
+    yay -S --needed \
+            sklauncher-bin fluent-reader-electron-bin kando-bin tuxi-git urn-git sherlock-git \
+            protonvpn-cli-community lyrebird fast hydroxide varia tty-clock
 
 ### Shell
 
 <details id="fish">
     <summary><strong>Fish</strong></summary>
 
-    sudo pacman -S fish fisher  
-    fisher install IlanCosman/tide@v6  
+run these respectively
+
+    sudo pacman -S fish fisher
+    fisher install IlanCosman/tide@v6
     chsh -s /usr/bin/fish
 
 </details>
@@ -238,15 +250,16 @@ enable repo
 <details id="zsh">
     <summary><strong>Zsh</strong></summary>
 
-first, installing zsh and changing default shell to zsh
+first, install zsh and change default shell to zsh
 
-    sudo pacman -S zsh zsh-completions && chsh -s /usr/bin/zsh
+    sudo pacman -S zsh zsh-completions
+    chsh -s /usr/bin/zsh
 
-then cloning required pluginsㅤ
+then clone required pluginsㅤ
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-ㅤlast one, editing zsh config and including plugins
+ㅤlastly edit zsh config and include the plugins
 
     nvim ~/.zshrc
 
@@ -266,7 +279,7 @@ then cloning required pluginsㅤ
 
 - start by installing `plymouth` package
 
-      sudo pacman -S --needed --noconfirm plymouth
+      sudo pacman -S --needed plymouth
 
 - edit `/etc/mkinitcpio.conf` and add `plymouth` to your hooks after `udev`
 - regenerate the images by running
@@ -277,8 +290,9 @@ then cloning required pluginsㅤ
 
       cmdline: cryptdevice=PARTUUID=d5dd7183-f8df-4b85-9b39-a634174f56ce:root root=/dev/mapper/root rw quiet splash loglevel=0 udev.log_level=3 rootfstype=ext4
 
-- now it is time to select plymouth theme
+- now it is time to select your plymouth theme
 
+      plymouth-set-default-theme -l
       sudo plymouth-set-default-theme -R spinner
 
 now you can reboot and see if plymouth has successfully installed
@@ -315,7 +329,7 @@ now you can reboot and see if plymouth has successfully installed
 
 download required packages
 
-    sudo pacman -S linux-zen linux-zen-headers
+    sudo pacman -S --needed linux-zen linux-zen-headers
 
 then adjust GRUB for the zen kernel
 
@@ -385,7 +399,7 @@ paste swap to end of the file
 <pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/fstab</pre>
 <pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">/swapfile                                 none           swap    defaults         0 0</pre>
 
-reboot to see the changes
+reboot to see changes
 
 > if you want to delete the swap, just type
 
@@ -440,7 +454,7 @@ via `iwctl`
 
 backup the files using rsync
 
-    rynsc -a --delete /path/to/files/ /path/to/backup/
+    rynsc -av --delete /path/to/files/ /path/to/backup/
 
 ### Ad Block
 
