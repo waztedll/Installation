@@ -92,7 +92,7 @@ enable repo
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
             network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils fdupes recode jq pup \
             python-pip python-requests kvantum kvantum-qt5 redshift imagemagick htop btop gvfs gvfs-mtp mtpfs \
-            pacman-contrib thefuck cava rate-mirrors
+            pacman-contrib thefuck cava zenity rate-mirrors
 
 > Don't forget to enable `tlp`.
 >
