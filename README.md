@@ -184,8 +184,8 @@ enable repo
 
     yay -S --needed \
             firefox alacritty thunar obsidian syncthing anki localsend pavucontrol \
-            kdiskmark discord thunderbird obs-studio piper qbittorrent xsensors \
-            ventoy thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
+            discord thunderbird obs-studio piper qbittorrent xsensors ventoy \
+            thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
             mpv mpv-mpris upscayl youtube-music-git okular marker xarchiver \
             lact metadata-cleaner wine-stable ungoogled-chromium-bin
@@ -211,7 +211,7 @@ enable repo
 
     yay -S --needed \
             kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-            signal-desktop lutris heroic-games-launcher-bin gallery-dl \
+            signal-desktop lutris heroic-games-launcher-bin gallery-dl kdiskmark \
             tor-browser-bin librewolf octopi ferium prismlauncher modrinth-app \
             duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
             stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
