@@ -92,7 +92,7 @@ enable repo
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
             network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils fdupes recode jq pup \
             python-pip python-requests kvantum kvantum-qt5 redshift imagemagick htop btop gvfs gvfs-mtp mtpfs \
-            pacman-contrib thefuck cava zenity rate-mirrors
+            pacman-contrib thefuck cava mat2 zenity rate-mirrors
 
 > Don't forget to enable `tlp`.
 >
@@ -187,8 +187,8 @@ enable repo
             discord thunderbird obs-studio piper qbittorrent xsensors ventoy \
             thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-            mpv mpv-mpris upscayl youtube-music-git okular marker xarchiver \
-            lact metadata-cleaner wine-stable ungoogled-chromium-bin
+            mpv mpv-mpris upscayl youtube-music-git evince marker xarchiver \
+            lact wine-stable ungoogled-chromium-bin
 
 </details>
 
