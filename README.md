@@ -106,7 +106,7 @@ enable repo
     yay -S --needed \
             gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
             gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
-            polkit-gnome extension-manager gdm gdm-settings
+            gnome-calculator polkit-gnome extension-manager gdm gdm-settings
 
 
 > Enable `switcheroo-control` if it's not enabled.
