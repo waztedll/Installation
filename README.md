@@ -108,7 +108,6 @@ enable repo
             gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
             gnome-calculator polkit-gnome extension-manager gdm gdm-settings
 
-
 > Enable `switcheroo-control` if it's not enabled.
 >
 >     sudo systemctl enable --now switcheroo-control.service
