@@ -184,7 +184,7 @@ enable repo
     yay -S --needed \
             firefox alacritty thunar obsidian syncthing anki localsend pavucontrol \
             discord thunderbird obs-studio piper qbittorrent xsensors ventoy \
-            thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
+            thunar-volman thunar-archive-plugin thunar-media-tags-plugin keepassxc \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
             mpv mpv-mpris upscayl youtube-music-git evince marker xarchiver \
             lact wine-stable ungoogled-chromium-bin
