@@ -46,6 +46,7 @@
     - [Dictionary](#dictionary)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
     - [Remove the wrong password delay](#remove-the-wrong-password-delay)
+    - [Disable wayland on GDM](#disable-wayland-on-gdm)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
     - [Tuxi config fix](#tuxi-config-fix)
@@ -491,7 +492,7 @@ Section "InputClass"
 EndSection
 </pre>
 
-# Remove the wrong password delay
+### Remove the wrong password delay
 
 to remove the boring delay after entering wrong password, edit `/etc/pam.d/system-auth` and add `nodelay` at end of the every line that starts with `auth` and includes `pam_faillock.so` or `pam_unix.so`
 
@@ -503,6 +504,13 @@ auth       [success=2 default=ignore]  pam_unix.so          try_first_pass nullo
 auth       [default=die]               pam_faillock.so      authfail nodelay
 ...
 </pre>
+
+### Disable wayland on GDM
+
+> [!NOTE]
+> This will disable all wayland sessions on GDM
+
+    sudo sed -i "/#WaylandEnable=false/s/^#//g" /etc/gdm/custom.conf
 
 ### Show stars on sudo password
 
