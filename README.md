@@ -508,7 +508,7 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 ### Disable wayland on GDM
 
 > [!NOTE]
-> This will disable all wayland sessions on GDM
+> This will disable all wayland sessions in GDM
 
     sudo sed -i "/#WaylandEnable=false/s/^#//g" /etc/gdm/custom.conf
 
