@@ -504,6 +504,7 @@ auth       [success=2 default=ignore]  pam_unix.so          try_first_pass nullo
 auth       [default=die]               pam_faillock.so      authfail nodelay
 ...
 </pre>
+</details>
 
 ### Show stars on sudo password
 
