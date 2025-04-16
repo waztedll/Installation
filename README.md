@@ -45,6 +45,7 @@
     - [DPI Bypass](#dpi-bypass)
     - [Dictionary](#dictionary)
     - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
+    - [Remove the wrong password delay](#wrong-password-delay)
     - [Show stars on sudo password](#show-stars-on-sudo-password)
     - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
     - [Tuxi config fix](#tuxi-config-fix)
@@ -488,6 +489,20 @@ Section "InputClass"
     Option "XkbOptions" "grp:alt_shift_toggle"
     ...
 EndSection
+</pre>
+
+### Remove the wrong password delay
+
+to remove the boring delay after entering wrong password, edit `/etc/pam.d/system-auth` and add `nodelay` at end of the every line that starts with `auth` and includes `pam_faillock.so` or `pam_unix.so`
+
+<details id="wrong-password-delay">
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/pam.d/system-auth</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
+auth       required                    pam_faillock.so      preauth nodelay                                                
+auth       [success=2 default=ignore]  pam_unix.so          try_first_pass nullok nodelay                                  
+-auth      [success=1 default=ignore]  pam_systemd_home.so                                                                 
+auth       [default=die]               pam_faillock.so      authfail nodelay
+...
 </pre>
 
 ### Show stars on sudo password
