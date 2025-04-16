@@ -491,19 +491,18 @@ Section "InputClass"
 EndSection
 </pre>
 
-### Remove the wrong password delay
-
 to remove the boring delay after entering wrong password, edit `/etc/pam.d/system-auth` and add `nodelay` at end of the every line that starts with `auth` and includes `pam_faillock.so` or `pam_unix.so`
 
 <details id="wrong-password-delay">
-<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/pam.d/system-auth</pre>
+    <summary><strong>Remove the wrong password delay</strong></summary>
+        <pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/pam.d/system-auth</pre>
 <pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
 auth       required                    pam_faillock.so      preauth nodelay                                                
 auth       [success=2 default=ignore]  pam_unix.so          try_first_pass nullok nodelay                                  
 -auth      [success=1 default=ignore]  pam_systemd_home.so                                                                 
 auth       [default=die]               pam_faillock.so      authfail nodelay
 ...
-</pre>
+    </pre>
 </details>
 
 ### Show stars on sudo password
