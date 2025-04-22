@@ -239,7 +239,7 @@ enable repo
 <details id="fish">
     <summary><strong>Fish</strong></summary>
 
-run these respectively
+run each one respectively
 
     sudo pacman -S fish fisher
     fisher install IlanCosman/tide@v6
