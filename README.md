@@ -295,6 +295,11 @@ then clone required pluginsㅤ
       plymouth-set-default-theme -l
       sudo plymouth-set-default-theme -R spinner
 
+optional: remove unnecessary stuff to make it more cleaner
+
+    sudo rm /usr/share/plymouth/themes/spinner/
+    sudo rm /usr/share/plymouth/themes/spinner/
+
 now you can reboot and see if plymouth has successfully installed
 
 ### Enable VA-API
