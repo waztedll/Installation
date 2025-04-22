@@ -290,18 +290,22 @@ then clone required pluginsㅤ
 
       cmdline: cryptdevice=PARTUUID=d5dd7183-f8df-4b85-9b39-a634174f56ce:root root=/dev/mapper/root rw quiet splash loglevel=0 udev.log_level=3 rootfstype=ext4
 
-- now it is time to select your plymouth theme
+now it is time to select your plymouth theme
 
-      plymouth-set-default-theme -l # list themes
-      sudo
-      sudo plymouth-set-default-theme -R spinner # set theme to spinner
+- list themes by running
 
-optional: remove unnecessary stuff to make it more cleaner
+      plymouth-set-default-theme -l
 
-    sudo rm /usr/share/plymouth/themes/spinner/
-    sudo rm /usr/share/plymouth/themes/spinner/
+- optional: remove unnecessary stuff to make it more cleaner
 
-now you can reboot and see if plymouth has successfully installed
+      sudo rm -f /usr/share/plymouth/themes/spinner/animation-*.png
+      sudo rm -f /usr/share/plymouth/themes/spinner/throbber-*.png
+
+- set default theme & regenerate kernel images
+
+      sudo plymouth-set-default-theme -R spinner
+
+now you can reboot and see if plymouth has successfully installed and our configurations applied
 
 ### Enable VA-API
 
