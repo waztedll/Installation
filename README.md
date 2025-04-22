@@ -292,8 +292,9 @@ then clone required pluginsㅤ
 
 - now it is time to select your plymouth theme
 
-      plymouth-set-default-theme -l
-      sudo plymouth-set-default-theme -R spinner
+      plymouth-set-default-theme -l # list themes
+      sudo
+      sudo plymouth-set-default-theme -R spinner # set theme to spinner
 
 optional: remove unnecessary stuff to make it more cleaner
 
