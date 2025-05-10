@@ -41,15 +41,16 @@
         - [GTK](#gtk)
         - [QT](#qt)
     - [Backup Files](#backup-files)
-    - [Change keyboard layout on X11](#change-keyboard-layout-on-x11)
+    - [Change Keyboard Layout on X11](#change-keyboard-layout-on-x11)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
     - [Dictionary](#dictionary)
-    - [Disable wayland on GDM](#disable-wayland-on-gdm)
+    - [Disable Wayland in GDM](#disable-wayland-in-gdm)
     - [DPI Bypass](#dpi-bypass)
-    - [Prism Launcher offline bypass](#prism-launcher-offline-bypass)
-    - [Remove the wrong password delay](#remove-the-wrong-password-delay)
-    - [Show stars on sudo password](#show-stars-on-sudo-password)
-    - [Tuxi config fix](#tuxi-config-fix)
+    - [Prism Launcher Offline Bypass](#prism-launcher-offline-bypass)
+    - [Remove the Wrong Password Delay](#remove-the-wrong-password-delay)
+    - [Setup Gaming Environment](#setup-gaming-environment)
+    - [Show the Stars on sudo Password](#show-the-stars-on-sudo-password)
+    - [Tuxi Config Fix](#tuxi-config-fix)
 - [Error Solutions](#error-solutions)
     - [Pacman gives PGP error](#pacman-pgp-error)
     - [Bluetooth not working](#bluetooth-not-working)
@@ -417,24 +418,9 @@ reboot to see changes
 
 ## Useful Utilities
 
-### Connect to Wi-Fi
+### Ad Block
 
-via `NetworkManager`
-
-    $ nmcli device status
-    $ nmcli device wifi list
-    $ nmcli device wifi connect <SSID> password <password>
-    $ nmcli general status
-
-via `iwctl`
-
-    [iwd]# device list
-    [iwd]# adapter phy0 set-property Powered on
-    [iwd]# device wlan0 set-property Powered on
-    [iwd]# station wlan0 scan
-    [iwd]# station wlan0 get-networks
-    [iwd]# station wlan0 connect <network>
-    [iwd]# station wlan0 show
+    sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
 ### Apply Themes
 
@@ -466,9 +452,52 @@ backup the files using rsync
 
     rynsc -av --delete /path/to/files/ /path/to/backup/
 
-### Ad Block
+### Change Keyboard Layout on X11
 
-    sudo curl -o /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/X11/xorg.conf.d/00-keyboard.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
+Section "InputClass"
+    Option "XkbLayout" "tr,us"
+    Option "XkbOptions" "grp:alt_shift_toggle"
+    ...
+EndSection
+</pre>
+
+### Connect to Wi-Fi
+
+via `NetworkManager`
+
+    $ nmcli device status
+    $ nmcli device wifi list
+    $ nmcli device wifi connect <SSID> password <password>
+    $ nmcli general status
+
+via `iwctl`
+
+    [iwd]# device list
+    [iwd]# adapter phy0 set-property Powered on
+    [iwd]# device wlan0 set-property Powered on
+    [iwd]# station wlan0 scan
+    [iwd]# station wlan0 get-networks
+    [iwd]# station wlan0 connect <network>
+    [iwd]# station wlan0 show
+
+### Dictionary
+
+download the database
+
+    wget https://github.com/metwse/rofi-tdk.sh/releases/download/v1/rofi-tdk.tar.gz
+
+then move it into the required directory
+
+    sudo mv ~/rofi-tdk.tar.gz /var/
+
+### Disable Wayland in GDM
+
+> [!NOTE]
+> This will disable all wayland sessions in GDM
+
+    sudo sed -i "/#WaylandEnable=false/s/^#//g" /etc/gdm/custom.conf
 
 ### DPI Bypass
 
@@ -481,28 +510,11 @@ check and install
     sudo ./blockcheck.sh
     sudo ./install_easy.sh
 
-### Dictionary
+### Prism Launcher Offline Bypass
 
-download the database
+    echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
 
-    wget https://github.com/metwse/rofi-tdk.sh/releases/download/v1/rofi-tdk.tar.gz
-
-then move it into the required directory
-
-    sudo mv ~/rofi-tdk.tar.gz /var/
-
-### Change keyboard layout on X11
-
-<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/X11/xorg.conf.d/00-keyboard.conf</pre>
-<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
-Section "InputClass"
-    Option "XkbLayout" "tr,us"
-    Option "XkbOptions" "grp:alt_shift_toggle"
-    ...
-EndSection
-</pre>
-
-### Remove the wrong password delay
+### Remove the Wrong Password Delay
 
 to remove the boring delay after entering wrong password, edit `/etc/pam.d/system-auth` and add `nodelay` at end of the every line that starts with `auth` and includes `pam_faillock.so` or `pam_unix.so`
 
@@ -515,22 +527,13 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 ...
 </pre>
 
-### Disable wayland on GDM
+### Setup Gaming Environment
 
-> [!NOTE]
-> This will disable all wayland sessions in GDM
-
-    sudo sed -i "/#WaylandEnable=false/s/^#//g" /etc/gdm/custom.conf
-
-### Show stars on sudo password
+### Show the Stars on sudo Password
 
     echo "Defaults pwfeedback" | sudo tee -a /etc/sudoers
 
-### Prism Launcher offline bypass
-
-    echo '{"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "Offline"}],"formatVersion": 3}' > ~/.local/share/PrismLauncher/accounts.json
-
-### Tuxi config fix
+### Tuxi Config Fix
 
 > ready binary here: <https://gist.github.com/waztedll/0d3856ca7e583949ace73245a234f5d4>
 
