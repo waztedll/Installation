@@ -185,10 +185,10 @@ enable repo
 
     yay -S --needed \
             firefox alacritty thunar obsidian syncthing anki localsend pavucontrol \
-            discord thunderbird obs-studio piper qbittorrent xsensors ventoy \
+            discord thunderbird obs-studio piper qbittorrent xsensors ventoy xarchiver \
             thunar-volman thunar-archive-plugin thunar-media-tags-plugin keepassxc \
-            gtkhash-thunar gnome-system-monitor viewnior gimp steam umu-launcher \
-            mpv mpv-mpris upscayl youtube-music-git evince marker xarchiver \
+            gtkhash-thunar gnome-system-monitor viewnior gimp steam lutris umu-launcher \
+            heroic-games-launcher-git mpv mpv-mpris upscayl youtube-music-git evince marker \
             lact wine-stable ungoogled-chromium-bin
 
 </details>
@@ -212,7 +212,7 @@ enable repo
 
     yay -S --needed \
             kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-            signal-desktop lutris heroic-games-launcher-bin gallery-dl kdiskmark \
+            signal-desktop zathura vscodium kdeconnect gallery-dl kdiskmark kweather \
             tor-browser-bin librewolf octopi ferium prismlauncher modrinth-app pinta \
             duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
             stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
@@ -220,7 +220,7 @@ enable repo
             github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
             waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
             pamac-aur ksysguard gnome-dictionary dialect waydroid zed screenkey veracrypt lmms ardour \
-            zathura authenticator vscodium xdman-beta-bin kdeconnect kweather
+            authenticator xdman-beta-bin  
 
 </details>
 
