@@ -55,7 +55,7 @@
     - [Pacman gives PGP error](#pacman-pgp-error)
     - [Bluetooth not working](#bluetooth-not-working)
     - [Controller doesn't connect to the PC](#controller-not-connecting)
-    - [Controller asking for a PIN code](#controller-asks-pin)
+    - [Controller asks for a PIN code](#controller-asks-pin)
     - [Notifications not working correctly on KDE](#notification-issue-kde)
     - [Clipboard not working correctly on KDE](#clipboard-issue-kde)
 - [Firefox Tweaks](#firefox-tweaks)
@@ -571,7 +571,7 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 </details>
 
 <details id="controller-asks-pin">
-    <summary><strong>Controller asking for a PIN code</strong></summary>
+    <summary><strong>Controller asks for a PIN code</strong></summary>
 
     echo -e "[General]\nClassicBondedOnly=false\nUserspaceHID=false" | sudo tee /etc/bluetooth/input.conf
 
