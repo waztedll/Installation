@@ -544,7 +544,7 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 <details id="pacman-pgp-error">
     <summary><strong>Pacman gives PGP error</strong></summary>
 
-    sudo pacman -S --noconfirm --needed archlinux-keyring && sudo pacman-key --refresh
+    sudo pacman -S --noconfirm --needed archlinux-keyring && sudo pacman-key --refresh-keys
 
 </details>
 
