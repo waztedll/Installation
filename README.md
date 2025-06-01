@@ -232,7 +232,7 @@ enable repo
 ### AUR
 
     yay -S --needed \
-            sklauncher-bin fluent-reader-electron-bin kando-bin nuclear-player-bin \
+            sklauncher-bin fluent-reader-electron-bin kando-bin nuclear-player-bin bifrost-bin \
             tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock
 
 ### Shell
