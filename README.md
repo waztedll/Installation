@@ -233,7 +233,7 @@ enable repo
 
     yay -S --needed \
             sklauncher-bin fluent-reader-electron-bin kando-bin nuclear-player-bin bifrost-bin hydra-launcher-bin \
-            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock
+            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock odin4-cli
 
 ### Shell
 
