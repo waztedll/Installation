@@ -221,7 +221,7 @@ enable repo
             github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
             waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
             pamac-aur ksysguard gnome-dictionary dialect waydroid zed screenkey veracrypt lmms ardour \
-            authenticator xdman-beta-bin john
+            authenticator xdman-beta-bin john tradingview
 
 </details>
 
