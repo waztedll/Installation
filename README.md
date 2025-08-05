@@ -168,14 +168,14 @@ enable repo
 <details id="bluetooth">
     <summary><strong>Bluetooth</strong></summary>
 
-    yay -S --needed bluez bluez-utils blueman
+    yay -S --needed bluez bluez-utils blueman && systemctl enable --now bluetooth
 
 </details>
 
 <details id="printers">
     <summary><strong>Printers</strong></summary>
 
-    yay -S --needed cups
+    yay -S --needed cups && systemctl enable --now cups
 
 </details>
 
