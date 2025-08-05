@@ -175,7 +175,7 @@ enable repo
 <details id="printers">
     <summary><strong>Printers</strong></summary>
 
-    yay -S --needed cups system-config-printer && systemctl enable --now cups
+    yay -S --needed cups cups-pdf system-config-printer && systemctl enable --now cups
 
 </details>
 
