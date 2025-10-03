@@ -89,7 +89,7 @@ enable repo
 
     sudo pacman -S --needed \
             inxi linux-headers man-db systemd-resolvconf tldr git base-devel yay scrcpy yt-dlp fzf ytfzf ani-cli \
-            xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget curl ncdu xdg-utils \
+            iwd xorg-server xorg-xauth xf86-input-libinput netctl dialog bind net-tools wget curl ncdu xdg-utils \
             android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release \
@@ -562,6 +562,11 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 <details id="controller-not-connecting">
     <summary><strong>Controller doesn't connect to the PC</strong></summary>
 
+    $ bluetoothctl
+    [bluetoothctl#] power on
+    [bluetoothctl#] agent on
+    [bluetoothctl#] default-agent
+    [bluetoothctl#] scan on
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
     [bluetoothctl#] pair <gamepad>
