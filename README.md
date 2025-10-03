@@ -567,11 +567,12 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
     [bluetoothctl#] agent on
     [bluetoothctl#] default-agent
     [bluetoothctl#] scan on
-    [bluetoothctl#] scan on
     [bluetoothctl#] devices
     [bluetoothctl#] pair <gamepad>
     [bluetoothctl#] connect <gamepad>
     [bluetoothctl#] trust <gamepad>
+    [bluetoothctl#] scan off
+    [bluetoothctl#] exit
 
 </details>
 
