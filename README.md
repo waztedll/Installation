@@ -161,7 +161,7 @@ enable repo
     <summary><strong>AMD</strong></summary>
 
     yay -S --needed \
-            mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
+            mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader hsa-rocr
 
 </details>
 
