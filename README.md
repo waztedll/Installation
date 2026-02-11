@@ -128,7 +128,7 @@ enable repo
     <summary><strong>i3</strong></summary>
 
     yay -S --needed \
-            i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
+            i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper xorg-xbacklight \
             clipmenu redshift brightnessctl playerctl lxappearance polkit-gnome \
             tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu
 
