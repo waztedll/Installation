@@ -42,6 +42,7 @@
         - [QT](#qt)
     - [Backup Files](#backup-files)
     - [Change Keyboard Layout on X11](#change-keyboard-layout-on-x11)
+    - [Configure Touchpad on X11](#configure-touchpad-on-x11)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
     - [Dictionary](#dictionary)
     - [Disable Wayland in GDM](#disable-wayland-in-gdm)
@@ -462,6 +463,23 @@ Section "InputClass"
     ...
 EndSection
 </pre>
+
+### Configure Touchpad on X11
+
+<pre style="margin-bottom: 0px; border-bottom: medium; padding-bottom: 0.8em; --darkreader-inline-border-bottom: currentcolor;" data-darkreader-inline-border-bottom="">/etc/X11/xorg.conf.d/30-touchpad.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">
+Section "InputClass"
+    Identifier "touchpad"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    Option "Tapping" "on"
+    Option "NaturalScrolling" "on"
+    Option "ScrollMethod" "edge"
+    ...
+EndSection
+</pre>
+
+see more [here](https://man.archlinux.org/man/libinput.4.en.txt)
 
 ### Connect to Wi-Fi
 
