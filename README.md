@@ -109,7 +109,7 @@ enable repo
 
     yay -S --needed \
             gnome-shell gnome-control-center gnome-tweaks gnome-browser-connector gnome-menus \
-            gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
+            gnome-weather gnome-bluetooth-3.0 power-profiles-daemon switcheroo-control dconf-editor \
             gnome-calculator polkit-gnome extension-manager gdm gdm-settings
 
 > Enable `switcheroo-control` if it's not enabled.
@@ -186,12 +186,12 @@ enable repo
     <summary><strong>General</strong></summary>
 
     yay -S --needed \
-            firefox alacritty thunar obsidian syncthing anki localsend pavucontrol \
-            discord thunderbird obs-studio piper qbittorrent xsensors ventoy xarchiver \
-            thunar-volman thunar-archive-plugin thunar-media-tags-plugin keepassxc \
+            firefox epiphany ungoogled-chromium-bin alacritty thunar obsidian syncthing \
+            anki localsend pavucontrol discord thunderbird obs-studio piper qbittorrent \
+            xsensors xarchiver thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam lutris umu-launcher \
             heroic-games-launcher-git mpv mpv-mpris upscayl youtube-music-git evince marker \
-            lact wine-stable ungoogled-chromium-bin
+            keepassxc ventoy lact wine-stable
 
 </details>
 
