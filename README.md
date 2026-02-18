@@ -98,7 +98,7 @@ enable repo
             python-pip python-requests kvantum kvantum-qt5 redshift imagemagick htop btop gvfs gvfs-mtp mtpfs \
             pacman-contrib thefuck cava mat2 libnotify zenity rate-mirrors heimdall-grimler-git libimobiledevice
 
-> Don't forget to enable `tlp`.
+> Enable `tlp` if it's not enabled.
 >
 >     sudo systemctl enable --now tlp.service
 
