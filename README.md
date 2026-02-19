@@ -441,9 +441,9 @@ reboot to see changes
 > Dracula QT: <https://github.com/dracula/qt5/archive/master.zip>
 
 - download the $THEME and extract the anywhere
-- open up `kvantum` and select the folder that includes $THEME and install it
+- open up the `kvantum` and select the folder that includes $THEME and install it
 - click the change theme and select the $THEME
-- open up qt5ct and qt6ct and select the `kvantum`
+- open up the `qt5ct` and `qt6ct` and select the `kvantum`
 
 </details>
 
