@@ -431,7 +431,7 @@ reboot to see changes
 > Dracula GTK: <https://github.com/dracula/gtk/archive/master.zip>
 
 - download the $THEME and extract the .zip file to the `~/.themes`
-- open up `lxappearance` and select the $THEME in widgets.
+- open up the `lxappearance` and select the $THEME in widgets.
 
 </details>
 
