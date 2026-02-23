@@ -198,7 +198,7 @@ enable repo
 <details id="audio">
     <summary><strong>Audio</strong></summary>
 
-    yay -S --needed easyeffects audacity lsp-plugins-lv2
+    yay -S --needed easyeffects audacity lsp-plugins-lv2 calf; curl -LO https://github.com/Rikorose/DeepFilterNet/releases/download/v0.5.6/libdeep_filter_ladspa-0.5.6-x86_64-unknown-linux-gnu.so; sudo mv -v libdeep_filter_ladspa-0.5.6-x86_64-unknown-linux-gnu.so /usr/lib64/ladspa/libdeep_filter_ladspa.so
 
 </details>
 
