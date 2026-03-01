@@ -214,7 +214,7 @@ enable repo
 
     yay -S --needed \
             kdenlive krita antimicrox bitwarden goverlay qdirstat celluloid epiphany \
-            signal-desktop zathura vscodium kdeconnect gallery-dl kdiskmark kweather \
+            signal-desktop element-desktop zathura zathur-pdf-poppler vscodium kdeconnect gallery-dl kdiskmark kweather \
             tor-browser-bin librewolf octopi ferium prismlauncher modrinth-app pinta \
             duckstation-git hypnotix ruffle-git lightspark notesnook-bin logseq-desktop-bin \
             stremio discover-overlay mousai songrec soundux tokodon kdevelop davinci-resolve \
