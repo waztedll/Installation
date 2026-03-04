@@ -623,7 +623,7 @@ go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion
     <summary><strong>about:config</strong></summary>
 
 ```
-### Needed
+### Necessary
 
 beacon.enabled = false
 browser.cache.offline.enable = false
@@ -641,7 +641,7 @@ privacy.firstparty.isolate = true
 privacy.resistFingerprinting = true
 toolkit.telemetry.cachedClientID = blank
 
-### For Google IP
+### For Google tracking
 
 geo.enabled = false
 geo.wifi.uri = blank
