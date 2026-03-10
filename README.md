@@ -222,7 +222,7 @@ enable repo
             github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
             waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
             pamac-aur ksysguard gnome-dictionary dialect waydroid zed screenkey veracrypt lmms ardour \
-            authenticator xdman-beta-bin john tradingview
+            authenticator xdman-beta-bin john tradingview solaar logiops
 
 </details>
 
@@ -234,7 +234,8 @@ enable repo
 
     yay -S --needed \
             sklauncher-bin fluent-reader-electron-bin kando-bin nuclear-player-bin bifrost-bin hydra-launcher-bin \
-            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock odin4-cli xclicker
+            tuxi-git urn-git sherlock-git protonvpn-cli-community lyrebird fast hydroxide varia tty-clock odin4-cli xclicker \
+            mangayomi-linux
 
 ### Shell
 
