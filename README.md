@@ -94,7 +94,7 @@ enable repo
             android-tools neofetch fastfetch pfetch zip unzip 7zip unrar make libva libva-utils lm_sensors ffmpeg \
             cmatrix rsync vi vim neovim starship tlp qt5ct qt6ct gnome-keyring translate-shell glfw openal \
             ttf-hack ttf-hack-nerd otf-font-awesome ttf-jetbrains-mono-nerd noto-fonts-emoji lsb-release inetutils \
-            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils fdupes recode jq pup \
+            network-manager-applet ffmpegthumbnailer tumbler tgpt acpi tree joyutils fdupes recode jq pup xorg-xinit \
             python-pip python-requests kvantum kvantum-qt5 redshift imagemagick htop btop gvfs gvfs-mtp gvfs-gphoto2 gvfs-afc mtpfs \
             pacman-contrib thefuck cava mat2 libnotify zenity rate-mirrors heimdall-grimler-git libimobiledevice ifuse
 
