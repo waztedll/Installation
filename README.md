@@ -191,7 +191,7 @@ enable repo
             xsensors xarchiver thunar-volman thunar-archive-plugin thunar-media-tags-plugin \
             gtkhash-thunar gnome-system-monitor viewnior gimp steam lutris umu-launcher \
             heroic-games-launcher-git mpv mpv-mpris upscayl youtube-music-git evince marker \
-            keepassxc ventoy lact wine-stable
+            ventoy lact wine-stable spotify-launcher
 
 </details>
 
@@ -222,7 +222,7 @@ enable repo
             github-desktop protonlaunch minecraft-launcher mcpelauncher-linux-git video-downloader \
             waypaper-git vlc shotcut flowblade olive vidcutter neovide edex-ui wireshark hardinfo \
             pamac-aur ksysguard gnome-dictionary dialect waydroid zed screenkey veracrypt lmms ardour \
-            authenticator xdman-beta-bin john tradingview solaar logiops spotify-launcher
+            authenticator xdman-beta-bin john tradingview solaar logiops keepassxc
 
 </details>
 
