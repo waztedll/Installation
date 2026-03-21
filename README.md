@@ -44,7 +44,6 @@
     - [Change Keyboard Layout on X11](#change-keyboard-layout-on-x11)
     - [Configure Touchpad on X11](#configure-touchpad-on-x11)
     - [Connect to Wi-Fi](#connect-to-wi-fi)
-    - [Dictionary](#dictionary)
     - [Disable Wayland in GDM](#disable-wayland-in-gdm)
     - [DPI Bypass](#dpi-bypass)
     - [Prism Launcher Offline Bypass](#prism-launcher-offline-bypass)
@@ -500,16 +499,6 @@ via `iwctl`
     [iwd]# station wlan0 get-networks
     [iwd]# station wlan0 connect <network>
     [iwd]# station wlan0 show
-
-### Dictionary
-
-download the database
-
-    wget https://github.com/metwse/rofi-tdk.sh/releases/download/v1/rofi-tdk.tar.gz
-
-then move it into the required directory
-
-    sudo mv ~/rofi-tdk.tar.gz /var/
 
 ### Disable Wayland in GDM
 
