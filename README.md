@@ -613,6 +613,8 @@ go to clipboard setings and set keyboard shortcut "Show Items at Mouse Posittion
     <summary><strong>about:config</strong></summary>
 
 ```
+# Privacy oriented  firefox config settings
+
 ### Necessary
 
 beacon.enabled = false
@@ -630,6 +632,7 @@ network.IDN_show_punycode = true
 privacy.firstparty.isolate = true
 privacy.resistFingerprinting = true
 toolkit.telemetry.cachedClientID = blank
+security.ssl.require_safe_negotiation = true
 
 ### For Google tracking
 
