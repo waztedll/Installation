@@ -129,7 +129,7 @@ enable repo
 
     yay -S --needed \
             i3 polybar rofi picom dunst scrot slop xsel xcolor xwallpaper \
-            xorg-xbacklight clipmenu redshift playerctl lxappearance polkit-gnome \
+            xorg-xbacklight clipmenu redshift playerctl lxappearance polkit-gnome python-i3ipc \
             tesseract tesseract-data-eng tesseract-data-tur tesseract-data-rus tesseract-data-deu
 
 </details>
