@@ -40,6 +40,7 @@
     - [Apply Themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
+        - [Flatpak)(#theme-flatpak)
     - [Backup Files](#backup-files)
     - [Change Keyboard Layout on X11](#change-keyboard-layout-on-x11)
     - [Configure Touchpad on X11](#configure-touchpad-on-x11)
@@ -444,6 +445,18 @@ reboot to see changes
 - open up the `kvantum` and select the folder that includes $THEME and install it
 - click the change theme and select the $THEME
 - open up the `qt5ct` and `qt6ct` and select the `kvantum`
+
+</details>
+
+<details id="theme-flatpak">
+    <summary><strong>Flatpak</strong></summary>
+
+you need to download and apply a gtk/qt theme first as shown above
+
+    flatpak -u override --filesystem=~/.themes
+    flatpak -u override --filesystem=xdg-config/gtk-3.0
+    flatpak -u override --filesystem=xdg-config/gtk-4.0
+    flatpak -u override --filesystem=xdg-config/Kvantum:ro
 
 </details>
 
