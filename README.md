@@ -40,7 +40,7 @@
     - [Apply Themes](#apply-themes)
         - [GTK](#gtk)
         - [QT](#qt)
-        - [Flatpak)(#themeFlatpak)
+        - [Flatpak](#theme-flatpak)
     - [Backup Files](#backup-files)
     - [Change Keyboard Layout on X11](#change-keyboard-layout-on-x11)
     - [Configure Touchpad on X11](#configure-touchpad-on-x11)
@@ -448,7 +448,7 @@ reboot to see changes
 
 </details>
 
-<details id="themeFlatpak">
+<details id="theme-flatpak">
     <summary><strong>Flatpak</strong></summary>
 
 you need to download and apply a gtk/qt theme first as shown above
