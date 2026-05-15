@@ -610,7 +610,7 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
     [bluetoothctl#] agent on
     [bluetoothctl#] default-agent
 
-Now connect the controller via USB while in the bluetoothctl menu and type `yes`. If the pop-up doesn't show then repeat the process.
+Now connect the controller via USB while in the bluetoothctl menu and type `yes`. If the pop-up doesn't show up then repeat the process.
 
     [bluetoothctl#] trust <MAC address>
     [bluetoothctl#] scan off
