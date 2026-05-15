@@ -583,17 +583,43 @@ auth       [default=die]               pam_faillock.so      authfail nodelay
 <details id="controller-not-connecting">
     <summary><strong>Controller doesn't connect to the PC</strong></summary>
 
+**Command line**
+
+**Method 1: (manual)**
+
+    systemctl start bluetooth.service
+
     $ bluetoothctl
     [bluetoothctl#] power on
     [bluetoothctl#] agent on
     [bluetoothctl#] default-agent
     [bluetoothctl#] scan on
     [bluetoothctl#] devices
-    [bluetoothctl#] pair <gamepad>
-    [bluetoothctl#] connect <gamepad>
-    [bluetoothctl#] trust <gamepad>
+    [bluetoothctl#] pair <MAC address>
+    [bluetoothctl#] connect <MAC address>
+    [bluetoothctl#] trust <MAC address>
     [bluetoothctl#] scan off
     [bluetoothctl#] exit
+
+**Method 2: (auto)**
+
+    systemctl start bluetooth.service
+
+    $ bluetoothctl
+    [bluetoothctl#] power on
+    [bluetoothctl#] agent on
+    [bluetoothctl#] default-agent
+
+Now connect the controller via USB while in the bluetoothctl menu and type `yes`. If the pop-up doesn't show then repeat the process.
+
+    [bluetoothctl#] trust <MAC address>
+    [bluetoothctl#] scan off
+    [bluetoothctl#] exit
+
+If you want to pair wireless:
+
+    [bluetoothctl#] disconnect <MAC address>
+    [bluetoothctl#] connect <MAC address>
 
 </details>
 
